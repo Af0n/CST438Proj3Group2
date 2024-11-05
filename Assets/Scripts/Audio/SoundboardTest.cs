@@ -14,13 +14,13 @@ public class SoundboardTest : MonoBehaviour
 
         // sfx testing
         if (Input.GetKeyDown(KeyCode.C))
-            AudioManager.Instance.PlaySFX("concrete scrape");
+            AudioManager.Instance.PlaySFX("concrete scrape", 2);
         if (Input.GetKeyDown(KeyCode.G))
-            AudioManager.Instance.PlaySFX("glorp");
+            AudioManager.Instance.PlaySFX("glorp", 1);
         if (Input.GetKeyDown(KeyCode.S))
-            AudioManager.Instance.PlaySFX("meat slap");
+            AudioManager.Instance.PlaySFX("meat slap", 0);
         if (Input.GetKeyDown(KeyCode.V))
-            AudioManager.Instance.PlaySFX("vine boom");
+            AudioManager.Instance.PlaySFX("vine boom", 3);
     }
 
 }

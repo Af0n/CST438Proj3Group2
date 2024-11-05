@@ -58,7 +58,7 @@ public class AudioManager : MonoBehaviour
     }
 
     // for sound effects that you're okay with having multiple of running at the same time, click this!!!
-    public void PlaySFX(string name)
+    public void PlaySFX(string name, int someCase)
     {
         // Attempts to find the music source with the rioght sound name in the array
         Sound s = Array.Find(sfxSounds, x => x.name == name);
@@ -75,8 +75,32 @@ public class AudioManager : MonoBehaviour
             // Look into differentiating the value of the sounds dependent on the source
             // i.e. player, enemies, machinery, etc
 
-            sfxSource.PlayOneShot(s.clip);
+            sfxSource.PlayOneShot(s.clip, getModifier(someCase));
         }
+    }
+
+    public float getModifier(int someCase)
+    {
+
+        // depending on the scenarion, the code will have different return values depending the type of source
+        /*
+         * 1 == entity
+         * 2 == object
+         * 3 == spell
+         * 
+         */
+        switch (someCase)
+        {
+            case 1:
+                return sfxSource.volume * sfxEnt;
+            case 2:
+                return sfxSource.volume * sfxObj;
+            case 3:
+                return sfxSource.volume * sfxSpell;
+            default:
+                return sfxSource.volume;
+        }
+
     }
 
     // Flips whether the music is playing or not

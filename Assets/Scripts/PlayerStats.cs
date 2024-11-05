@@ -12,6 +12,7 @@ public class PlayerStats : ScriptableObject {
 
     [Header("States")]
     public bool hasItem;
+    public bool isBuilding;
 
     [Header("Debug")]
     public bool debug;
@@ -32,13 +33,5 @@ public class PlayerStats : ScriptableObject {
 
             return useSpeed;
         }
-    }
-
-    public bool CanAfford(int price){
-        bool result = money >= price;
-        if(debug){
-            Debug.Log($"Price: {price}, {result}");
-        }
-        return result;
     }
 }

@@ -34,4 +34,12 @@ public class PlayerStats : ScriptableObject {
             return useSpeed;
         }
     }
+
+    public bool CanAfford(int price){
+        bool result = money >= price;
+        if(debug){
+            Debug.Log($"Price: {price}, {result}");
+        }
+        return result;
+    }
 }

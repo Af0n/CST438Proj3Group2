@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : ScriptableObject {
     [Header("DON'T USE THESE FOR PLAYER SPEED\nUse playerStats.MoveSpeed")]
-    public float speed;
+    public float freeSpeed;
     public float carrySpeed;
 
     [Header("Currency")]
@@ -18,10 +18,19 @@ public class PlayerStats : ScriptableObject {
 
     public float MoveSpeed{
         get{
+            float useSpeed;
+
             if(hasItem){
-                return carrySpeed;
+                useSpeed = carrySpeed;
+            }else{
+                useSpeed = freeSpeed;
             }
-            return speed;
+            
+            if(debug){
+                Debug.Log($"Using speed: {useSpeed}");
+            }
+
+            return useSpeed;
         }
     }
 

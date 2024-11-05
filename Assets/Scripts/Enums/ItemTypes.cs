@@ -1,0 +1,12 @@
+public enum ItemType{
+    SALTWATER,
+    FRESH_APPLE,
+    RAW_RUBY,
+    DISORDERED_SPIRIT,
+    SPARKLING_APPLE,
+    MINOR_SPIRIT,
+    PURE_WATER,
+    SALT,
+    SPARKLING_RUBY,
+    GEMSTONE_DUST
+}

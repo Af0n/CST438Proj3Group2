@@ -13,6 +13,9 @@ public class PlayerStats : ScriptableObject {
     [Header("States")]
     public bool hasItem;
 
+    [Header("Debug")]
+    public bool debug;
+
     public float MoveSpeed{
         get{
             if(hasItem){
@@ -20,5 +23,13 @@ public class PlayerStats : ScriptableObject {
             }
             return speed;
         }
+    }
+
+    public bool CanAfford(int price){
+        bool result = money >= price;
+        if(debug){
+            Debug.Log($"Price: {price}, {result}");
+        }
+        return result;
     }
 }

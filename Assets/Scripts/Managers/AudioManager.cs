@@ -13,6 +13,11 @@ public class AudioManager : MonoBehaviour
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
+    // Extra audio vals for smaller audio tweaking
+    public float sfxEnt = 1f;
+    public float sfxObj = 1f;
+    public float sfxSpell = 1f;
+
     public void Start()
     {
         PlayMusic("meow");
@@ -72,6 +77,48 @@ public class AudioManager : MonoBehaviour
 
             sfxSource.PlayOneShot(s.clip);
         }
+    }
+
+    // Flips whether the music is playing or not
+    public void ToggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    // Flips whether the SFX is playing or not
+    public void ToggleSFX()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
+    // Adjust volume for music
+    public void MusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    // Adjust volume for sfx
+    public void SFXVolume(float volume)
+    {
+        sfxSource.volume = volume;
+    }
+
+    // Adjusts volumes for entity sfxs
+    public void SFXEntVolume(float volume)
+    {
+        sfxEnt = volume;
+    }
+
+    // Adjusts volumes for object sfxs
+    public void SFXObjVolume(float volume)
+    {
+        sfxObj = volume;
+    }
+
+    // Adjusts volumes for spell sfxs
+    public void SFXSpellVolume(float volume)
+    {
+        sfxSpell = volume;
     }
 
 }

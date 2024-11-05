@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerStats", menuName = "PlayerStats", order = 0)]
+[CreateAssetMenu(fileName = "PlayerStats", menuName = "ScriptableObjects/PlayerStats", order = 0)]
 
 public class PlayerStats : ScriptableObject {
     [Header("DON'T USE THESE FOR PLAYER SPEED\nUse playerStats.MoveSpeed")]

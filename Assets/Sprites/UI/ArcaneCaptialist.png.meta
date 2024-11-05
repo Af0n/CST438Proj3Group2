@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: ee0e988f4d08a434e99a94b05b007970
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4341052569211774528
+    second: ArcaneCaptialist_0
+  - first:
+      213: -5167076160568794537
+    second: ArcaneCaptialist_1
+  - first:
+      213: 6599011000909044897
+    second: ArcaneCaptialist_2
+  - first:
+      213: 8054936838426490160
+    second: ArcaneCaptialist_3
+  - first:
+      213: -3313183532085886560
+    second: ArcaneCaptialist_4
+  - first:
+      213: 3118042042014709095
+    second: ArcaneCaptialist_5
+  - first:
+      213: 7267333987795847687
+    second: ArcaneCaptialist_6
+  - first:
+      213: -1315436888438349291
+    second: ArcaneCaptialist_7
+  - first:
+      213: 1284844475190751138
+    second: ArcaneCaptialist_8
+  - first:
+      213: -8633963310692128186
+    second: ArcaneCaptialist_9
+  - first:
+      213: -7830121335673080883
+    second: ArcaneCaptialist_10
+  - first:
+      213: -4194712276814710588
+    second: ArcaneCaptialist_11
+  - first:
+      213: -3123161391130554368
+    second: ArcaneCaptialist_12
+  - first:
+      213: -5177492329655519667
+    second: ArcaneCaptialist_13
+  - first:
+      213: -93609725418289171
+    second: ArcaneCaptialist_14
+  - first:
+      213: 7039102986246343630
+    second: ArcaneCaptialist_15
+  - first:
+      213: -2950996558809653172
+    second: ArcaneCaptialist_16
+  - first:
+      213: 196844944386042716
+    second: ArcaneCaptialist_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArcaneCaptialist_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 116
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9d5dc20bb71c3c0800000000000000
+      internalID: -4341052569211774528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 18
+        width: 83
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75268e9bb9bda48b0800000000000000
+      internalID: -5167076160568794537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 97
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac1412da85649b50800000000000000
+      internalID: 6599011000909044897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 37
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0357e9ea062e8cf60800000000000000
+      internalID: 8054936838426490160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 37
+        width: 29
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1c85ea1253502d0800000000000000
+      internalID: -3313183532085886560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_5
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 97
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765350597b2854b20800000000000000
+      internalID: 3118042042014709095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_6
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 37
+        width: 31
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ac1b602c1cad460800000000000000
+      internalID: 7267333987795847687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_7
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 37
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512ef249e11aebde0800000000000000
+      internalID: -1315436888438349291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 37
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af2e572e3fa4d110800000000000000
+      internalID: 1284844475190751138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 37
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64aa0761d100e2880800000000000000
+      internalID: -8633963310692128186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_10
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 37
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3bff68122d55390800000000000000
+      internalID: -7830121335673080883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_11
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 37
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c83d75a86369c5c0800000000000000
+      internalID: -4194712276814710588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 37
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000d271134d48a4d0800000000000000
+      internalID: -3123161391130554368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_13
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46b29f582ad528b0800000000000000
+      internalID: -5177492329655519667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_14
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 37
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7cbe0637e63bef0800000000000000
+      internalID: -93609725418289171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_15
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 37
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbca980fdaefa160800000000000000
+      internalID: 7039102986246343630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_16
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 37
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4020cac344fb07d0800000000000000
+      internalID: -2950996558809653172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_17
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 37
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b26f91f655bb200800000000000000
+      internalID: 196844944386042716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ArcaneCaptialist_0: -4341052569211774528
+      ArcaneCaptialist_1: -5167076160568794537
+      ArcaneCaptialist_10: -7830121335673080883
+      ArcaneCaptialist_11: -4194712276814710588
+      ArcaneCaptialist_12: -3123161391130554368
+      ArcaneCaptialist_13: -5177492329655519667
+      ArcaneCaptialist_14: -93609725418289171
+      ArcaneCaptialist_15: 7039102986246343630
+      ArcaneCaptialist_16: -2950996558809653172
+      ArcaneCaptialist_17: 196844944386042716
+      ArcaneCaptialist_2: 6599011000909044897
+      ArcaneCaptialist_3: 8054936838426490160
+      ArcaneCaptialist_4: -3313183532085886560
+      ArcaneCaptialist_5: 3118042042014709095
+      ArcaneCaptialist_6: 7267333987795847687
+      ArcaneCaptialist_7: -1315436888438349291
+      ArcaneCaptialist_8: 1284844475190751138
+      ArcaneCaptialist_9: -8633963310692128186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

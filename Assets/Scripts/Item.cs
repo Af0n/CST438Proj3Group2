@@ -26,8 +26,11 @@ public class Item : MonoBehaviour
         ChangeItem(type);
     }
 
-    private void Update() {
-        if(debug){
+    private void Update()
+    {
+        // debugging all the sprites
+        if (debug)
+        {
             ChangeItem(type);
         }
     }
@@ -48,12 +51,15 @@ public class Item : MonoBehaviour
         rb.isKinematic = false;
     }
 
-    public void SetSprite(Sprite set){
+    public void SetSprite(Sprite set)
+    {
         spriteRenderer.sprite = set;
     }
 
     // handles all variables when changing item to a new type
-    public void ChangeItem(ItemType newType){
+    // use when spawning a new item and set it to the appropriate type
+    public void ChangeItem(ItemType newType)
+    {
         type = newType;
         typeCode = GetItemTypeCode();
         SetSprite(itemSprites.sprites[typeCode]);
@@ -97,5 +103,9 @@ public class Item : MonoBehaviour
                 Debug.Log("Could Not Find Type");
                 return -1;
         }
+    }
+
+    public void ToggleDebug(){
+        debug = !debug;
     }
 }

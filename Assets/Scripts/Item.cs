@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem.Controls;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -17,15 +13,18 @@ public class Item : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private int typeCode;
     private Rigidbody rb;
+    private CircleCollider2D col;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody>();
+        col = GetComponent<CircleCollider2D>();
 
         ChangeItem(type);
     }
 
+    /*
     private void Update()
     {
         // debugging all the sprites
@@ -34,13 +33,20 @@ public class Item : MonoBehaviour
             ChangeItem(type);
         }
     }
+    */
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up
     public void PickUp()
     {
         isHeld = true;
+        col.enabled = false;
         rb.isKinematic = true;
+
+        if (debug)
+        {
+            Debug.Log(transform.name + " has been picked up");
+        }
     }
 
     // not intended to be used as a pickup script.
@@ -48,12 +54,23 @@ public class Item : MonoBehaviour
     public void Drop()
     {
         isHeld = false;
+        col.enabled = true;
         rb.isKinematic = false;
+
+        if (debug)
+        {
+            Debug.Log(transform.name + " has been dropped");
+        }
     }
 
     public void SetSprite(Sprite set)
     {
         spriteRenderer.sprite = set;
+
+        if (debug)
+        {
+            Debug.Log(transform.name + " has new sprite: " + set.ToString());
+        }
     }
 
     // handles all variables when changing item to a new type
@@ -63,6 +80,11 @@ public class Item : MonoBehaviour
         type = newType;
         typeCode = GetItemTypeCode();
         SetSprite(itemSprites.sprites[typeCode]);
+
+        if (debug)
+        {
+            Debug.Log(transform.name + " has been changed to a " + newType);
+        }
     }
 
     // gets the numerical value of the item's type
@@ -105,7 +127,8 @@ public class Item : MonoBehaviour
         }
     }
 
-    public void ToggleDebug(){
+    public void ToggleDebug()
+    {
         debug = !debug;
     }
 }

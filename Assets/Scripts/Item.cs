@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public ItemSprites itemSprites;
-    public ItemType type;
+    [Header("Item info")]
+    [Tooltip("Enum to determine what kind of item this is.\nDo not set directly, call ChangeItem")]
+    [SerializeField]
+    private ItemType type;
     public bool isHeld;
+    [Header("Unity Set Up")]
+    public ItemSprites itemSprites;
+    [Header("Debugging")]
     public bool debug;
 
     private SpriteRenderer spriteRenderer;

@@ -83,7 +83,7 @@ public class Item : MonoBehaviour
     public void ChangeItem(ItemType newType)
     {
         type = newType;
-        typeCode = GetItemTypeCode();
+        typeCode = GetItemTypeCode(type);
         SetSprite(itemSprites.sprites[typeCode]);
 
         if (debug)
@@ -94,9 +94,9 @@ public class Item : MonoBehaviour
 
     // gets the numerical value of the item's type
     // an enum doesnt actually equal a number, the value is used for ordering in Unity editor
-    public int GetItemTypeCode()
+    public static int GetItemTypeCode(ItemType t)
     {
-        switch (type)
+        switch (t)
         {
             case ItemType.BUCKET:
                 return 0;

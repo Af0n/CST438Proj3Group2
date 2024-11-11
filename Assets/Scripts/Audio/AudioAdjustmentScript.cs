@@ -9,6 +9,26 @@ public class AudioAdjustmentScript : MonoBehaviour
                     _sfxEntityrSlider, _sfxObjectSlider, 
                     _sfxSpellSlider;
 
+    // refers to the category of the slider
+
+    /*
+     * 
+     * 1 == music
+     * 2 == sfx
+     * 3 == sfx entity
+     * 4 == sfx object
+     * 
+     */
+
+    public int type;
+
+    public void Start()
+    {
+        
+
+
+    }
+
     public void ToggleMusic()
     {
         AudioManager.Instance.ToggleMusic();

@@ -17,13 +17,17 @@ public class Item : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private int typeCode;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private CircleCollider2D col;
+
+    public ItemType Type{
+        get{ return type; }
+    }
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CircleCollider2D>();
 
         ChangeItem(type);
@@ -42,15 +46,18 @@ public class Item : MonoBehaviour
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up
-    public void PickUp()
+    public void PickUp(Transform p)
     {
         isHeld = true;
         col.enabled = false;
         rb.isKinematic = true;
 
+        transform.parent = p;
+        transform.localPosition = Vector3.zero;
+
         if (debug)
         {
-            Debug.Log(transform.name + " has been picked up");
+            Debug.Log(transform.name + " has been picked up by " + p.name);
         }
     }
 
@@ -61,6 +68,8 @@ public class Item : MonoBehaviour
         isHeld = false;
         col.enabled = true;
         rb.isKinematic = false;
+
+        transform.parent = null;
 
         if (debug)
         {

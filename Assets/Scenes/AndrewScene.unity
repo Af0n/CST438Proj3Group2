@@ -189,10 +189,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
---- !u!114 &959187969 stripped
+--- !u!114 &539014199 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-  m_PrefabInstance: {fileID: 1159703680}
+  m_CorrespondingSourceObject: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+  m_PrefabInstance: {fileID: 539014198}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -340,7 +340,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2799227322408694993, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
       propertyPath: type
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
       propertyPath: m_Name
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec0a519200b9174e9e35c0610bcd195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testStation: {fileID: 959187969}
+  testStation: {fileID: 539014199}
   testItem: {fileID: 139162769}
   debug: 1
 --- !u!1001 &1600147622

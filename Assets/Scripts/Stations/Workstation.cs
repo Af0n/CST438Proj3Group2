@@ -14,7 +14,7 @@ public class Workstation : MonoBehaviour
 
     [Header("Unity Setup")]
     public StationSprites stationSprites;
-    public GameObject saltPrefab;
+    public GameObject prefab;
 
     [Header("Testing")]
     [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
@@ -37,6 +37,7 @@ public class Workstation : MonoBehaviour
     private void Awake() {
         tickTimer = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        itemPos = transform.GetChild(0);
         SetStation(type);
     }
 
@@ -52,6 +53,18 @@ public class Workstation : MonoBehaviour
 
     public void Tick(){
         tickTimer--;
+
+        // dont do anything if no item
+        if(!HasItem){
+            return;
+        }
+
+        // don't do anything if still processing
+        if(tickTimer > 0){
+            return;
+        }
+
+        ProcessItem(itemPos.GetChild(0).GetComponent<Item>());
     }
 
     // assumes the item is processable at this station
@@ -112,14 +125,18 @@ public class Workstation : MonoBehaviour
             case ItemType.SALTWATER:
                 item.ChangeItem(ItemType.PURE_WATER);
 
-                // spawning salt along with the new water
-                GameObject obj = Instantiate(saltPrefab, transform.position + 0.5f * Vector3.up, Quaternion.identity);
-                obj.GetComponent<Item>().ChangeItem(ItemType.SALT);
+                SpawnAtItemPos(ItemType.SALT);
                 return;
             default:
                 Debug.Log("Cannot Boil Item");
                 return;
         }
+    }
+
+    private void SpawnAtItemPos(ItemType t){
+        // spawning salt along with the new water
+        GameObject obj = Instantiate(prefab, itemPos.position, Quaternion.identity);
+        obj.GetComponent<Item>().ChangeItem(t);
     }
 
     private void Arcane(Item item){

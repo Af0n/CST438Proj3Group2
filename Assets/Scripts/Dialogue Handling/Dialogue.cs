@@ -9,14 +9,20 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
 
+    // Reference to the actual textbox
+    public GameObject textBox;
+
     // reference to the tmp ugui element
     public TextMeshProUGUI textComponent;
 
     // ref to the lines that the dialogue meanager needs to show off
     public string[] lines;
 
-    // text speed of the current piece of dialogue
+    // base text speed the code should refer to
     public float textSpeed;
+    
+    // text speed of the current piece of dialogue
+    public float currentTextSpeed;
 
     // index of the line getting ouputted
     private int index;
@@ -27,6 +33,9 @@ public class Dialogue : MonoBehaviour
 
         // makes sure the text in the text component i s empty
         textComponent.text = string.Empty;
+
+        // sets the current text speed to the original text speed
+        currentTextSpeed = textSpeed;
         
         // Calls the start dialogue cript to get things goin
         StartDialogue();
@@ -36,7 +45,26 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // If the left mouse button is pressed
+        if( Input.GetMouseButtonDown(0) )
+        {
+            // If the text component has been completed, then it will move to the next line
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                // Modifies the speed of the how fast text can go
+                currentTextSpeed = textSpeed / 2f;
+            }
+        }
+
+        // Resets the text speed when the mouse buttong gets released
+        if (Input.GetMouseButtonUp(0))
+        {
+            currentTextSpeed = textSpeed;
+        }
     }
 
     void StartDialogue ()
@@ -59,10 +87,29 @@ public class Dialogue : MonoBehaviour
             textComponent.text += c;
 
             // waits a moment before adding a new character
-            yield return new WaitForSeconds(textSpeed);
-
+            yield return new WaitForSeconds(currentTextSpeed);
 
         }
 
     }
+
+    // Function that moves onto the next line if there are any
+    void NextLine()
+    {
+
+        // If there are more lines, then the y will be printed out in the dialogue box
+        if (index < lines.Length - 1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        // If there are no more line, then the text box will get deactivate
+        else
+        {
+            textBox.SetActive(false);
+        }
+
+    }
+
 }

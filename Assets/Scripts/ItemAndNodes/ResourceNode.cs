@@ -92,6 +92,7 @@ public class ResourceNode : MonoBehaviour
         GameObject obj = Instantiate(prefab, randPos, Quaternion.identity);
         // changing object to the proper type
         obj.GetComponent<Item>().ChangeItem(type);
+        obj.GetComponent<Rigidbody2D>().isKinematic = true;
 
         numItems++;
     }

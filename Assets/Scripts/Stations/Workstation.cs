@@ -180,6 +180,11 @@ public class Workstation : MonoBehaviour
             case ItemType.DISORDERED_SPIRIT:
                 item.ChangeItem(ItemType.MINOR_SPIRIT);
                 return;
+            // don't keep this one
+            // we'll probably get saltwater from the ocean?
+            case ItemType.BUCKET:
+                item.ChangeItem(ItemType.SALTWATER);
+                return;
             default:
                 Debug.Log("Cannot Do Magic With Item");
                 return;

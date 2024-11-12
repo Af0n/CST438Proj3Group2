@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1989c25434a85c14ba1e828ba4e5e2cc, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  speed: 5
+  freeSpeed: 10
   carrySpeed: 8
   money: 0
   hasItem: 0
+  isBuilding: 0
+  debug: 0
+  MoveDeceleration: 10

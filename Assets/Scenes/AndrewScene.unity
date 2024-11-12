@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &15426937 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-  m_PrefabInstance: {fileID: 1600147622}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3ed4305cecfe64fa62fc23710eae94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &139162769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6231010452977320033, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
@@ -143,6 +132,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+      propertyPath: processTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+      propertyPath: testTickTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6178028114125089771, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
       propertyPath: m_Name
       value: Conflagration Pyre
@@ -192,6 +189,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+--- !u!114 &959187969 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
+  m_PrefabInstance: {fileID: 1159703680}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3ed4305cecfe64fa62fc23710eae94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1033008358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,6 +273,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
+      propertyPath: processTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
+      propertyPath: testTickTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6131743875911923007, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -324,7 +340,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2799227322408694993, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
       propertyPath: type
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
       propertyPath: m_Name
@@ -484,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec0a519200b9174e9e35c0610bcd195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testStation: {fileID: 15426937}
+  testStation: {fileID: 959187969}
   testItem: {fileID: 139162769}
   debug: 1
 --- !u!1001 &1600147622
@@ -538,6 +554,14 @@ PrefabInstance:
     - target: {fileID: 4069071422737878555, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
       propertyPath: m_Name
       value: Grindstone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
+      propertyPath: processTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
+      propertyPath: testTickTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -689,6 +713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
+      propertyPath: processTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
+      propertyPath: testTickTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4673338299069107527, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7
@@ -752,11 +784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7132440502215606095, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.640817
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7132440502215606095, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.916564
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 7132440502215606095, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
       propertyPath: m_LocalPosition.z

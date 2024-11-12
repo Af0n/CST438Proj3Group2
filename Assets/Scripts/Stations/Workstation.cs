@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -147,8 +146,11 @@ public class Workstation : MonoBehaviour
             case ItemType.RAW_RUBY:
                 item.ChangeItem(ItemType.SPARKLING_RUBY);
                 return;
+            case ItemType.SALT:
+                item.ChangeItem(ItemType.SALTWATER);
+                return;
             default:
-                Debug.Log("Cannot Grind Item");
+                Debug.Log("Cannot Clean Item");
                 return;
         }
     }
@@ -162,17 +164,13 @@ public class Workstation : MonoBehaviour
 
                 SpawnAtItemPos(ItemType.SALT);
                 return;
+            case ItemType.PURE_WATER:
+                item.ChangeItem(ItemType.BUCKET);
+                return;
             default:
                 Debug.Log("Cannot Boil Item");
                 return;
         }
-    }
-
-    private void SpawnAtItemPos(ItemType t)
-    {
-        // spawning salt along with the new water
-        GameObject obj = Instantiate(prefab, itemPos.position, Quaternion.identity);
-        obj.GetComponent<Item>().ChangeItem(t);
     }
 
     private void Arcane(Item item)
@@ -186,6 +184,14 @@ public class Workstation : MonoBehaviour
                 Debug.Log("Cannot Do Magic With Item");
                 return;
         }
+    }
+
+    private void SpawnAtItemPos(ItemType t)
+    {
+        // spawning item at pos
+        // adds a bit of randomness to the horizontal position of the spawn
+        GameObject obj = Instantiate(prefab, itemPos.position + Random.Range(-0.1f, 0.1f) * Vector3.right, Quaternion.identity);
+        obj.GetComponent<Item>().ChangeItem(t);
     }
 
     public void SetStation(StationType t)

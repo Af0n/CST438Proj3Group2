@@ -8,7 +8,7 @@ public class Workstation : MonoBehaviour
 {
     [Header("Station Stats")]
     [Tooltip("Determines the type of workstation")]
-    public StationTypes type;
+    public StationType type;
     [Tooltip("Number of ticks it takes to process an ingredient")]
     public int processTime;
 
@@ -46,31 +46,67 @@ public class Workstation : MonoBehaviour
             return;
         }
 
-        StartCoroutine("TestSpawnCycle");
+        StartCoroutine("TestProcessCycle");
     }
 
     public void Tick(){
         tickTimer--;
     }
 
-    public void StartProcessing(Item i){
-
+    // assumes the item is processable at this station
+    public void ProcessItem(Item item){
+        switch(type){
+            case StationType.GRINDSTONE:
+                Grind(item);
+                return;
+            case StationType.MIXING:
+                Mix(item);
+                return;
+            case StationType.CLEANSING:
+                Clean(item);
+                return;
+            default:
+                Debug.Log("Could Not Process Item");
+                return;
+        }
     }
 
-    public void SetStation(StationTypes t)
+    private void Grind(Item item){
+        switch(item.Type){
+            case ItemType.SPARKLING_RUBY:
+                item.ChangeItem(ItemType.GEMSTONE_DUST);
+                return;
+            default:
+                Debug.Log("Cannot Grind Item");
+                return;
+        }
+    }
+
+    private void Grind(Item item){
+        switch(item.Type){
+            case ItemType.SPARKLING_RUBY:
+                item.ChangeItem(ItemType.GEMSTONE_DUST);
+                return;
+            default:
+                Debug.Log("Cannot Grind Item");
+                return;
+        }
+    }
+
+    public void SetStation(StationType t)
     {
         typeCode = GetStationTypeCode(t);
         spriteRenderer.sprite = stationSprites.sprites[typeCode];
     }
 
     // gets the numerical value for the type of station
-    public static int GetStationTypeCode(StationTypes t){
+    public static int GetStationTypeCode(StationType t){
         switch(t){
-            case StationTypes.GRINDSTONE:
+            case StationType.GRINDSTONE:
                 return 0;
-            case StationTypes.MIXING:
+            case StationType.MIXING:
                 return 1;
-            case StationTypes.CLEANSING:
+            case StationType.CLEANSING:
                 return 2;
             default:
                 Debug.Log("Could Not Find Type");

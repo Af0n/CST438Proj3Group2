@@ -20,6 +20,10 @@ public class Item : MonoBehaviour
     private Rigidbody rb;
     private CircleCollider2D col;
 
+    public ItemType Type{
+        get{ return type; }
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

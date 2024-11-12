@@ -14,6 +14,7 @@ public class Workstation : MonoBehaviour
 
     [Header("Unity Setup")]
     public StationSprites stationSprites;
+    public GameObject saltPrefab;
 
     [Header("Testing")]
     [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
@@ -65,6 +66,12 @@ public class Workstation : MonoBehaviour
             case StationType.CLEANSING:
                 Clean(item);
                 return;
+            case StationType.BOILING:
+                Boil(item);
+                return;
+            case StationType.CONJURATION:
+                Arcane(item);
+                return;
             default:
                 Debug.Log("Could Not Process Item");
                 return;
@@ -82,13 +89,46 @@ public class Workstation : MonoBehaviour
         }
     }
 
-    private void Grind(Item item){
+    private void Mix(Item item){
+
+    }
+
+    private void Clean(Item item){
         switch(item.Type){
-            case ItemType.SPARKLING_RUBY:
-                item.ChangeItem(ItemType.GEMSTONE_DUST);
+            case ItemType.FRESH_APPLE:
+                item.ChangeItem(ItemType.SPARKLING_APPLE);
+                return;
+            case ItemType.RAW_RUBY:
+                item.ChangeItem(ItemType.SPARKLING_RUBY);
                 return;
             default:
                 Debug.Log("Cannot Grind Item");
+                return;
+        }
+    }
+    
+    private void Boil(Item item){
+        switch(item.Type){
+            case ItemType.SALTWATER:
+                item.ChangeItem(ItemType.PURE_WATER);
+
+                // spawning salt along with the new water
+                GameObject obj = Instantiate(saltPrefab, transform.position + 0.5f * Vector3.up, Quaternion.identity);
+                obj.GetComponent<Item>().ChangeItem(ItemType.SALT);
+                return;
+            default:
+                Debug.Log("Cannot Boil Item");
+                return;
+        }
+    }
+
+    private void Arcane(Item item){
+        switch(item.Type){
+            case ItemType.DISORDERED_SPIRIT:
+                item.ChangeItem(ItemType.MINOR_SPIRIT);
+                return;
+            default:
+                Debug.Log("Cannot Do Magic With Item");
                 return;
         }
     }
@@ -108,6 +148,10 @@ public class Workstation : MonoBehaviour
                 return 1;
             case StationType.CLEANSING:
                 return 2;
+            case StationType.BOILING:
+                return 3;
+            case StationType.CONJURATION:
+                return 4;
             default:
                 Debug.Log("Could Not Find Type");
                 return -1;

@@ -6,6 +6,8 @@ public class InteractionSide : MonoBehaviour
 {
     [Tooltip("Interaction Radius")]
     public float radius;
+    [Tooltip("Interaction Center Distance")]
+    public float distance;
     [Header("Unity Setup")]
     [Tooltip("A refrence to player stats object")]
     public PlayerStats stats;
@@ -29,6 +31,7 @@ public class InteractionSide : MonoBehaviour
         if(move2 != Vector2.zero){
             move3 = new Vector3(move2.x, move2.y, 0);
             move3.Normalize();
+            move3 = move3 * distance;
         }
         itemPos.localPosition = Vector3.zero + move3;
     }
@@ -40,6 +43,7 @@ public class InteractionSide : MonoBehaviour
                 return;
             }
 
+            // go here if no place to put item
             ItemDrop();
             return;
         }

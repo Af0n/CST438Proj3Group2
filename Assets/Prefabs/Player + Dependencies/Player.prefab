@@ -178,7 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed760666e6b00b4f90be1004e2e0bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0.75
+  radius: 1
+  distance: 0.5
   stats: {fileID: 11400000, guid: 08661f339cb6f254a867f89d9a012f1f, type: 2}
   itemPos: {fileID: 8799285890132214664}
   pickupMask:

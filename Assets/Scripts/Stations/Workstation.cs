@@ -10,6 +10,8 @@ public class Workstation : MonoBehaviour
     public StationType type;
     [Tooltip("Number of ticks it takes to process an ingredient")]
     public int processTime;
+    [Tooltip("How strongly the station launches the item when rejected")]
+    public float rejectVel;
 
     [Header("Unity Setup")]
     public StationSprites stationSprites;
@@ -93,69 +95,84 @@ public class Workstation : MonoBehaviour
     // also assumes we HAVE an item to process
     public void ProcessItem(Item item)
     {
+        bool success;
         switch (type)
         {
             case StationType.GRINDSTONE:
-                Grind(item);
+                success = Grind(item);
                 break;
             case StationType.MIXING:
-                Mix(item);
+                success = Mix(item);
                 break;
             case StationType.CLEANSING:
-                Clean(item);
+                success = Clean(item);
                 break;
             case StationType.BOILING:
-                Boil(item);
+                success = Boil(item);
                 break;
             case StationType.CONJURATION:
-                Arcane(item);
+                success = Arcane(item);
                 break;
             default:
                 Debug.Log("Could Not Process Item");
+                success = false;
                 break;
         }
 
         item.GetComponent<PickUp>().Drop();
+
+        if(success){
+            return;
+        }
+
+        Vector2 randDir = new Vector2(Random.Range(-1f,1f),Random.Range(-1f,1f));
+        randDir.Normalize();
+        randDir *= rejectVel;
+        item.GetComponent<Rigidbody2D>().AddForce(randDir, ForceMode2D.Impulse);
     }
 
-    private void Grind(Item item)
+    private bool Grind(Item item)
     {
         switch (item.Type)
         {
             case ItemType.SPARKLING_RUBY:
                 item.ChangeItem(ItemType.GEMSTONE_DUST);
-                return;
+                break;
             default:
                 Debug.Log("Cannot Grind Item");
-                return;
+                return false;
         }
+
+        return true;
     }
 
-    private void Mix(Item item)
+    private bool Mix(Item item)
     {
-
+        return false;
     }
 
-    private void Clean(Item item)
+    private bool Clean(Item item)
     {
         switch (item.Type)
         {
             case ItemType.FRESH_APPLE:
                 item.ChangeItem(ItemType.SPARKLING_APPLE);
-                return;
+                break;
             case ItemType.RAW_RUBY:
                 item.ChangeItem(ItemType.SPARKLING_RUBY);
-                return;
+                break;
             case ItemType.SALT:
                 item.ChangeItem(ItemType.SALTWATER);
-                return;
+                break;
             default:
                 Debug.Log("Cannot Clean Item");
-                return;
+                return false;
         }
+
+        return true;
     }
 
-    private void Boil(Item item)
+    private bool Boil(Item item)
     {
         switch (item.Type)
         {
@@ -163,32 +180,36 @@ public class Workstation : MonoBehaviour
                 item.ChangeItem(ItemType.PURE_WATER);
 
                 SpawnAtItemPos(ItemType.SALT);
-                return;
+                break;
             case ItemType.PURE_WATER:
                 item.ChangeItem(ItemType.BUCKET);
-                return;
+                break;
             default:
                 Debug.Log("Cannot Boil Item");
-                return;
+                return false;
         }
+
+        return true;
     }
 
-    private void Arcane(Item item)
+    private bool Arcane(Item item)
     {
         switch (item.Type)
         {
             case ItemType.DISORDERED_SPIRIT:
                 item.ChangeItem(ItemType.MINOR_SPIRIT);
-                return;
+                break;
             // don't keep this one
             // we'll probably get saltwater from the ocean?
             case ItemType.BUCKET:
                 item.ChangeItem(ItemType.SALTWATER);
-                return;
+                break;
             default:
                 Debug.Log("Cannot Do Magic With Item");
-                return;
+                return false;
         }
+
+        return true;
     }
 
     private void SpawnAtItemPos(ItemType t)

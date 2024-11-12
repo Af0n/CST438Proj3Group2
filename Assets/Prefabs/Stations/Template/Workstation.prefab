@@ -80,9 +80,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   processTime: 0
+  rejectVel: 10
   stationSprites: {fileID: 11400000, guid: eb8d6a4eb62db07489855ab5ff7c5926, type: 2}
   prefab: {fileID: 0}
-  testTickTime: 0
+  testTickTime: -1
 --- !u!212 &4286977317673287800
 SpriteRenderer:
   m_ObjectHideFlags: 0

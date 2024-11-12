@@ -20,6 +20,7 @@ public class Item : MonoBehaviour
     private int typeCode;
     private Rigidbody2D rb;
     private BoxCollider2D col;
+    private ResourceNode maker;
     private bool isNoded;
 
     public bool IsNoded{
@@ -40,6 +41,11 @@ public class Item : MonoBehaviour
         ChangeItem(type);
     }
 
+    public void SetMaker(ResourceNode m){
+        maker = m;
+        IsNoded = true;
+    }
+
     /*
     private void Update()
     {
@@ -58,6 +64,12 @@ public class Item : MonoBehaviour
         isHeld = true;
         col.enabled = false;
         rb.isKinematic = true;
+
+        if(IsNoded){
+            maker.LoseOne();
+            IsNoded = false;
+            maker = null;
+        }
 
         if (debug)
         {

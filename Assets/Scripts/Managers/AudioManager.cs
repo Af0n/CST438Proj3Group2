@@ -127,6 +127,20 @@ public class AudioManager : MonoBehaviour
         sfxSource.volume = volume;
     }
 
+    // Getter for the music Source
+
+    public float getMusicVolume()
+    {
+        return musicSource.volume;
+    }
+
+    // Getter for the SFX source
+
+    public float getSFXVolume()
+    {
+        return sfxSource.volume;
+    }
+
     // Adjusts volumes for entity sfxs
     public void SFXEntVolume(float volume)
     {

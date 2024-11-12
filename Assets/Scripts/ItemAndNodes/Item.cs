@@ -18,7 +18,7 @@ public class Item : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private int typeCode;
     private Rigidbody2D rb;
-    private CircleCollider2D col;
+    private BoxCollider2D col;
 
     public ItemType Type{
         get{ return type; }
@@ -28,7 +28,7 @@ public class Item : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-        col = GetComponent<CircleCollider2D>();
+        col = GetComponent<BoxCollider2D>();
 
         ChangeItem(type);
     }

@@ -27,7 +27,7 @@ public class Workstation : MonoBehaviour
     private int tickTimer;
 
     public bool HasItem{
-        get{ return itemPos.childCount == 1; }
+        get{ return itemPos.childCount != 0; }
     }
 
     public bool IsProcessing{
@@ -49,6 +49,10 @@ public class Workstation : MonoBehaviour
         }
 
         StartCoroutine("TestProcessCycle");
+    }
+
+    public void SetItem(Transform t){
+        t.GetComponent<Item>().PickUp(itemPos);
     }
 
     public void Tick(){
@@ -91,7 +95,7 @@ public class Workstation : MonoBehaviour
                 break;
         }
 
-        itemPos.DetachChildren();
+        item.Drop();
     }
 
     private void Grind(Item item){

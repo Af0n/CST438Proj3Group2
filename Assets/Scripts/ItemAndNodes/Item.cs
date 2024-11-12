@@ -46,15 +46,18 @@ public class Item : MonoBehaviour
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up
-    public void PickUp()
+    public void PickUp(Transform p)
     {
         isHeld = true;
         col.enabled = false;
         rb.isKinematic = true;
 
+        transform.parent = p;
+        transform.localPosition = Vector3.zero;
+
         if (debug)
         {
-            Debug.Log(transform.name + " has been picked up");
+            Debug.Log(transform.name + " has been picked up by " + p.name);
         }
     }
 
@@ -65,6 +68,8 @@ public class Item : MonoBehaviour
         isHeld = false;
         col.enabled = true;
         rb.isKinematic = false;
+
+        transform.parent = null;
 
         if (debug)
         {

@@ -68,27 +68,30 @@ public class Workstation : MonoBehaviour
     }
 
     // assumes the item is processable at this station
+    // also assumes we HAVE an item to process
     public void ProcessItem(Item item){
         switch(type){
             case StationType.GRINDSTONE:
                 Grind(item);
-                return;
+                break;
             case StationType.MIXING:
                 Mix(item);
-                return;
+                break;
             case StationType.CLEANSING:
                 Clean(item);
-                return;
+                break;
             case StationType.BOILING:
                 Boil(item);
-                return;
+                break;
             case StationType.CONJURATION:
                 Arcane(item);
-                return;
+                break;
             default:
                 Debug.Log("Could Not Process Item");
-                return;
+                break;
         }
+
+        itemPos.DetachChildren();
     }
 
     private void Grind(Item item){

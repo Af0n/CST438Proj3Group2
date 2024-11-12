@@ -73,8 +73,6 @@ public class Item : MonoBehaviour
         col.enabled = true;
         rb.isKinematic = false;
 
-        transform.parent = null;
-
         if (debug)
         {
             Debug.Log(transform.name + " has been dropped");

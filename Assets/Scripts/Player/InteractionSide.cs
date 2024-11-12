@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class InteractionSide : MonoBehaviour
 {
+    [Tooltip("Interaction Radius")]
+    public float radius;
     [Header("Unity Setup")]
-    [Tooltip("The center of the interaction sphere")]
-    public Transform interactionCheck;
+    [Tooltip("A refrence to player stats object")]
+    public PlayerStats stats;
+    [Tooltip("The transform to parent when picking up")]
+    public Transform itemPos;
+    [Tooltip("Layer to check on for pickup")]
+    public LayerMask pickupMask;
+    [Tooltip("Layer to check on for interaction")]
+    public LayerMask interactMask;
+    
 
     private PlayerMovement movement;
     private Vector3 move3;
@@ -21,6 +30,79 @@ public class InteractionSide : MonoBehaviour
             move3 = new Vector3(move2.x, move2.y, 0);
             move3.Normalize();
         }
-        interactionCheck.localPosition = Vector3.zero + move3;
+        itemPos.localPosition = Vector3.zero + move3;
+    }
+
+    public void CheckInteraction(){
+        if(stats.hasItem){
+            // go in here if player has an item
+            if(TryPlaceItem()){
+                return;
+            }
+
+            ItemDrop();
+            return;
+        }
+
+        TryItemPickup();
+    }
+
+    private void TryItemPickup(){
+        Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, pickupMask);
+
+        // if there are no nearby items to pickup, quit
+        if(objs.Length == 0){
+            return;
+        }
+
+        stats.hasItem = true;
+
+        // default value that will guarantee at least one selected item
+        float dist = 100;
+        Collider2D closestItem = null;
+
+        // finding closest item to PLAYER
+        foreach (Collider2D obj in objs)
+        {
+            if(Vector2.Distance(transform.position, obj.transform.position) < dist){
+                closestItem = obj;
+            }
+        }
+
+        // we have found the closest item
+        // call pickup on that item
+        closestItem.GetComponent<PickUp>().Pick(itemPos);
+    }
+
+    private bool TryPlaceItem(){
+        Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, interactMask);
+
+        // if there are no nearby stations, quit
+        if(objs.Length == 0){
+            return false;
+        }
+        stats.hasItem = false;
+
+        // default value that will guarantee at least one selected station
+        float dist = 100;
+        Collider2D closestItem = null;
+
+        // finding closest station to PLAYER
+        foreach (Collider2D obj in objs)
+        {
+            if(Vector2.Distance(transform.position, obj.transform.position) < dist){
+                closestItem = obj;
+            }
+        }
+
+        // we have found the closest station
+        // call SetItem on that station
+        closestItem.GetComponent<Workstation>().SetItem(itemPos.GetChild(0));
+        return true;
+    }
+
+    private void ItemDrop(){
+        stats.hasItem = false;
+        itemPos.GetChild(0).GetComponent<PickUp>().Drop();
     }
 }

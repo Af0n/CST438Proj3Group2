@@ -115,7 +115,7 @@ public class Workstation : MonoBehaviour
                 break;
         }
 
-        item.Drop();
+        item.GetComponent<PickUp>().Drop();
     }
 
     private void Grind(Item item)

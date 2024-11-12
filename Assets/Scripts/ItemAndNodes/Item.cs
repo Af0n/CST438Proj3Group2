@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private int typeCode;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private CircleCollider2D col;
 
     public ItemType Type{
@@ -27,7 +27,7 @@ public class Item : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CircleCollider2D>();
 
         ChangeItem(type);

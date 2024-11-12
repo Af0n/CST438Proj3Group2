@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951128469177855755}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Item Spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
   type: 0
   processTime: 0
   stationSprites: {fileID: 11400000, guid: eb8d6a4eb62db07489855ab5ff7c5926, type: 2}
-  saltPrefab: {fileID: 0}
+  prefab: {fileID: 0}
   testTickTime: 0
 --- !u!212 &4286977317673287800
 SpriteRenderer:

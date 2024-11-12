@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
         if(transform.CompareTag("Item"))
         {
             GetComponent<Item>().PickUp();
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
 
         Debug.Log(transform.name + " has been picked up by " + p.name);

@@ -66,7 +66,7 @@ public class Workstation : MonoBehaviour
     public void SetItem(Transform t)
     {
         // TODO: DISABLING PICKUP UNTIL DONE
-        t.GetComponent<Item>().PickUp(itemPos);
+        t.GetComponent<PickUp>().Pick(itemPos);
         tickTimer = processTime;
     }
 

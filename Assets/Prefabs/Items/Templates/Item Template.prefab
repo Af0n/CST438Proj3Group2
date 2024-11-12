@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6231010452977320033}
   - component: {fileID: 2799227322408694993}
+  - component: {fileID: 8727055708004359183}
   - component: {fileID: 2603770626575010299}
   - component: {fileID: 680638524943923874}
   - component: {fileID: -4509203819676963428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Item Template
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -51,6 +52,18 @@ MonoBehaviour:
   isHeld: 0
   itemSprites: {fileID: 11400000, guid: 6936034cb5519f24db79a846586c299c, type: 2}
   debug: 0
+--- !u!114 &8727055708004359183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751072535792237884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a15fc4ed3e176745ad8c5749fd0ad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &2603770626575010299
 SpriteRenderer:
   m_ObjectHideFlags: 0

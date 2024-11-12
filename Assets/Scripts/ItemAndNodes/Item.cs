@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     [SerializeField]
     private ItemType type;
     public bool isHeld;
+
     [Header("Unity Set Up")]
     public ItemSprites itemSprites;
     [Header("Debugging")]
@@ -19,6 +20,12 @@ public class Item : MonoBehaviour
     private int typeCode;
     private Rigidbody2D rb;
     private BoxCollider2D col;
+    private bool isNoded;
+
+    public bool IsNoded{
+        get { return isNoded; }
+        set { isNoded = value; }
+    }
 
     public ItemType Type{
         get{ return type; }
@@ -46,18 +53,15 @@ public class Item : MonoBehaviour
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up
-    public void PickUp(Transform p)
+    public void PickUp()
     {
         isHeld = true;
         col.enabled = false;
         rb.isKinematic = true;
 
-        transform.parent = p;
-        transform.localPosition = Vector3.zero;
-
         if (debug)
         {
-            Debug.Log(transform.name + " has been picked up by " + p.name);
+            Debug.Log("Picking up" + name);
         }
     }
 

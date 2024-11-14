@@ -66,4 +66,8 @@ public class PlayerMovement : MonoBehaviour
 
         _rb.MovePosition(_rb.position + _current_velocity * Time.fixedDeltaTime);
     }
+
+    public Vector2 GetMovementVector(){
+        return _movement_vec;
+    }
 }

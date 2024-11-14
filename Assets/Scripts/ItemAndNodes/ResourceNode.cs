@@ -48,16 +48,16 @@ public class ResourceNode : MonoBehaviour
 
     public void Tick()
     {
-        tickTimer--;
-
-        // don't spawn if still cooling down
-        if (tickTimer > 0)
+        // don't spawn or count if too many items
+        if (numItems >= maxSpawns)
         {
             return;
         }
 
-        // don't spawn if too many items
-        if (numItems >= maxSpawns)
+        tickTimer--;
+
+        // don't spawn if still cooling down
+        if (tickTimer > 0)
         {
             return;
         }
@@ -92,6 +92,8 @@ public class ResourceNode : MonoBehaviour
         GameObject obj = Instantiate(prefab, randPos, Quaternion.identity);
         // changing object to the proper type
         obj.GetComponent<Item>().ChangeItem(type);
+        obj.GetComponent<Item>().SetMaker(this);
+        obj.GetComponent<Rigidbody2D>().isKinematic = true;
 
         numItems++;
     }
@@ -105,5 +107,11 @@ public class ResourceNode : MonoBehaviour
         // give it a random length between ranges
         randDir *= Random.Range(minRange, maxRange);
         return transform.position + (Vector3)randDir;
+    }
+
+    // called whenever a resource is picked up from a node
+    public void LoseOne()
+    {
+        numItems--;
     }
 }

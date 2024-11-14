@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private void OnEnable() => EnableControls();
     private void OnDisable()=> DisableControls();
 
+    public InteractionSide interaction;
+
     public void EnableControls() {
         _move.Enable();
         _pause.Enable();
@@ -55,6 +57,6 @@ public class PlayerController : MonoBehaviour
     }
 
     public void action() {
-        Debug.Log("Do something homie");
+        interaction.CheckInteraction();
     }
 }

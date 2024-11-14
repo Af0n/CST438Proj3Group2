@@ -84,6 +84,7 @@ MonoBehaviour:
   rejectVel: 10
   stationSprites: {fileID: 11400000, guid: eb8d6a4eb62db07489855ab5ff7c5926, type: 2}
   prefab: {fileID: 0}
+  recipes: {fileID: 0}
   testTickTime: -1
 --- !u!114 &-4835855260537129560
 MonoBehaviour:
@@ -106,7 +107,7 @@ MonoBehaviour:
   recipes: {fileID: 11400000, guid: d4758408b9595324aaaaf2f4c566e196, type: 2}
   itemPos: {fileID: 5185139618150410003, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
   prefab: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
-  testTickTime: 1
+  spriteRenderer: {fileID: 0}
 --- !u!212 &4286977317673287800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

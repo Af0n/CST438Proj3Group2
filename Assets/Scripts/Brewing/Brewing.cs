@@ -25,11 +25,7 @@ public class Brewing : MonoBehaviour
     [Tooltip("Potion sprite renderer")]
     public SpriteRenderer spriteRenderer;
 
-    [Header("Testing")]
-    [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float testTickTime;
-
-    // used for debugging
+    // main timing variable
     private int tickTimer;
 
     // numerical representation of potion type

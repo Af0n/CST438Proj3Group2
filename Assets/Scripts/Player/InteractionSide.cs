@@ -48,7 +48,36 @@ public class InteractionSide : MonoBehaviour
             return;
         }
 
+        if(TryCauldronInteract()){
+            return;
+        }
+
         TryItemPickup();
+    }
+
+    private bool TryCauldronInteract(){
+        Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, interactMask);
+
+        // if there are no nearby stations, quit
+        if(objs.Length == 0){
+            return false;
+        }
+
+        foreach (Collider2D col in objs)
+        {
+            // check if the interactable is the cauldron
+            Brewing brew = col.GetComponent<Brewing>();
+            if(brew == null){
+                continue;
+            }
+
+            // if we get here, then we've selected the cauldron
+
+            brew.TryCycleRecipe();
+            return true;
+        }
+
+        return false;
     }
 
     private void TryItemPickup(){

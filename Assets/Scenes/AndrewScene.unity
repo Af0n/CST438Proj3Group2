@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6918948776269675952, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
       propertyPath: type
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6918948776269675952, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
       propertyPath: processTime

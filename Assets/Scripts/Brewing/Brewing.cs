@@ -56,9 +56,11 @@ public class Brewing : MonoBehaviour
 
         typeCode++;
 
-        if(typeCode > recipes.recipes.Length){
+        if(typeCode >= recipes.recipes.Length){
             typeCode = 0;
         }
+
+        selectedRecipe = recipes.recipes[typeCode];
 
         SetPotion(selectedRecipe.type);
     }
@@ -70,7 +72,6 @@ public class Brewing : MonoBehaviour
         typeCode = GetPotionTypeCode(type);
 
         if(typeCode == -1){
-            Debug.Log("Cannot brew item");
             type = ItemType.POTION_CALM;
         }
 
@@ -85,12 +86,10 @@ public class Brewing : MonoBehaviour
         tickTimer = Mathf.Max(0, tickTimer);
 
         if(isBrewing){
-            Debug.Log("Brewing...");
             // go in here if currently brewing
 
             if(tickTimer <= 0){
                 tickTimer = processTime;
-                Debug.Log("Done!");
                 EndBrewing();
                 SpawnItem(type);
                 if(selectedRecipe.containsBucket){
@@ -104,11 +103,9 @@ public class Brewing : MonoBehaviour
         
         // don't do anything if recipe is not satisfied
         if(!IsRecipeSatisfied()){
-            Debug.Log("Not Satisfied");
             return;
         }
 
-        Debug.Log("Starting brewing");
         StartBrewing();
     }
 

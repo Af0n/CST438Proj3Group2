@@ -48,11 +48,11 @@ public class InteractionSide : MonoBehaviour
             return;
         }
 
-        if(TryCauldronInteract()){
+        if(TryItemPickup()){
             return;
         }
 
-        TryItemPickup();
+        TryCauldronInteract();
     }
 
     private bool TryCauldronInteract(){
@@ -80,12 +80,12 @@ public class InteractionSide : MonoBehaviour
         return false;
     }
 
-    private void TryItemPickup(){
+    private bool TryItemPickup(){
         Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, pickupMask);
 
         // if there are no nearby items to pickup, quit
         if(objs.Length == 0){
-            return;
+            return false;
         }
 
         stats.hasItem = true;
@@ -105,6 +105,8 @@ public class InteractionSide : MonoBehaviour
         // we have found the closest item
         // call pickup on that item
         closestItem.GetComponent<PickUp>().Pick(itemPos);
+
+        return true;
     }
 
     private bool TryPlaceItem(){

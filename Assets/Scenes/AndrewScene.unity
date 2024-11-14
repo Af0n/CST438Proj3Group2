@@ -242,10 +242,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
       propertyPath: testTickTime
       value: 1
       objectReference: {fileID: 0}
@@ -298,6 +294,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+--- !u!1001 &705869691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3968364638360021988, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256781210906744246, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: m_Name
+      value: Cauldron
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918948776269675952, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918948776269675952, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: processTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771740994002836294, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
+      propertyPath: testTickTime
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
 --- !u!1001 &1033008358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,10 +436,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
       propertyPath: testTickTime
       value: 1
@@ -607,8 +668,8 @@ PrefabInstance:
       value: Grindstone
       objectReference: {fileID: 0}
     - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-      propertyPath: processTime
-      value: 3
+      propertyPath: type
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
       propertyPath: testTickTime
@@ -765,10 +826,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
       propertyPath: testTickTime
       value: 1
       objectReference: {fileID: 0}
@@ -898,6 +955,7 @@ SceneRoots:
   - {fileID: 1928522088}
   - {fileID: 539014198}
   - {fileID: 1159703680}
+  - {fileID: 705869691}
   - {fileID: 1210751558}
   - {fileID: 439320071}
   - {fileID: 98648264}

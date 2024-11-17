@@ -10,9 +10,11 @@ public class Item : MonoBehaviour
     [SerializeField]
     private ItemType type;
     public bool isHeld;
+    public int price;
 
     [Header("Unity Set Up")]
     public ItemSprites itemSprites;
+    public PlayerStats stats;
     [Header("Debugging")]
     public bool debug;
 
@@ -30,6 +32,14 @@ public class Item : MonoBehaviour
 
     public ItemType Type{
         get{ return type; }
+    }
+
+    public bool CanSell{
+        get{
+            return type == ItemType.POTION_CALM ||
+                    type == ItemType.POTION_HEAL ||
+                    type == ItemType.POTION_MANA;
+        }
     }
 
     private void Awake()
@@ -56,6 +66,28 @@ public class Item : MonoBehaviour
         }
     }
     */
+
+    private int GetPrice(){
+        switch (type)
+        {
+            case ItemType.POTION_CALM:
+                return 0;
+            default:
+                Debug.Log("Could Not Find Price");
+                break;
+        }
+    }
+
+    public bool Sell(){
+        if(!CanSell){
+            Debug.Log("Cannot sell");
+            return false;
+        }
+
+        stats.money += price;
+        Destroy(gameObject);
+        return true;
+    }
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up

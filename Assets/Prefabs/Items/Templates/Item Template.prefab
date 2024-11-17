@@ -50,7 +50,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   isHeld: 0
+  price: 0
   itemSprites: {fileID: 11400000, guid: 6936034cb5519f24db79a846586c299c, type: 2}
+  stats: {fileID: 11400000, guid: 08661f339cb6f254a867f89d9a012f1f, type: 2}
   debug: 0
 --- !u!114 &8727055708004359183
 MonoBehaviour:

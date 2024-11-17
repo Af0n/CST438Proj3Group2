@@ -15,6 +15,7 @@ public class Item : MonoBehaviour
     [Header("Unity Set Up")]
     public ItemSprites itemSprites;
     public PlayerStats stats;
+    public Prices prices;
     [Header("Debugging")]
     public bool debug;
 
@@ -47,7 +48,6 @@ public class Item : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<BoxCollider2D>();
-
         ChangeItem(type);
     }
 
@@ -71,10 +71,14 @@ public class Item : MonoBehaviour
         switch (type)
         {
             case ItemType.POTION_CALM:
-                return 0;
+                return prices.calmPrice;
+            case ItemType.POTION_HEAL:
+                return prices.healPrice;
+            case ItemType.POTION_MANA:
+                return prices.manaPrice;
             default:
                 Debug.Log("Could Not Find Price");
-                break;
+                return 0;
         }
     }
 
@@ -82,6 +86,11 @@ public class Item : MonoBehaviour
         if(!CanSell){
             Debug.Log("Cannot sell");
             return false;
+        }
+
+        if (debug)
+        {
+            Debug.Log("Selling " + name + " for " + price);
         }
 
         stats.money += price;
@@ -140,6 +149,7 @@ public class Item : MonoBehaviour
         type = newType;
         typeCode = GetItemTypeCode(type);
         SetSprite(itemSprites.sprites[typeCode]);
+        price = GetPrice();
 
         if (debug)
         {

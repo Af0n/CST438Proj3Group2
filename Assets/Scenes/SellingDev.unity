@@ -249,6 +249,10 @@ PrefabInstance:
       propertyPath: testTickTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5446585183989494989, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6178028114125089771, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
       propertyPath: m_Name
       value: Conflagration Pyre
@@ -379,6 +383,10 @@ PrefabInstance:
       propertyPath: testTickTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5130680182049395787, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6131743875911923007, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -438,6 +446,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2799227322408694993, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
       propertyPath: type
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799227322408694993, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
+      propertyPath: isHeld
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
@@ -554,6 +566,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
+--- !u!1 &1521234170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2186027894732971595, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
+  m_PrefabInstance: {fileID: 8948803495553311556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1521234175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521234170}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9, y: 0.8}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_EdgeRadius: 0
 --- !u!1001 &1600147622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,6 +625,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2761504190586425661, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3781149631026622537, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
@@ -816,6 +883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cleansing Pool
       objectReference: {fileID: 0}
+    - target: {fileID: 5976429040987728947, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -938,10 +1009,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Selling
       objectReference: {fileID: 0}
+    - target: {fileID: 6700846937119477947, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
+      propertyPath: testTickTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2186027894732971595, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1521234175}
   m_SourcePrefab: {fileID: 100100000, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -955,7 +1033,7 @@ SceneRoots:
   - {fileID: 1928522088}
   - {fileID: 539014198}
   - {fileID: 1159703680}
+  - {fileID: 8948803495553311556}
   - {fileID: 1210751558}
   - {fileID: 439320071}
   - {fileID: 98648264}
-  - {fileID: 8948803495553311556}

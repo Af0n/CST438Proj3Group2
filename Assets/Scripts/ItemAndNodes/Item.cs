@@ -10,9 +10,12 @@ public class Item : MonoBehaviour
     [SerializeField]
     private ItemType type;
     public bool isHeld;
+    public int price;
 
     [Header("Unity Set Up")]
     public ItemSprites itemSprites;
+    public PlayerStats stats;
+    public Prices prices;
     [Header("Debugging")]
     public bool debug;
 
@@ -32,12 +35,19 @@ public class Item : MonoBehaviour
         get{ return type; }
     }
 
+    public bool CanSell{
+        get{
+            return type == ItemType.POTION_CALM ||
+                    type == ItemType.POTION_HEAL ||
+                    type == ItemType.POTION_MANA;
+        }
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<BoxCollider2D>();
-
         ChangeItem(type);
     }
 
@@ -56,6 +66,37 @@ public class Item : MonoBehaviour
         }
     }
     */
+
+    private int GetPrice(){
+        switch (type)
+        {
+            case ItemType.POTION_CALM:
+                return prices.calmPrice;
+            case ItemType.POTION_HEAL:
+                return prices.healPrice;
+            case ItemType.POTION_MANA:
+                return prices.manaPrice;
+            default:
+                Debug.Log("Could Not Find Price");
+                return 0;
+        }
+    }
+
+    public bool Sell(){
+        if(!CanSell){
+            Debug.Log("Cannot sell");
+            return false;
+        }
+
+        if (debug)
+        {
+            Debug.Log("Selling " + name + " for " + price);
+        }
+
+        stats.money += price;
+        Destroy(gameObject);
+        return true;
+    }
 
     // not intended to be used as a pickup script.
     // does things to the item when picked up
@@ -108,6 +149,7 @@ public class Item : MonoBehaviour
         type = newType;
         typeCode = GetItemTypeCode(type);
         SetSprite(itemSprites.sprites[typeCode]);
+        price = GetPrice();
 
         if (debug)
         {

@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d4758408b9595324aaaaf2f4c566e196, type: 2}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: testTickTime
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4286977317673287800, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_Sprite

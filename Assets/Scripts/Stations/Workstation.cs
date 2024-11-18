@@ -128,6 +128,8 @@ public class Workstation : MonoBehaviour
             case StationType.MIXING:
                 success = false;
                 doDrop = !brewing.IsBrewing;
+            case StationType.SELLING:
+                success = Sell(item);
                 break;
             default:
                 Debug.Log("Could Not Process Item");
@@ -135,7 +137,9 @@ public class Workstation : MonoBehaviour
                 break;
         }
 
-        if(!doDrop){
+          if(!doDrop){}
+        // don't continue if item was sold
+        if(item == null){
             return;
         }
 
@@ -150,6 +154,10 @@ public class Workstation : MonoBehaviour
         randDir.Normalize();
         randDir *= rejectVel;
         item.GetComponent<Rigidbody2D>().AddForce(randDir, ForceMode2D.Impulse);
+    }
+
+    private bool Sell(Item item){
+        return item.Sell();
     }
 
     private bool Grind(Item item)
@@ -257,6 +265,8 @@ public class Workstation : MonoBehaviour
                 return 3;
             case StationType.CONJURATION:
                 return 4;
+            case StationType.SELLING:
+                return 5;
             default:
                 Debug.Log("Could Not Find Type");
                 return -1;

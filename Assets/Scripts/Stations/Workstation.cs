@@ -1,4 +1,5 @@
 using System.Collections;
+using Mono.Cecil.Cil;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -16,6 +17,7 @@ public class Workstation : MonoBehaviour
     [Header("Unity Setup")]
     public StationSprites stationSprites;
     public GameObject prefab;
+    public Recipes recipes;
 
     [Header("Testing")]
     [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
@@ -24,7 +26,12 @@ public class Workstation : MonoBehaviour
     // the child object that determines where the item will be 'held'
     private Transform itemPos;
     private SpriteRenderer spriteRenderer;
+    private Brewing brewing;
+
+    // type of station
     private int typeCode;
+
+    // used for debugging
     private int tickTimer;
 
     public bool HasItem
@@ -39,6 +46,7 @@ public class Workstation : MonoBehaviour
 
     private void Awake()
     {
+        brewing = GetComponent<Brewing>();
         tickTimer = 0;
         spriteRenderer = GetComponent<SpriteRenderer>();
         itemPos = transform.GetChild(0);
@@ -67,7 +75,6 @@ public class Workstation : MonoBehaviour
 
     public void SetItem(Transform t)
     {
-        // TODO: DISABLING PICKUP UNTIL DONE
         t.GetComponent<PickUp>().Pick(itemPos);
         tickTimer = processTime;
     }
@@ -75,6 +82,12 @@ public class Workstation : MonoBehaviour
     public void Tick()
     {
         tickTimer--;
+        tickTimer = Mathf.Max(0, tickTimer);
+
+        if(type == StationType.MIXING){
+            brewing.Tick();
+        }
+        
 
         // dont do anything if no item
         if (!HasItem)
@@ -95,14 +108,13 @@ public class Workstation : MonoBehaviour
     // also assumes we HAVE an item to process
     public void ProcessItem(Item item)
     {
-        bool success;
+        bool success = false;
+        bool doDrop = true;
+
         switch (type)
         {
             case StationType.GRINDSTONE:
                 success = Grind(item);
-                break;
-            case StationType.MIXING:
-                success = Mix(item);
                 break;
             case StationType.CLEANSING:
                 success = Clean(item);
@@ -113,6 +125,9 @@ public class Workstation : MonoBehaviour
             case StationType.CONJURATION:
                 success = Arcane(item);
                 break;
+            case StationType.MIXING:
+                success = false;
+                doDrop = !brewing.IsBrewing;
             case StationType.SELLING:
                 success = Sell(item);
                 break;
@@ -122,6 +137,7 @@ public class Workstation : MonoBehaviour
                 break;
         }
 
+          if(!doDrop){}
         // don't continue if item was sold
         if(item == null){
             return;
@@ -133,6 +149,7 @@ public class Workstation : MonoBehaviour
             return;
         }
 
+        // rejection launch
         Vector2 randDir = new Vector2(Random.Range(-1f,1f),Random.Range(-1f,1f));
         randDir.Normalize();
         randDir *= rejectVel;
@@ -156,11 +173,6 @@ public class Workstation : MonoBehaviour
         }
 
         return true;
-    }
-
-    private bool Mix(Item item)
-    {
-        return false;
     }
 
     private bool Clean(Item item)

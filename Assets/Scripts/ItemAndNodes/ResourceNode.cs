@@ -55,6 +55,7 @@ public class ResourceNode : MonoBehaviour
         }
 
         tickTimer--;
+        tickTimer = Mathf.Max(0, tickTimer);
 
         // don't spawn if still cooling down
         if (tickTimer > 0)

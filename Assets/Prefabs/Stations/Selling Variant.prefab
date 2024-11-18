@@ -8,13 +8,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4835855260537129560, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 4818200789837497245}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: type
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: recipes
+      value: 
+      objectReference: {fileID: 11400000, guid: d4758408b9595324aaaaf2f4c566e196, type: 2}
+    - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: testTickTime
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4286977317673287800, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_Sprite
@@ -76,8 +84,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4835855260537129560, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+--- !u!212 &4818200789837497245 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4286977317673287800, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+  m_PrefabInstance: {fileID: 8765085965692142565}
+  m_PrefabAsset: {fileID: 0}

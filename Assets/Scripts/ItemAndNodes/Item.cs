@@ -77,7 +77,6 @@ public class Item : MonoBehaviour
             case ItemType.POTION_MANA:
                 return prices.manaPrice;
             default:
-                Debug.Log("Could Not Find Price");
                 return 0;
         }
     }

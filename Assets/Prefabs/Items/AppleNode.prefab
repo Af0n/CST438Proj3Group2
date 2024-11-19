@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4994843122853843954, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: spawnDelay
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4994843122853843954, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: spawnRangeMax
@@ -42,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6183048766951493054, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.005339
       objectReference: {fileID: 0}
     - target: {fileID: 6183048766951493054, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.7158318
       objectReference: {fileID: 0}
     - target: {fileID: 6183048766951493054, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_LocalPosition.z

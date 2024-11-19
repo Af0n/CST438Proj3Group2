@@ -17,6 +17,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: rejectVel
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: saltPrefab
       value: 
       objectReference: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
@@ -38,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7779100424702534652, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7779100424702534652, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7779100424702534652, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_LocalPosition.z

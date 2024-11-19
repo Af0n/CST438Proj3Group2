@@ -24,83 +24,65 @@ public class ResourceNode : MonoBehaviour
 
     [Header("Testing")]
     [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float testTickTime;
+    public float tickTime;
 
     private int numItems;
     private int tickTimer;
 
-    private void Awake()
-    {
+    private void Awake() {
         numItems = 0;
         tickTimer = spawnDelay;
     }
 
-    private void Start()
-    {
-        // check if we should do test cycling
-        if (testTickTime < 0)
-        {
+    private void Start() {
+        if(tickTime < 0){
             return;
         }
 
-        StartCoroutine("TestSpawnCycle");
+        StartCoroutine("SpawnCycle");
     }
 
-    public void Tick()
-    {
-        // don't spawn or count if too many items
-        if (numItems >= maxSpawns)
-        {
-            return;
-        }
+    private IEnumerator SpawnCycle(){
+        while(true){
+            tickTimer--;
 
-        tickTimer--;
-        tickTimer = Mathf.Max(0, tickTimer);
+            yield return new WaitForSeconds(tickTime);
 
-        // don't spawn if still cooling down
-        if (tickTimer > 0)
-        {
-            return;
-        }
+            // don't spawn if still cooling down
+            if(tickTimer > 0){
+                continue;
+            }
 
-        SpawnWave();
+            // don't spawn if too many items
+            if(numItems >= maxSpawns){
+                continue;
+            }
 
-        tickTimer = spawnDelay;
-    }
+            SpawnWave();
 
-    private IEnumerator TestSpawnCycle()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(testTickTime);
-            Tick();
+            tickTimer = spawnDelay;
         }
     }
 
-    private void SpawnWave()
-    {
-        for (int i = 0; i < numSpawns; i++)
+    private void SpawnWave(){
+        for (int i = 0; i  < numSpawns; i++)
         {
             SpawnItem();
         }
     }
 
-    public void SpawnItem()
-    {
+    public void SpawnItem(){
         // random position around node
         Vector2 randPos = RandomPointInRadii(spawnRangeMin, spawnRangeMax);
         // instantiation
         GameObject obj = Instantiate(prefab, randPos, Quaternion.identity);
         // changing object to the proper type
         obj.GetComponent<Item>().ChangeItem(type);
-        obj.GetComponent<Item>().SetMaker(this);
-        obj.GetComponent<Rigidbody2D>().isKinematic = true;
 
         numItems++;
     }
 
-    private Vector2 RandomPointInRadii(float minRange, float maxRange)
-    {
+    private Vector2 RandomPointInRadii(float minRange, float maxRange){
         // random direction vector
         Vector2 randDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         // normalize
@@ -108,11 +90,5 @@ public class ResourceNode : MonoBehaviour
         // give it a random length between ranges
         randDir *= Random.Range(minRange, maxRange);
         return transform.position + (Vector3)randDir;
-    }
-
-    // called whenever a resource is picked up from a node
-    public void LoseOne()
-    {
-        numItems--;
     }
 }

@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6231010452977320033}
   - component: {fileID: 2799227322408694993}
-  - component: {fileID: 8727055708004359183}
   - component: {fileID: 2603770626575010299}
   - component: {fileID: 680638524943923874}
-  - component: {fileID: -4509203819676963428}
-  m_Layer: 6
+  - component: {fileID: 7796606719374689964}
+  m_Layer: 0
   m_Name: Item Template
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -50,23 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   isHeld: 0
-  price: 0
   itemSprites: {fileID: 11400000, guid: 6936034cb5519f24db79a846586c299c, type: 2}
-  stats: {fileID: 11400000, guid: 08661f339cb6f254a867f89d9a012f1f, type: 2}
-  prices: {fileID: 11400000, guid: 23902e3d7e84be146b6bfed062cde896, type: 2}
   debug: 0
---- !u!114 &8727055708004359183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3751072535792237884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a15fc4ed3e176745ad8c5749fd0ad0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2603770626575010299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134,8 +118,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -147,9 +131,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &-4509203819676963428
-BoxCollider2D:
+  m_Constraints: 0
+--- !u!58 &7796606719374689964
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -183,14 +167,4 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 5.375, y: 5.875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.1, y: 0.1}
-  m_EdgeRadius: 0
+  m_Radius: 0.3

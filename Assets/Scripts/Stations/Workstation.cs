@@ -32,7 +32,7 @@ public class Workstation : MonoBehaviour
     // type of station
     private int typeCode;
 
-    // used for debugging
+    // used for timing
     private int tickTimer;
 
     public bool HasItem
@@ -46,11 +46,11 @@ public class Workstation : MonoBehaviour
     }
 
     private void OnEnable() {
-        TickSystem.onSecAction += Tick;
+        TickSystem.OnTick += Tick;
     }
 
     private void OnDisable() {
-        TickSystem.onSecAction -= Tick;
+        TickSystem.OnTick -= Tick;
     }
 
 
@@ -66,28 +66,30 @@ public class Workstation : MonoBehaviour
     public void SetItem(Transform t)
     {
         t.GetComponent<PickUp>().Pick(itemPos);
-        tickTimer = processTime;
+        tickTimer = 0;
     }
 
     public void Tick()
     {
+        // dont do anything if no item
+        if (!HasItem)
+        {
+            tickTimer = 0;
+            return;
+        }
+
         tickTimer += 1;
+
         // Not our time yet.. 
-        if(tickTime > tickTimer) {
+        if(tickTimer < processTime) {
             return;
         } 
+
         tickTimer = 0;
         
         if (type == StationType.MIXING)
         {
             brewing.Tick();
-        }
-
-
-        // dont do anything if no item
-        if (!HasItem)
-        {
-            return;
         }
 
         ProcessItem(itemPos.GetChild(0).GetComponent<Item>());
@@ -137,6 +139,7 @@ public class Workstation : MonoBehaviour
 
         item.GetComponent<PickUp>().Drop();
 
+        // don't do reject launch
         if (success)
         {
             return;

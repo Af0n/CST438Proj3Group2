@@ -1,5 +1,6 @@
 using System.Collections;
 using Mono.Cecil.Cil;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -21,7 +22,7 @@ public class Workstation : MonoBehaviour
 
     [Header("Testing")]
     [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float testTickTime;
+    public float tickTime;
 
     // the child object that determines where the item will be 'held'
     private Transform itemPos;
@@ -44,6 +45,15 @@ public class Workstation : MonoBehaviour
         get { return tickTimer != 0; }
     }
 
+    private void OnEnable() {
+        TickSystem.onSecAction += Tick;
+    }
+
+    private void OnDisable() {
+        TickSystem.onSecAction -= Tick;
+    }
+
+
     private void Awake()
     {
         brewing = GetComponent<Brewing>();
@@ -51,26 +61,6 @@ public class Workstation : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         itemPos = transform.GetChild(0);
         SetStation(type);
-    }
-
-    private void Start()
-    {
-        // check if we should do test cycling
-        if (testTickTime < 0)
-        {
-            return;
-        }
-
-        StartCoroutine("TestProcessCycle");
-    }
-
-    private IEnumerator TestProcessCycle()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(testTickTime);
-            Tick();
-        }
     }
 
     public void SetItem(Transform t)
@@ -81,9 +71,13 @@ public class Workstation : MonoBehaviour
 
     public void Tick()
     {
-        tickTimer--;
-        tickTimer = Mathf.Max(0, tickTimer);
-
+        tickTimer += 1;
+        // Not our time yet.. 
+        if(tickTime > tickTimer) {
+            return;
+        } 
+        tickTimer = 0;
+        
         if (type == StationType.MIXING)
         {
             brewing.Tick();
@@ -96,14 +90,10 @@ public class Workstation : MonoBehaviour
             return;
         }
 
-        // don't do anything if still processing
-        if (tickTimer > 0)
-        {
-            return;
-        }
-
         ProcessItem(itemPos.GetChild(0).GetComponent<Item>());
     }
+
+
 
     // assumes the item is processable at this station
     // also assumes we HAVE an item to process

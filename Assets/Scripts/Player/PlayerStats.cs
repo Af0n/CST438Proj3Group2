@@ -8,7 +8,7 @@ public class PlayerStats : ScriptableObject {
     public float carrySpeed;
 
     [Header("Currency")]
-    public int money;
+    public long money;
 
     [Header("States")]
     public bool hasItem;

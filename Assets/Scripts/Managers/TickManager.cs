@@ -10,20 +10,9 @@ public class TickSystem : MonoBehaviour
     public static event onSec onSecAction;
     public delegate void on2Sec();
     public static event on2Sec on2SecAction;
-    public static TickSystem instance;
     private double _tickTimer;
     private int _tick = 0;
     private const float _MAX_TICK = 0.1f; // This would allow for ticks to be 1/10 of a second.. 
-    void Awake() {
-        if(instance == null && instance != this) instance = this;
-        else {
-            Destroy(gameObject);
-            return;
-        }
-        DontDestroyOnLoad(gameObject);
-    }
-
-
     // Todo: add a queue system.. 
     void Update() {
         _tickTimer += Time.deltaTime;

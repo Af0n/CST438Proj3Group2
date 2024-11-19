@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Item
   - PauseMenu
+  - ScrollingMenu
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1372805351
+    locked: 0
+  - name: Foreground
+    uniqueID: 3891641583
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3843492147
     locked: 0

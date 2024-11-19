@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerStats stats;
     public HUDScript hud;
 
-    void Start() {
+    void Update() {
         hud.UpdateMoneyText(stats.money);
     }
 

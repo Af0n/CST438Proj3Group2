@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mr._Incredible11_0: -712233377299141687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

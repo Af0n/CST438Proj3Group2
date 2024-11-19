@@ -8,7 +8,7 @@ public class AudioAdjustmentScript : MonoBehaviour
 
     public Slider _musicSlider, _sfxSlider,
                     _sfxEntitySlider, _sfxObjectSlider,
-                    _sfxSpellSlider;
+                    _sfxSpellSlider, _genSider;
 
     // Sets up the value of the sound sl;iders when the game starts
     public void Start()
@@ -20,7 +20,7 @@ public class AudioAdjustmentScript : MonoBehaviour
         _sfxEntitySlider.value = AudioManager.Instance.sfxEnt;
         _sfxObjectSlider.value = AudioManager.Instance.sfxObj;
         _sfxSpellSlider.value = AudioManager.Instance.sfxSpell;
-
+        _genSider.value = AudioManager.Instance.sfxGeneral;
     }
 
     public void ToggleMusic()
@@ -58,5 +58,7 @@ public class AudioAdjustmentScript : MonoBehaviour
         AudioManager.Instance.SFXSpellVolume(_sfxSpellSlider.value);
     }
 
-
+    public void SFXGenVolume() {
+        AudioManager.Instance.SFXSGeneralVolume(_genSider.value);
+    }
 }

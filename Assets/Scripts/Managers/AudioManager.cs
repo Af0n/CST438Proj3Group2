@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     public float sfxEnt = 1f;
     public float sfxObj = 1f;
     public float sfxSpell = 1f;
+    public float sfxGeneral = 1f;
 
     public void Awake()
     {
@@ -29,13 +30,13 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+
         }
         else
         {
             Destroy(gameObject);
         }
-
+        DontDestroyOnLoad(gameObject);
         getAudioModifiers();
 
     }
@@ -43,67 +44,27 @@ public class AudioManager : MonoBehaviour
     // gets all the audio modifiers from the player prefs
     public void getAudioModifiers()
     {
+        // Passes a ref, and string to get what we need from player prefs. 
+        getModifiers("musicVol", ref musicVol);
+        getModifiers("sfxVol", ref sfxVol);
+        getModifiers("sfxEnt", ref sfxEnt);
+        getModifiers("sfxObj", ref sfxObj);
+        getModifiers("sfxSpell", ref sfxSpell);
+        getModifiers("sfxGen", ref sfxGeneral);
+    }
 
-        // Gets/makes the mmusic volume in the player prefs
-        if (PlayerPrefs.HasKey("musicVol"))
+    private void getModifiers(string sfxName, ref float sfxVol)
+    {
+        if (PlayerPrefs.HasKey(sfxName))
         {
-            musicVol = PlayerPrefs.GetFloat("musicVol");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("musicVol", 1f);
-            musicVol = PlayerPrefs.GetFloat("musicVol");
-            PlayerPrefs.Save();
-        }
-
-        // Gets/makes the sfx volume in the player prefs
-        if (PlayerPrefs.HasKey("sfxVol"))
-        {
-            sfxVol = PlayerPrefs.GetFloat("sfxVol");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxVol", 1f);
-            sfxVol = PlayerPrefs.GetFloat("sfxVol");
-            PlayerPrefs.Save();
+            sfxVol = PlayerPrefs.GetFloat(sfxName);
+            return;
         }
 
-        // Gets/makes the sfxEnt volume in the player prefs
-        if (PlayerPrefs.HasKey("sfxEnt"))
-        {
-            sfxEnt = PlayerPrefs.GetFloat("sfxEnt");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxEnt", 1f);
-            sfxEnt = PlayerPrefs.GetFloat("sfxEnt");
-            PlayerPrefs.Save();
-        }
 
-        // Gets/makes the sfxObj volume in the player prefs
-        if (PlayerPrefs.HasKey("sfxObj"))
-        {
-            sfxObj = PlayerPrefs.GetFloat("sfxObj");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxObj", 1f);
-            sfxObj = PlayerPrefs.GetFloat("sfxObj");
-            PlayerPrefs.Save();
-        }
-
-        // Gets/makes the sfx volume in the player prefs
-        if (PlayerPrefs.HasKey("sfxSpell"))
-        {
-            sfxSpell = PlayerPrefs.GetFloat("sfxSpell");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxSpell", 1f);
-            sfxSpell = PlayerPrefs.GetFloat("sfxSpell");
-            PlayerPrefs.Save();
-        }
-
+        PlayerPrefs.SetFloat(sfxName, 1f);
+        sfxVol = PlayerPrefs.GetFloat(sfxName);
+        PlayerPrefs.Save();
     }
 
     // Call this bit if you want to play a singular bg track!!!!
@@ -111,7 +72,7 @@ public class AudioManager : MonoBehaviour
     {
 
         // Attempts to find the music source with the rioght sound name in the array
-        Sound s = Array.Find(musicSounds, x=> x.name == name);
+        Sound s = Array.Find(musicSounds, x => x.name == name);
 
         // if it isn't found, then error messages will be given
         if (s == null)
@@ -127,7 +88,7 @@ public class AudioManager : MonoBehaviour
     }
 
     // for sound effects that you're okay with having multiple of running at the same time, click this!!!
-    public void PlaySFX(string name, int someCase)
+    public void PlaySFX(string name, AudioSourceTypes someCase)
     {
         // Attempts to find the music source with the rioght sound name in the array
         Sound s = Array.Find(sfxSounds, x => x.name == name);
@@ -147,25 +108,19 @@ public class AudioManager : MonoBehaviour
             sfxSource.PlayOneShot(s.clip, getModifier(someCase));
         }
     }
-
-    public float getModifier(int someCase)
+    public float getModifier(AudioSourceTypes someCase)
     {
-
         // depending on the scenarion, the code will have different return values depending the type of source
-        /*
-         * 1 == entity
-         * 2 == object
-         * 3 == spell
-         * 
-         */
         switch (someCase)
         {
-            case 1:
+            case AudioSourceTypes.ENTITY:
                 return sfxSource.volume * sfxEnt;
-            case 2:
+            case AudioSourceTypes.OBJECT:
                 return sfxSource.volume * sfxObj;
-            case 3:
+            case AudioSourceTypes.SPELL:
                 return sfxSource.volume * sfxSpell;
+            case AudioSourceTypes.GENERAL:
+                return sfxSource.volume * sfxGeneral;
             default:
                 return sfxSource.volume;
         }
@@ -183,8 +138,18 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.mute = !sfxSource.mute;
     }
+    // Getter for the music Source
+    public float getMusicVolume()
+    {
+        return musicVol;
+    }
 
-    // Adjust volume for music
+    // Getter for the SFX source
+
+    public float getSFXVolume()
+    {
+        return sfxVol;
+    }
     public void MusicVolume(float volume)
     {
         musicVol = volume;
@@ -203,21 +168,6 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.SetFloat("sfxVol", sfxVol);
         PlayerPrefs.Save();
     }
-
-    // Getter for the music Source
-
-    public float getMusicVolume()
-    {
-        return musicVol;
-    }
-
-    // Getter for the SFX source
-
-    public float getSFXVolume()
-    {
-        return sfxVol;
-    }
-
     // Adjusts volumes for entity sfxs
     public void SFXEntVolume(float volume)
     {
@@ -242,6 +192,13 @@ public class AudioManager : MonoBehaviour
         sfxSpell = volume;
 
         PlayerPrefs.SetFloat("sfxSpell", sfxSpell);
+        PlayerPrefs.Save();
+    }
+    public void SFXSGeneralVolume(float volume)
+    {
+        sfxGeneral = volume;
+
+        PlayerPrefs.SetFloat("sfxGen", sfxGeneral);
         PlayerPrefs.Save();
     }
 

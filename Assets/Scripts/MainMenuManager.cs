@@ -24,10 +24,16 @@ public class MainMenuManager : MonoBehaviour
 
     public void ActivateSettingsMenu()
     {
-        if (settingsMenu != null)
-        {
+        if (settingsMenu == null)
+        {   
+            return;
+        }
+        if(settingsMenu.activeSelf) {
+            settingsMenu.SetActive(false);
+        } else {
             settingsMenu.SetActive(true);
         }
+        
     }
 
     public void ExitGame()

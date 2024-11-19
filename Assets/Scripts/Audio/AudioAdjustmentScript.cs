@@ -2,26 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class AudioAdjustmentScript : MonoBehaviour
 {
 
-    public Slider _musicSlider, _sfxSlider,
-                    _sfxEntitySlider, _sfxObjectSlider,
+    public Slider _musicSlider, _sfxSlider, 
+                    _sfxEntityrSlider, _sfxObjectSlider, 
                     _sfxSpellSlider;
-
-    // Sets up the value of the sound sl;iders when the game starts
-    public void Start()
-    {
-
-        _musicSlider.value = AudioManager.Instance.getMusicVolume();
-        _sfxSlider.value = AudioManager.Instance.getSFXVolume();
-
-        _sfxEntitySlider.value = AudioManager.Instance.sfxEnt;
-        _sfxObjectSlider.value = AudioManager.Instance.sfxObj;
-        _sfxSpellSlider.value = AudioManager.Instance.sfxSpell;
-
-    }
 
     public void ToggleMusic()
     {
@@ -45,7 +31,7 @@ public class AudioAdjustmentScript : MonoBehaviour
 
     public void SFXEntVolume()
     {
-        AudioManager.Instance.SFXEntVolume(_sfxEntitySlider.value);
+        AudioManager.Instance.SFXEntVolume(_sfxEntityrSlider.value);
     }
 
     public void SFXObjVolume()

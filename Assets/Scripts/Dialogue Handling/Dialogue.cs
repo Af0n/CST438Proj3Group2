@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 using TMPro;
 
 // Using this tutorial as a base for the dialogue system
@@ -36,9 +37,11 @@ public class Dialogue : MonoBehaviour
 
         // sets the current text speed to the original text speed
         currentTextSpeed = textSpeed;
-        
-        // Calls the start dialogue cript to get things goin
-        StartDialogue();
+
+        // Calls the start dialogue script to get things goin
+        // StartDialogue();
+
+        newDialogue();
 
     }
 
@@ -65,6 +68,11 @@ public class Dialogue : MonoBehaviour
         {
             currentTextSpeed = textSpeed;
         }
+    }
+
+    void newDialogue()
+    {
+        StartDialogue();
     }
 
     void StartDialogue ()

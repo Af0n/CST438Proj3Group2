@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: df65c1729113c9e47ad1759e6470f916
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8608100462805300412
+    second: ArcaneCaptialist_WToP_0
+  - first:
+      213: 920657498887040246
+    second: ArcaneCaptialist_WToP_1
+  - first:
+      213: -6292887733012194751
+    second: ArcaneCaptialist_WToP_2
+  - first:
+      213: 926831029823654606
+    second: ArcaneCaptialist_WToP_3
+  - first:
+      213: -4068812121151724272
+    second: ArcaneCaptialist_WToP_4
+  - first:
+      213: -960600934924975065
+    second: ArcaneCaptialist_WToP_5
+  - first:
+      213: 7907482034358674405
+    second: ArcaneCaptialist_WToP_6
+  - first:
+      213: 4882833542452131778
+    second: ArcaneCaptialist_WToP_7
+  - first:
+      213: -7633962492920891994
+    second: ArcaneCaptialist_WToP_8
+  - first:
+      213: 9121423275301733919
+    second: ArcaneCaptialist_WToP_9
+  - first:
+      213: -4464705631453311683
+    second: ArcaneCaptialist_WToP_10
+  - first:
+      213: 711348704639895867
+    second: ArcaneCaptialist_WToP_11
+  - first:
+      213: -412090127033094391
+    second: ArcaneCaptialist_WToP_12
+  - first:
+      213: -6795581828008565952
+    second: ArcaneCaptialist_WToP_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 582
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b4d9b9c32e98880800000000000000
+      internalID: -8608100462805300412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_1
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 75
+        width: 350
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc26fc0e15d6cc00800000000000000
+      internalID: 920657498887040246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_2
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 399
+        width: 88
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a156ea2fb2ba8a0800000000000000
+      internalID: -6292887733012194751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_3
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 150
+        width: 135
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecac27b39e3ccdc00800000000000000
+      internalID: 926831029823654606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_4
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 149
+        width: 352
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015a2fceeeca887c0800000000000000
+      internalID: -4068812121151724272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_5
+      rect:
+        serializedVersion: 2
+        x: 2907
+        y: 399
+        width: 88
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72483e60a824ba2f0800000000000000
+      internalID: -960600934924975065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_6
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 149
+        width: 288
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e36bbdb3050dbd60800000000000000
+      internalID: 7907482034358674405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 150
+        width: 201
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7b83b8c3f43c340800000000000000
+      internalID: 4882833542452131778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_8
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 149
+        width: 434
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a57bc42f87be0690800000000000000
+      internalID: -7633962492920891994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_9
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 150
+        width: 201
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16075a342ec59e70800000000000000
+      internalID: 9121423275301733919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_10
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 154
+        width: 223
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d0a8a12ed2a02c0800000000000000
+      internalID: -4464705631453311683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_11
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 0
+        width: 226
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39ce73c0e73fd900800000000000000
+      internalID: 711348704639895867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_12
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 149
+        width: 128
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f2fba7636f74af0800000000000000
+      internalID: -412090127033094391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArcaneCaptialist_WToP_13
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 149
+        width: 120
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043237bf45e31b1a0800000000000000
+      internalID: -6795581828008565952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

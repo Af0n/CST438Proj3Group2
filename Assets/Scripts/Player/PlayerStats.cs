@@ -18,7 +18,7 @@ public class PlayerStats : ScriptableObject {
     public bool debug;
 
     public float MoveSpeed{
-        get{
+        get {
             float useSpeed;
 
             if(hasItem){
@@ -34,4 +34,6 @@ public class PlayerStats : ScriptableObject {
             return useSpeed;
         }
     }
+
+    public float MoveDeceleration = 0.5f; 
 }

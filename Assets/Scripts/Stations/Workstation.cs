@@ -92,11 +92,6 @@ public class Workstation : MonoBehaviour
         } 
 
         tickTimer = 0;
-        
-        if (type == StationType.MIXING)
-        {
-            brewing.Tick();
-        }
 
         ProcessItem(itemPos.GetChild(0).GetComponent<Item>());
     }

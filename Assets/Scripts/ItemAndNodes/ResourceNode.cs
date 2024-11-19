@@ -22,10 +22,6 @@ public class ResourceNode : MonoBehaviour
     [Tooltip("Item prefab to instantiate\nDO NOT CHANGE")]
     public GameObject prefab;
 
-    [Header("Testing")]
-    [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float testTickTime;
-
     private int numItems;
     private int tickTimer;
 
@@ -35,15 +31,12 @@ public class ResourceNode : MonoBehaviour
         tickTimer = spawnDelay;
     }
 
-    private void Start()
-    {
-        // check if we should do test cycling
-        if (testTickTime < 0)
-        {
-            return;
-        }
+    private void OnEnable() {
+        TickSystem.OnTick += Tick;
+    }
 
-        StartCoroutine("TestSpawnCycle");
+    private void OnDisable() {
+        TickSystem.OnTick -= Tick;
     }
 
     public void Tick()
@@ -66,15 +59,6 @@ public class ResourceNode : MonoBehaviour
         SpawnWave();
 
         tickTimer = spawnDelay;
-    }
-
-    private IEnumerator TestSpawnCycle()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(testTickTime);
-            Tick();
-        }
     }
 
     private void SpawnWave()

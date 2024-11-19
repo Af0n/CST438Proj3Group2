@@ -20,10 +20,6 @@ public class Workstation : MonoBehaviour
     public GameObject prefab;
     public Recipes recipes;
 
-    [Header("Testing")]
-    [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float tickTime;
-
     // the child object that determines where the item will be 'held'
     private Transform itemPos;
     private SpriteRenderer spriteRenderer;

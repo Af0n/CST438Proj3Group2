@@ -84,10 +84,11 @@ public class Workstation : MonoBehaviour
         tickTimer--;
         tickTimer = Mathf.Max(0, tickTimer);
 
-        if(type == StationType.MIXING){
+        if (type == StationType.MIXING)
+        {
             brewing.Tick();
         }
-        
+
 
         // dont do anything if no item
         if (!HasItem)
@@ -128,8 +129,10 @@ public class Workstation : MonoBehaviour
             case StationType.MIXING:
                 success = false;
                 doDrop = !brewing.IsBrewing;
+                break;
             case StationType.SELLING:
                 success = Sell(item);
+                doDrop = !success;
                 break;
             default:
                 Debug.Log("Could Not Process Item");
@@ -137,26 +140,27 @@ public class Workstation : MonoBehaviour
                 break;
         }
 
-          if(!doDrop){}
-        // don't continue if item was sold
-        if(item == null){
+        if (!doDrop)
+        {
             return;
         }
 
         item.GetComponent<PickUp>().Drop();
 
-        if(success){
+        if (success)
+        {
             return;
         }
 
         // rejection launch
-        Vector2 randDir = new Vector2(Random.Range(-1f,1f),Random.Range(-1f,1f));
+        Vector2 randDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         randDir.Normalize();
         randDir *= rejectVel;
         item.GetComponent<Rigidbody2D>().AddForce(randDir, ForceMode2D.Impulse);
     }
 
-    private bool Sell(Item item){
+    private bool Sell(Item item)
+    {
         return item.Sell();
     }
 

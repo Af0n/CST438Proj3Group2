@@ -3,7 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
     public GameObject menu;
+    public GameObject settingsMenu;
     public bool isActive = false;
+    public bool isSettingsActive = false;
     public void togglePause() {
         isActive = !isActive;
         menu.SetActive(isActive);
@@ -13,5 +15,10 @@ public class PauseMenu : MonoBehaviour {
     public void toMainMenu () {
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void toggleSettings() {
+        isSettingsActive = !isSettingsActive;
+        settingsMenu.SetActive(isSettingsActive);
     }
 }

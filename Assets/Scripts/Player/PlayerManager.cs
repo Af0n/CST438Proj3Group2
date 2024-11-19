@@ -5,6 +5,11 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public PlayerStats stats;
+    public HUDScript hud;
+
+    void Start() {
+        hud.UpdateMoneyText(stats.money);
+    }
 
     public bool CanAfford(int price){
         bool result = stats.money >= price;

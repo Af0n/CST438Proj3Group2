@@ -20,10 +20,6 @@ public class Workstation : MonoBehaviour
     public GameObject prefab;
     public Recipes recipes;
 
-    [Header("Testing")]
-    [Tooltip("Used for testing while tick system isn't implemented. Set to -1 to disable fake ticks.")]
-    public float tickTime;
-
     // the child object that determines where the item will be 'held'
     private Transform itemPos;
     private SpriteRenderer spriteRenderer;
@@ -32,7 +28,7 @@ public class Workstation : MonoBehaviour
     // type of station
     private int typeCode;
 
-    // used for debugging
+    // used for timing
     private int tickTimer;
 
     public bool HasItem
@@ -46,11 +42,11 @@ public class Workstation : MonoBehaviour
     }
 
     private void OnEnable() {
-        TickSystem.onSecAction += Tick;
+        TickSystem.OnTick += Tick;
     }
 
     private void OnDisable() {
-        TickSystem.onSecAction -= Tick;
+        TickSystem.OnTick -= Tick;
     }
 
 
@@ -63,32 +59,35 @@ public class Workstation : MonoBehaviour
         SetStation(type);
     }
 
-    public void SetItem(Transform t)
+    public bool SetItem(Transform t)
     {
+        // don't accept item if already one
+        if(HasItem){
+            return false;
+        }
+
         t.GetComponent<PickUp>().Pick(itemPos);
-        tickTimer = processTime;
+        tickTimer = 0;
+        return true;
     }
 
     public void Tick()
     {
-        tickTimer += 1;
-        // Not our time yet.. 
-        if(tickTime > tickTimer) {
-            return;
-        } 
-        tickTimer = 0;
-        
-        if (type == StationType.MIXING)
-        {
-            brewing.Tick();
-        }
-
-
         // dont do anything if no item
         if (!HasItem)
         {
+            tickTimer = 0;
             return;
         }
+
+        tickTimer += 1;
+
+        // Not our time yet.. 
+        if(tickTimer < processTime) {
+            return;
+        } 
+
+        tickTimer = 0;
 
         ProcessItem(itemPos.GetChild(0).GetComponent<Item>());
     }
@@ -137,6 +136,7 @@ public class Workstation : MonoBehaviour
 
         item.GetComponent<PickUp>().Drop();
 
+        // don't do reject launch
         if (success)
         {
             return;

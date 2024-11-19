@@ -40,6 +40,14 @@ public class Brewing : MonoBehaviour
         get { return isBrewing;  }
     }
 
+    private void OnEnable() {
+        TickSystem.OnTick += Tick;
+    }
+
+    private void OnDisable() {
+        TickSystem.OnTick -= Tick;
+    }
+
     private void Awake() {
         SetPotion(type);
     }

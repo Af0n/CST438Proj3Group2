@@ -116,7 +116,6 @@ public class InteractionSide : MonoBehaviour
         if(objs.Length == 0){
             return false;
         }
-        stats.hasItem = false;
 
         // default value that will guarantee at least one selected station
         float dist = 100;
@@ -132,7 +131,15 @@ public class InteractionSide : MonoBehaviour
 
         // we have found the closest station
         // call SetItem on that station
-        closestItem.GetComponent<Workstation>().SetItem(itemPos.GetChild(0));
+        bool success = closestItem.GetComponent<Workstation>().SetItem(itemPos.GetChild(0));
+
+        if(!success){
+            return false;
+        }
+
+        // successfully set item
+        stats.hasItem = false;
+
         return true;
     }
 

@@ -63,10 +63,16 @@ public class Workstation : MonoBehaviour
         SetStation(type);
     }
 
-    public void SetItem(Transform t)
+    public bool SetItem(Transform t)
     {
+        // don't accept item if already one
+        if(HasItem){
+            return false;
+        }
+
         t.GetComponent<PickUp>().Pick(itemPos);
         tickTimer = 0;
+        return true;
     }
 
     public void Tick()

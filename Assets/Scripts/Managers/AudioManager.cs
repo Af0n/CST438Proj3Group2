@@ -22,10 +22,6 @@ public class AudioManager : MonoBehaviour
     public float sfxObj = 1f;
     public float sfxSpell = 1f;
 
-    public void Start()
-    {
-        PlayMusic("meow");
-    }
     public void Awake()
     {
 

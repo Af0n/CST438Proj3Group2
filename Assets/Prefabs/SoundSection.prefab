@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSlider: {fileID: 5562529187010671850}
   _sfxSlider: {fileID: 7381040445754083200}
-  _sfxEntityrSlider: {fileID: 6618238302493365335}
+  _sfxEntitySlider: {fileID: 6618238302493365335}
   _sfxObjectSlider: {fileID: 5059325813309221920}
   _sfxSpellSlider: {fileID: 4623493982877932987}
 --- !u!1 &3317384449870071159
@@ -2418,7 +2418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SFX
+  m_text: Entities
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

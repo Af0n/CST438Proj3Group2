@@ -47,10 +47,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds:
-  - name: meow
-    clip: {fileID: 8300000, guid: b4bf7d9befa0c7a4185e57cc9a2ddb28, type: 3}
-  - name: buddy holly
-    clip: {fileID: 8300000, guid: 51348ce52ae6f2948ae358454253e832, type: 3}
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: d2acbc3a62cd2e247ad4699c3da679c4, type: 3}
+  - name: Loop1
+    clip: {fileID: 8300000, guid: 01117f7bb1eb4874a90aae97693077b5, type: 3}
+  - name: Loop2
+    clip: {fileID: 8300000, guid: 8fc034eb7be1b6f4b93193ae165d7cd0, type: 3}
+  - name: Loop3
+    clip: {fileID: 8300000, guid: 9842990c5dc1c434eb3b36a7d7230009, type: 3}
+  - name: Loop4
+    clip: {fileID: 8300000, guid: 9240bddc7419bdc48be0886cc02aa9e1, type: 3}
   sfxSounds:
   - name: concrete scrape
     clip: {fileID: 8300000, guid: 7c146be4bcb13424b8f70878e70bdfc2, type: 3}
@@ -60,8 +66,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0f27e615144029c44a29056cd454cc4f, type: 3}
   - name: vine boom
     clip: {fileID: 8300000, guid: 3c522c7c661b21a4385d7beeefa38681, type: 3}
+  - name: Select
+    clip: {fileID: 8300000, guid: 821c2360812df6247b5a354a94533300, type: 3}
   musicSource: {fileID: 457574233007232287}
   sfxSource: {fileID: 261137803599406269}
+  musicVol: 1
+  sfxVol: 1
   sfxEnt: 1
   sfxObj: 1
   sfxSpell: 1
@@ -106,7 +116,7 @@ AudioSource:
   m_GameObject: {fileID: 1187242427261162600}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4982008958926561649, guid: 08b30bb48e60aec46a3baa7dd0fcd6cf, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -235,7 +245,7 @@ AudioSource:
   m_GameObject: {fileID: 3864641483316883340}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2361469034184981431, guid: 08b30bb48e60aec46a3baa7dd0fcd6cf, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1

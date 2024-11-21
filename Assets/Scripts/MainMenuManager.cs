@@ -14,6 +14,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        AudioManager.Instance.getAudioModifiers();
         AudioManager.Instance.PlayMusic("MainMenu");
     }
 

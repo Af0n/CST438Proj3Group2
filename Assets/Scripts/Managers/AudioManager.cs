@@ -37,8 +37,8 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        
         getAudioModifiers();
-
     }
 
     // gets all the audio modifiers from the player prefs
@@ -46,11 +46,17 @@ public class AudioManager : MonoBehaviour
     {
         // Passes a ref, and string to get what we need from player prefs. 
         getModifiers("musicVol", ref musicVol);
+        MusicVolume(musicVol);
         getModifiers("sfxVol", ref sfxVol);
+        SFXVolume(sfxVol);
         getModifiers("sfxEnt", ref sfxEnt);
+        SFXEntVolume(sfxEnt);
         getModifiers("sfxObj", ref sfxObj);
+        SFXObjVolume(sfxObj);
         getModifiers("sfxSpell", ref sfxSpell);
+        SFXSpellVolume(sfxSpell);
         getModifiers("sfxGen", ref sfxGeneral);
+        SFXSGeneralVolume(sfxGeneral);
     }
 
     private void getModifiers(string sfxName, ref float sfxVol)
@@ -58,18 +64,17 @@ public class AudioManager : MonoBehaviour
         if (PlayerPrefs.HasKey(sfxName))
         {
             sfxVol = PlayerPrefs.GetFloat(sfxName);
-            return;
+        } else {
+            PlayerPrefs.SetFloat(sfxName, 1f);
+            sfxVol = PlayerPrefs.GetFloat(sfxName);
+            PlayerPrefs.Save();
         }
-
-
-        PlayerPrefs.SetFloat(sfxName, 1f);
-        sfxVol = PlayerPrefs.GetFloat(sfxName);
-        PlayerPrefs.Save();
     }
 
     // Call this bit if you want to play a singular bg track!!!!
     public void PlayMusic(string name)
     {
+        getAudioModifiers();
 
         // Attempts to find the music source with the rioght sound name in the array
         Sound s = Array.Find(musicSounds, x => x.name == name);
@@ -90,6 +95,7 @@ public class AudioManager : MonoBehaviour
     // for sound effects that you're okay with having multiple of running at the same time, click this!!!
     public void PlaySFX(string name, AudioSourceTypes someCase)
     {
+        getAudioModifiers();
         // Attempts to find the music source with the rioght sound name in the array
         Sound s = Array.Find(sfxSounds, x => x.name == name);
 

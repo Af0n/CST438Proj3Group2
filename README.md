@@ -1,4 +1,6 @@
-# CST438Proj3Group2 : Arcane Capitalist
+# CST438Proj3Group2 :
+
+![Arcane Capitalist Title](https://github.com/Af0n/CST438Proj3Group2/blob/main/Assets/Sprites/UI/ArcaneCaptialistBlackWhite.png)
 
 Unity Version: 2023.2.18f1
 

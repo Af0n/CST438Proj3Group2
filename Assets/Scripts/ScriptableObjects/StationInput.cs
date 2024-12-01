@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "StationInput", menuName = "ScriptableObjects/StationInput", order = 0)]

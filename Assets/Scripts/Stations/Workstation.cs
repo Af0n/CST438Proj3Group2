@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -171,81 +169,81 @@ public class Workstation : MonoBehaviour
         return item.Sell();
     }
 
-    private bool Grind(Item item)
-    {
-        switch (item.Type)
-        {
-            case ItemType.SPARKLING_RUBY:
-                item.ChangeItem(ItemType.GEMSTONE_DUST);
-                break;
-            default:
-                Debug.Log("Cannot Grind Item");
-                return false;
-        }
+    // private bool Grind(Item item)
+    // {
+    //     switch (item.Type)
+    //     {
+    //         case ItemType.SPARKLING_RUBY:
+    //             item.ChangeItem(ItemType.GEMSTONE_DUST);
+    //             break;
+    //         default:
+    //             Debug.Log("Cannot Grind Item");
+    //             return false;
+    //     }
 
-        return true;
-    }
+    //     return true;
+    // }
 
-    private bool Clean(Item item)
-    {
-        switch (item.Type)
-        {
-            case ItemType.FRESH_APPLE:
-                item.ChangeItem(ItemType.SPARKLING_APPLE);
-                break;
-            case ItemType.RAW_RUBY:
-                item.ChangeItem(ItemType.SPARKLING_RUBY);
-                break;
-            case ItemType.SALT:
-                item.ChangeItem(ItemType.SALTWATER);
-                break;
-            default:
-                Debug.Log("Cannot Clean Item");
-                return false;
-        }
+    // private bool Clean(Item item)
+    // {
+    //     switch (item.Type)
+    //     {
+    //         case ItemType.FRESH_APPLE:
+    //             item.ChangeItem(ItemType.SPARKLING_APPLE);
+    //             break;
+    //         case ItemType.RAW_RUBY:
+    //             item.ChangeItem(ItemType.SPARKLING_RUBY);
+    //             break;
+    //         case ItemType.SALT:
+    //             item.ChangeItem(ItemType.SALTWATER);
+    //             break;
+    //         default:
+    //             Debug.Log("Cannot Clean Item");
+    //             return false;
+    //     }
 
-        return true;
-    }
+    //     return true;
+    // }
 
-    private bool Boil(Item item)
-    {
-        switch (item.Type)
-        {
-            case ItemType.SALTWATER:
-                item.ChangeItem(ItemType.PURE_WATER);
+    // private bool Boil(Item item)
+    // {
+    //     switch (item.Type)
+    //     {
+    //         case ItemType.SALTWATER:
+    //             item.ChangeItem(ItemType.PURE_WATER);
 
-                SpawnAtItemPos(ItemType.SALT);
-                break;
-            case ItemType.PURE_WATER:
-                item.ChangeItem(ItemType.BUCKET);
-                break;
-            default:
-                Debug.Log("Cannot Boil Item");
-                return false;
-        }
+    //             SpawnAtItemPos(ItemType.SALT);
+    //             break;
+    //         case ItemType.PURE_WATER:
+    //             item.ChangeItem(ItemType.BUCKET);
+    //             break;
+    //         default:
+    //             Debug.Log("Cannot Boil Item");
+    //             return false;
+    //     }
 
-        return true;
-    }
+    //     return true;
+    // }
 
-    private bool Arcane(Item item)
-    {
-        switch (item.Type)
-        {
-            case ItemType.DISORDERED_SPIRIT:
-                item.ChangeItem(ItemType.MINOR_SPIRIT);
-                break;
-            // don't keep this one
-            // we'll probably get saltwater from the ocean?
-            case ItemType.BUCKET:
-                item.ChangeItem(ItemType.SALTWATER);
-                break;
-            default:
-                Debug.Log("Cannot Do Magic With Item");
-                return false;
-        }
+    // private bool Arcane(Item item)
+    // {
+    //     switch (item.Type)
+    //     {
+    //         case ItemType.DISORDERED_SPIRIT:
+    //             item.ChangeItem(ItemType.MINOR_SPIRIT);
+    //             break;
+    //         // don't keep this one
+    //         // we'll probably get saltwater from the ocean?
+    //         case ItemType.BUCKET:
+    //             item.ChangeItem(ItemType.SALTWATER);
+    //             break;
+    //         default:
+    //             Debug.Log("Cannot Do Magic With Item");
+    //             return false;
+    //     }
 
-        return true;
-    }
+    //     return true;
+    // }
 
     private void SpawnAtItemPos(ItemType t)
     {

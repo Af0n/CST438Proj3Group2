@@ -36,14 +36,21 @@ public class PlayerManager : MonoBehaviour
         // do other stuff relating to dropping your item
     }
 
-    public bool isYappingCheck()
+    public bool isBusyCheck()
     {
-        return stats.isYapping;
+        return stats.isBusy;
     }
 
     public void flipYapping()
     {
         stats.isYapping = !stats.isYapping;
+        flipBusy();
+
+    }
+
+    public void flipBusy()
+    {
+        stats.isBusy = !stats.isBusy;
     }
 
 }

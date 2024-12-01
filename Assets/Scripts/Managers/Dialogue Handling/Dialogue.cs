@@ -9,7 +9,7 @@ public class Dialogue : MonoBehaviour
 
     public void RunDialogue()
     {
-        dialogueManager.StartDialogue();
+        dialogueManager.StartDialogue("stringTestTable","test");
     }
 
 }

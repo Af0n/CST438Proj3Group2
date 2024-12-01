@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Will only handle movement when the player isn't dealing with dialogue boxes
-        if (!stats.isYapping)
+        if (!stats.isBusy)
         {
             fixedMove();
         }

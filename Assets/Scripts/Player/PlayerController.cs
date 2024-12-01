@@ -28,7 +28,11 @@ public class PlayerController : MonoBehaviour
 
     public InteractionSide interaction;
 
+    // Private bool that lets the game know if you're currently interacting with something
     private bool currentlyInteracting = false;
+
+    // private bool that waits for a second as to not speed through dialogue
+    private bool justStartedDia = false;
 
     public void EnableControls() {
         _move.Enable();
@@ -76,14 +80,49 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // flips if the player is currently interacting and will also give them some buffer time
     private void flipAction()
     {
         currentlyInteracting = !currentlyInteracting;
+
+        if (!currentlyInteracting)
+        {
+            StartCoroutine(waitForHuman());
+        }
+
     }
 
     public bool actionTriggered()
     {
         return currentlyInteracting;
+    }
+
+    // Waits for a second
+    IEnumerator waitForHuman ()
+    {
+
+        if (justStartedDia)
+        {
+            yield break;
+        }
+
+        justStartedDia = true;
+        yield return new WaitForSeconds(1f);
+        justStartedDia = false;
+    }
+
+    // Checks to see if the player wants to progress dialogue but does a wait check
+    public bool dialogueInputCheck()
+    {
+        if (actionTriggered())
+        {
+            if (justStartedDia)
+            {
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 
 }

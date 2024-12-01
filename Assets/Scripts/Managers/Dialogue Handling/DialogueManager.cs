@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI textComponent;
 
     // ref to the lines that the dialogue meanager needs to show off
-    private string line;
+    private string line ="";
 
     // base text speed the code should refer to
     public float textSpeed;
@@ -43,6 +43,9 @@ public class DialogueManager : MonoBehaviour
 
     // Ref to the key in the table we're currently looking at
     private string keyName = "";
+    
+    // Safet check to make sure players can read the dialogue
+    private bool canProgress = false;
 
     // Start is called before the first frame update
     void Start()
@@ -66,10 +69,10 @@ public class DialogueManager : MonoBehaviour
         if (startedDialogue)
         {
             // If the left mouse button is pressed
-            if (Input.GetMouseButtonDown(0) || playerController.actionTriggered())
+            if (playerController.dialogueInputCheck())
             {
                 // If the text component has been completed, then it will move to the next line
-                if (textComponent.text == line)
+                if (textComponent.text == line && canProgress)
                 {
                     // Increases the index for later use
                     index++;
@@ -80,14 +83,19 @@ public class DialogueManager : MonoBehaviour
                 else
                 {
                     // Modifies the speed of the how fast text can go
-                    currentTextSpeed = textSpeed / 2f;
+                    currentTextSpeed = textSpeed * 0.8f;
                 }
             }
-
-            // Resets the text speed when the mouse buttong gets released
-            if (Input.GetMouseButtonUp(0) || playerController.actionTriggered())
+            // However, we want the pplayer to be able to read the text
+            else
             {
-                currentTextSpeed = textSpeed;
+                // If the text component has been completed, then it will allow the player to go to the next line
+                if (textComponent.text == line)
+                {
+
+                    canProgress = true;
+
+                }
             }
         }
 
@@ -129,6 +137,8 @@ public class DialogueManager : MonoBehaviour
     void NextLine()
     {
 
+        canProgress = false;
+
         // Attempts to load a line of dialogue
         StartCoroutine(LoadLocalizedString());
 
@@ -147,14 +157,14 @@ public class DialogueManager : MonoBehaviour
     {
 
         // first attempts to see if the table exists
-        var table = LocalizationSettings.StringDatabase.GetTable(tableName);
+        StringTable table = LocalizationSettings.StringDatabase.GetTable(tableName);
 
         // If the table exists...
         if (table != null)
         {
 
             // It will then attempt to find the string
-            var localizedString = table.GetEntry(keyName + index);
+            StringTableEntry localizedString = table.GetEntry(keyName + index);
 
             if (localizedString != null)
             {

@@ -18,6 +18,7 @@ public class Workstation : MonoBehaviour
     public StationSprites stationSprites;
     public GameObject prefab;
     public Recipes recipes;
+    public StationInput inputs;
 
     // the child object that determines where the item will be 'held'
     private Transform itemPos;

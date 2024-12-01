@@ -241,18 +241,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5446585183989494989, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6178028114125089771, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
       propertyPath: m_Name
       value: Conflagration Pyre
@@ -310,14 +298,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2830520767548697771, guid: 88ba09b8c3956de439adce893804f28e, type: 3}
-      propertyPath: tickTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2830520767548697771, guid: 88ba09b8c3956de439adce893804f28e, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4023863906015720167, guid: 88ba09b8c3956de439adce893804f28e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.005339
@@ -375,18 +355,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5130680182049395787, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6131743875911923007, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -545,14 +513,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6708170813163574848, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
-      propertyPath: tickTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6708170813163574848, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -566,10 +526,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2761504190586425661, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3781149631026622537, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
@@ -613,14 +569,6 @@ PrefabInstance:
     - target: {fileID: 4069071422737878555, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
       propertyPath: m_Name
       value: Grindstone
-      objectReference: {fileID: 0}
-    - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-      propertyPath: testTickTime
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -816,10 +764,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cauldron
       objectReference: {fileID: 0}
-    - target: {fileID: 8771740994002836294, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -833,14 +777,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
-      propertyPath: processTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
-      propertyPath: testTickTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4673338299069107527, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -884,10 +820,6 @@ PrefabInstance:
     - target: {fileID: 5537845361968870165, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
       propertyPath: m_Name
       value: Cleansing Pool
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976429040987728947, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -945,14 +877,6 @@ PrefabInstance:
     - target: {fileID: 7132440502215606095, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8242750171585536259, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
-      propertyPath: tickTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8242750171585536259, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
-      propertyPath: testTickTime
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

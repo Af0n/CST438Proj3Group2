@@ -5,6 +5,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
+    //-=======================================-
+    // Public
+    [Tooltip("A refrence to player stats object")]
+    public PlayerStats stats;
+
     public PlayerMovement movement;
     private PauseMenu _pause_menu;
     public enum Input{
@@ -21,6 +27,8 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()=> DisableControls();
 
     public InteractionSide interaction;
+
+    private bool currentlyInteracting = false;
 
     public void EnableControls() {
         _move.Enable();
@@ -42,6 +50,10 @@ public class PlayerController : MonoBehaviour
 
         _pause.performed += _ => pause();
         _action.performed += _ => action();
+
+        _action.started += _ => flipAction();
+        _action.canceled += _ => flipAction();
+
     }
     private void Start() {
         _pause_menu = GameObject.FindWithTag("PauseMenu").GetComponent<PauseMenu>();
@@ -57,6 +69,21 @@ public class PlayerController : MonoBehaviour
     }
 
     public void action() {
-        interaction.CheckInteraction();
+        // will only check for interactions if the player is not busy
+        if (!stats.isBusy)
+        {
+            interaction.CheckInteraction();
+        }
     }
+
+    private void flipAction()
+    {
+        currentlyInteracting = !currentlyInteracting;
+    }
+
+    public bool actionTriggered()
+    {
+        return currentlyInteracting;
+    }
+
 }

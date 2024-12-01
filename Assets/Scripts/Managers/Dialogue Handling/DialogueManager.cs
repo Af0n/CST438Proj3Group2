@@ -11,6 +11,8 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    // Ref to the player controller
+    public PlayerController playerController;
 
     // Reference to the whole text box object
     public GameObject textBoxParent;
@@ -64,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         if (startedDialogue)
         {
             // If the left mouse button is pressed
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || playerController.actionTriggered())
             {
                 // If the text component has been completed, then it will move to the next line
                 if (textComponent.text == line)
@@ -83,7 +85,7 @@ public class DialogueManager : MonoBehaviour
             }
 
             // Resets the text speed when the mouse buttong gets released
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) || playerController.actionTriggered())
             {
                 currentTextSpeed = textSpeed;
             }

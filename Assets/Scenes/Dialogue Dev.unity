@@ -1470,6 +1470,10 @@ PrefabInstance:
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 1629530765}
+    - target: {fileID: 7389853168501298814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 08661f339cb6f254a867f89d9a012f1f, type: 2}
     - target: {fileID: 7681748526747771890, guid: 9e5617037de135a41855fa73bc440091, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1528,6 +1532,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8849165430302738059, guid: 9e5617037de135a41855fa73bc440091, type: 3}
   m_PrefabInstance: {fileID: 1559044747}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1559044753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7389853168501298814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
+  m_PrefabInstance: {fileID: 1559044747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3705c9bf76a024e986965ddab37e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1629530764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,11 +1875,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1966888775610962873, guid: 8e19c337a75d63643bb8c0175f56df8c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.44
+      value: -1.49
       objectReference: {fileID: 0}
     - target: {fileID: 1966888775610962873, guid: 8e19c337a75d63643bb8c0175f56df8c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.32
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1966888775610962873, guid: 8e19c337a75d63643bb8c0175f56df8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1890,6 +1905,10 @@ PrefabInstance:
       propertyPath: textBoxParent
       value: 
       objectReference: {fileID: 1886005803}
+    - target: {fileID: 9213685560016489303, guid: 8e19c337a75d63643bb8c0175f56df8c, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1559044753}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

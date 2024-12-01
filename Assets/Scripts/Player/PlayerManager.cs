@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         stats.isYapping = false;
+        stats.isBusy = false;
     }
 
     void Update() {

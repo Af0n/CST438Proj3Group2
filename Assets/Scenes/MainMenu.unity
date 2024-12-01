@@ -2156,11 +2156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5562170896429744243, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_text
-      value: Play
+      value: Dev Scene
       objectReference: {fileID: 0}
     - target: {fileID: 5778572707820711306, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_Name
-      value: DialogueTestScene
+      value: Dev Scene Button
       objectReference: {fileID: 0}
     - target: {fileID: 8540345906367101891, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_AnchorMax.y

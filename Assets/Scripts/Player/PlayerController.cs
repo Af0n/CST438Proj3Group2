@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
         }
 
         justStartedDia = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         justStartedDia = false;
     }
 

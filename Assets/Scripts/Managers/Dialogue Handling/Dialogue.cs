@@ -17,7 +17,7 @@ public class Dialogue : MonoBehaviour
     // Simple function that manages the dialogue
     public void RunDialogue()
     {
-        dialogueManager.StartDialogue(tableName,keyNames[0]);
+        dialogueManager.StartDialogue(tableName,keyNames[Random.Range(0, keyNames.Length)]);
     }
 
 }

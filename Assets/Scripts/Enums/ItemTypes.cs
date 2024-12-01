@@ -1,5 +1,6 @@
 public enum ItemType
 {
+    NONE = -1,
     BUCKET = 0,
     SALTWATER = 1,
     FRESH_APPLE = 2,

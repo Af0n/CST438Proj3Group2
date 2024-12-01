@@ -43,7 +43,12 @@ public class Workstation : MonoBehaviour
     }
 
     public Transform ProcessingItem{
-        get { return itemPos.GetChild(0); }
+        get { 
+            if(HasItem){
+                return itemPos.GetChild(0); 
+            }
+            return null;
+        }
     }
 
     private void OnEnable() {
@@ -110,6 +115,9 @@ public class Workstation : MonoBehaviour
 
         // checking if item is invalid
         stationRecipeIndex = ValidInput(itemScript.Type);
+        Debug.Log(stationRecipeIndex);
+
+        // reject item from station
         if(stationRecipeIndex == -1){
             Reject(ProcessingItem);
             return;
@@ -131,6 +139,16 @@ public class Workstation : MonoBehaviour
     // also assumes we HAVE an item to process
     public void ProcessItem()
     {
+        if(type == StationType.MIXING){
+            // lets boiling script handle things
+            return;
+        }
+
+        if(type == StationType.SELLING){
+            Sell(ProcessingItem.GetComponent<Item>());
+            return;
+        }
+
         StationRecipe recipe = inputs.recipes[stationRecipeIndex];
         Destroy(ProcessingItem.gameObject);
         foreach (ItemType t in recipe.output)
@@ -141,6 +159,7 @@ public class Workstation : MonoBehaviour
 
     private void Reject(Transform item){
         // rejection launch
+        item.GetComponent<PickUp>().Drop();
         Vector2 randDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         randDir.Normalize();
         randDir *= rejectVel;

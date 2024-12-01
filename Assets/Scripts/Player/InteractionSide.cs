@@ -89,6 +89,7 @@ public class InteractionSide : MonoBehaviour
         return false;
     }
 
+    // Will attempt to interact with a nearby object if the correcrt script is attached
     private bool TryDialogueInteract()
     {
         Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, interactMask);
@@ -102,15 +103,15 @@ public class InteractionSide : MonoBehaviour
         foreach (Collider2D col in objs)
         {
             // check if the interactable is the cauldron
-            Brewing brew = col.GetComponent<Brewing>();
-            if (brew == null)
+            Dialogue dialo = col.GetComponent<Dialogue>();
+            if (dialo == null)
             {
                 continue;
             }
 
             // if we get here, then we've selected the cauldron
 
-            brew.TryCycleRecipe();
+            dialo.RunDialogue();
             return true;
         }
 

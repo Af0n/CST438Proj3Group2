@@ -10,6 +10,9 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
 
+    // Reference to the whole text box object
+    public GameObject textBoxParent;
+
     // Reference to the actual textbox
     public GameObject textBox;
 
@@ -41,8 +44,6 @@ public class DialogueManager : MonoBehaviour
         // Calls the start dialogue script to get things goin
         // StartDialogue();
 
-        newDialogue();
-
     }
 
     // Update is called once per frame
@@ -70,13 +71,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void newDialogue()
+    public void StartDialogue()
     {
-        StartDialogue();
-    }
 
-    void StartDialogue()
-    {
+        textBoxParent.SetActive(true);
+        isYappingFlip();
 
         // sets the index back to 0
         index = 0;
@@ -115,9 +114,17 @@ public class DialogueManager : MonoBehaviour
         // If there are no more line, then the text box will get deactivate
         else
         {
-            textBox.SetActive(false);
+            isYappingFlip();
+            textBoxParent.SetActive(false);
         }
 
+    }
+
+    // Handles the flipping of player states when it comes to dialogue
+    void isYappingFlip()
+    {
+        GameObject player = GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerManager>().flipYapping();
     }
 
 }

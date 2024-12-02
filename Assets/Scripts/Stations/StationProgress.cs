@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StationProgress : MonoBehaviour
 {
+    public Image image;
     private Workstation stationScript;
     private Brewing brewingScript;
 
@@ -13,7 +15,7 @@ public class StationProgress : MonoBehaviour
     }
 
     public float Progress{
-        get { return current / duration; }
+        get { return (float)current / (float)duration; }
     }
 
     private void Awake() {
@@ -26,6 +28,10 @@ public class StationProgress : MonoBehaviour
         }else{
             duration = stationScript.processTime;
         }
+
+        if(duration <= 0){
+            duration = 1;
+        }
     }
 
     private void Update() {
@@ -34,5 +40,7 @@ public class StationProgress : MonoBehaviour
         }else{
             current = stationScript.TickTimer;
         }
+
+        image.fillAmount = Progress;
     }
 }

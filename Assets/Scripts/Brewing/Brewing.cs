@@ -104,6 +104,7 @@ public class Brewing : MonoBehaviour
         }
 
         // comes here if not brewing
+        tickTimer=0;
         
         // don't do anything if recipe is not satisfied
         if(!IsRecipeSatisfied()){

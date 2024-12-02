@@ -269,10 +269,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1663138704017810715, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
-      propertyPath: processTime
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 6178028114125089771, guid: 4aad07749db91b944b48b036bbcebded, type: 3}
       propertyPath: m_Name
       value: Conflagration Pyre
@@ -387,10 +383,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1995475039113627037, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
-      propertyPath: processTime
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 6131743875911923007, guid: bdeee241184e0994cb156cac3c817a34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -606,10 +598,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grindstone
       objectReference: {fileID: 0}
-    - target: {fileID: 8849673215130075371, guid: 7ec069118a14af04cad28851466b3d51, type: 3}
-      propertyPath: processTime
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -804,10 +792,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cauldron
       objectReference: {fileID: 0}
-    - target: {fileID: 8771740994002836294, guid: 9e7d5da67ca83ae46947394427d21ec5, type: 3}
-      propertyPath: processTime
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -821,10 +805,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1040899981681163749, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
-      propertyPath: processTime
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 4673338299069107527, guid: 0ca61e3cf4b44d44da6676f3a3190feb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -1039,14 +1019,6 @@ PrefabInstance:
     - target: {fileID: 2186027894732971595, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
       propertyPath: m_Name
       value: Selling
-      objectReference: {fileID: 0}
-    - target: {fileID: 6700846937119477947, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
-      propertyPath: inputs
-      value: 
-      objectReference: {fileID: 11400000, guid: 23983afe70aeb5f408bbf79356a50675, type: 2}
-    - target: {fileID: 6700846937119477947, guid: 871274396e0da9c47bc4b957cfe265da, type: 3}
-      propertyPath: processTime
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

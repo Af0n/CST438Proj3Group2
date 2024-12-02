@@ -117,7 +117,7 @@ public class Workstation : MonoBehaviour
 
         // checking if item is invalid
         stationRecipeIndex = ValidInput(itemScript.Type);
-        Debug.Log(stationRecipeIndex);
+        //Debug.Log(stationRecipeIndex);
 
         // reject item from station
         if(stationRecipeIndex == -1){
@@ -126,6 +126,7 @@ public class Workstation : MonoBehaviour
         }
 
         tickTimer += 1;
+        Debug.Log(tickTimer);
 
         // Not our time yet.. 
         if(tickTimer < processTime) {

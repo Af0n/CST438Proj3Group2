@@ -86,14 +86,14 @@ public class Brewing : MonoBehaviour
     }
     
     public void Tick(){
-        tickTimer --;
-        tickTimer = Mathf.Max(0, tickTimer);
+        tickTimer++;
+        tickTimer = Mathf.Clamp(tickTimer, 0, processTime);
 
         if(isBrewing){
             // go in here if currently brewing
 
-            if(tickTimer <= 0){
-                tickTimer = processTime;
+            if(tickTimer >= processTime){
+                tickTimer = 0;
                 EndBrewing();
                 SpawnItem(type);
                 if(selectedRecipe.containsBucket){
@@ -115,7 +115,7 @@ public class Brewing : MonoBehaviour
 
     private void StartBrewing(){
         isBrewing = true;
-        tickTimer = processTime;
+        tickTimer = 0;
 
         TargetIngredients();
         GrabTargetIngredients();

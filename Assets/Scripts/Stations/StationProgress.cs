@@ -12,6 +12,10 @@ public class StationProgress : MonoBehaviour
         get { return brewingScript != null; }
     }
 
+    public float Progress{
+        get { return current / duration; }
+    }
+
     private void Awake() {
         stationScript = GetComponent<Workstation>();
         brewingScript = GetComponent<Brewing>();
@@ -21,6 +25,14 @@ public class StationProgress : MonoBehaviour
             duration = brewingScript.processTime;
         }else{
             duration = stationScript.processTime;
+        }
+    }
+
+    private void Update() {
+        if(IsCauldron){
+            current = brewingScript.TickTimer;
+        }else{
+            current = stationScript.TickTimer;
         }
     }
 }

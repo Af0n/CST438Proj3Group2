@@ -131,7 +131,7 @@ PrefabInstance:
       objectReference: {fileID: 5653095072715800309}
     - target: {fileID: -4835855260537129560, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: processTime
-      value: 30
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -4835855260537129560, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: spriteRenderer
@@ -151,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 3751072535792237884, guid: 999bdbf93d1a47d49bdcccd1cb6a7412, type: 3}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: rejectVel
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: saltPrefab

@@ -17,6 +17,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: inputs
+      value: 
+      objectReference: {fileID: 11400000, guid: 23983afe70aeb5f408bbf79356a50675, type: 2}
+    - target: {fileID: 2692563197991506782, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: recipes
       value: 
       objectReference: {fileID: 11400000, guid: d4758408b9595324aaaaf2f4c566e196, type: 2}

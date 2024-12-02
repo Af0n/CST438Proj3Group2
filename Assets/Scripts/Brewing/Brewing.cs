@@ -36,6 +36,10 @@ public class Brewing : MonoBehaviour
         get { return isBrewing;  }
     }
 
+    public int TickTimer{
+        get { return tickTimer; }
+    }
+
     private void OnEnable() {
         TickSystem.OnTick += Tick;
     }

@@ -30,6 +30,10 @@ public class Workstation : MonoBehaviour
     // used for timing
     private int tickTimer;
 
+    public int TickTimer{
+        get { return tickTimer; }
+    }
+
     public bool HasItem
     {
         get { return itemPos.childCount != 0; }

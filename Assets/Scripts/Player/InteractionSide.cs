@@ -52,7 +52,16 @@ public class InteractionSide : MonoBehaviour
             return;
         }
 
-        TryCauldronInteract();
+        if (TryCauldronInteract())
+        {
+            return;
+        }
+
+        if (TryDialogueInteract())
+        {
+            return;
+        }
+
     }
 
     private bool TryCauldronInteract(){
@@ -74,6 +83,35 @@ public class InteractionSide : MonoBehaviour
             // if we get here, then we've selected the cauldron
 
             brew.TryCycleRecipe();
+            return true;
+        }
+
+        return false;
+    }
+
+    // Will attempt to interact with a nearby object if the correcrt script is attached
+    private bool TryDialogueInteract()
+    {
+        Collider2D[] objs = Physics2D.OverlapCircleAll(itemPos.position, radius, interactMask);
+
+        // if there are no nearby stations, quit
+        if (objs.Length == 0)
+        {
+            return false;
+        }
+
+        foreach (Collider2D col in objs)
+        {
+            // check if the interactable is the cauldron
+            Dialogue dialo = col.GetComponent<Dialogue>();
+            if (dialo == null)
+            {
+                continue;
+            }
+
+            // if we get here, then we've selected the cauldron
+
+            dialo.RunDialogue();
             return true;
         }
 

@@ -1856,9 +1856,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1981766164}
-  tableName: stringTestTable
+  tableName: theIncrediblePR
   keyNames:
-  - test
+  - yes
+  - about
 --- !u!61 &2108383923
 BoxCollider2D:
   m_ObjectHideFlags: 0

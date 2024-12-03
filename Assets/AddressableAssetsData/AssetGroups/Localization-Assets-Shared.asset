@@ -27,6 +27,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90e46fa28b42a7b43a8b6928b05c1387
+    m_Address: Assets/LocalizationSettings/StringTables/theIncrediblePR Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 4650464a36f49b441a52aadae66f9f40, type: 2}
   m_SchemaSet:

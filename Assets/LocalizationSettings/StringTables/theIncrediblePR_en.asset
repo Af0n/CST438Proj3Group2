@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: theIncrediblePR_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 90e46fa28b42a7b43a8b6928b05c1387, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 15870189568
+    m_Localized: This PR needs a hero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1413366145024
+    m_Localized: AmbotaPR rn!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1618920595456
+    m_Localized: 'I couldn''t even code to this :( , I segfaulted immediately!!!
+      Cleanup on isle: my codebase!'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

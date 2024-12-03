@@ -18,7 +18,7 @@ public class DayNight : MonoBehaviour
     }
 
     public float PercentDay{
-        get { return (float)clock / (float)day; }
+        get { return (float)clock / (float)dayLength; }
     }
 
     private void OnEnable() {
@@ -40,5 +40,7 @@ public class DayNight : MonoBehaviour
             day++;
             clock = 0;
         }
+
+        Debug.Log($"Day {day}, IsDay {IsDay}, PercentDay {PercentDay}");
     }
 }

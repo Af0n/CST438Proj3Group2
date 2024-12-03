@@ -184,34 +184,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1469854718065411814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469854718065411814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469854718065411814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469854718065411814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851147690838847418, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851147690838847418, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851147690838847418, guid: 9e5617037de135a41855fa73bc440091, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7681748526747771890, guid: 9e5617037de135a41855fa73bc440091, type: 3}
       propertyPath: m_Name
       value: Player

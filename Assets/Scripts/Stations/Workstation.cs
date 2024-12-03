@@ -37,7 +37,7 @@ public class Workstation : MonoBehaviour
 
     // So Essentaully this is a DP problem!
     private Dictionary<Item, int> _price_sheet = new Dictionary<Item, int>();
-    private ConcurrentQueue<Item> _items_price_queue; 
+    private ConcurrentQueue<Item> _items_price_queue = new ConcurrentQueue<Item>(); 
 
     public int TickTimer
     {
@@ -145,7 +145,7 @@ public class Workstation : MonoBehaviour
         }
 
         tickTimer += 1;
-        Debug.Log(tickTimer);
+        //Debug.Log(tickTimer);
 
         // Not our time yet.. 
         if (tickTimer < processTime)

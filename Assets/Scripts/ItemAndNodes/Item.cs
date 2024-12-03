@@ -97,6 +97,23 @@ public class Item : MonoBehaviour
         return true;
     }
 
+    // For Buying and selling.. 
+    public bool Sell(int newPrice){
+        if(!CanSell){
+            Debug.Log("Cannot sell");
+            return false;
+        }
+
+        if (debug)
+        {
+            Debug.Log("Selling " + name + " for " + newPrice);
+        }
+
+        stats.money += newPrice;
+        Destroy(gameObject);
+        return true;
+    }
+
     // not intended to be used as a pickup script.
     // does things to the item when picked up
     public void PickUp()

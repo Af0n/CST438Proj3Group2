@@ -1,4 +1,9 @@
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 [RequireComponent(typeof(SpriteRenderer))]
 
@@ -30,7 +35,12 @@ public class Workstation : MonoBehaviour
     // used for timing
     private int tickTimer;
 
-    public int TickTimer{
+    // So Essentaully this is a DP problem!
+    private Dictionary<Item, int> _price_sheet = new Dictionary<Item, int>();
+    private ConcurrentQueue<Item> _items_price_queue; 
+
+    public int TickTimer
+    {
         get { return tickTimer; }
     }
 
@@ -44,20 +54,25 @@ public class Workstation : MonoBehaviour
         get { return tickTimer != 0; }
     }
 
-    public Transform ProcessingItem{
-        get { 
-            if(HasItem){
-                return itemPos.GetChild(0); 
+    public Transform ProcessingItem
+    {
+        get
+        {
+            if (HasItem)
+            {
+                return itemPos.GetChild(0);
             }
             return null;
         }
     }
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
         TickSystem.OnTick += Tick;
     }
 
-    private void OnDisable() {
+    private void OnDisable()
+    {
         TickSystem.OnTick -= Tick;
     }
 
@@ -74,7 +89,8 @@ public class Workstation : MonoBehaviour
     public bool SetItem(Transform t)
     {
         // don't accept item if already one
-        if(HasItem){
+        if (HasItem)
+        {
             return false;
         }
 
@@ -86,13 +102,15 @@ public class Workstation : MonoBehaviour
     // helper fucntion to check all input recipes to see if the item set is processable
     // returns index of found recipe
     // -1 if no match
-    private int ValidInput(ItemType t){
+    private int ValidInput(ItemType t)
+    {
         int count = -1;
         foreach (StationRecipe recipe in inputs.recipes)
         {
             count++;
             // checks if the current recipe's input is the same as the given item
-            if(recipe.input == t){
+            if (recipe.input == t)
+            {
                 return count;
             }
         }
@@ -120,7 +138,8 @@ public class Workstation : MonoBehaviour
         //Debug.Log(stationRecipeIndex);
 
         // reject item from station
-        if(stationRecipeIndex == -1){
+        if (stationRecipeIndex == -1)
+        {
             Reject(ProcessingItem);
             return;
         }
@@ -129,9 +148,10 @@ public class Workstation : MonoBehaviour
         Debug.Log(tickTimer);
 
         // Not our time yet.. 
-        if(tickTimer < processTime) {
+        if (tickTimer < processTime)
+        {
             return;
-        } 
+        }
 
         tickTimer = 0;
 
@@ -142,12 +162,14 @@ public class Workstation : MonoBehaviour
     // also assumes we HAVE an item to process
     public void ProcessItem()
     {
-        if(type == StationType.MIXING){
+        if (type == StationType.MIXING)
+        {
             // lets boiling script handle things
             return;
         }
 
-        if(type == StationType.SELLING){
+        if (type == StationType.SELLING)
+        {
             Sell(ProcessingItem.GetComponent<Item>());
             return;
         }
@@ -160,10 +182,11 @@ public class Workstation : MonoBehaviour
         }
     }
 
-    private void Reject(Transform item){
+    private void Reject(Transform item)
+    {
         // rejection launch
         item.GetComponent<PickUp>().Drop();
-        Vector2 randDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        Vector2 randDir = new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f));
         randDir.Normalize();
         randDir *= rejectVel;
         item.GetComponent<Rigidbody2D>().AddForce(randDir, ForceMode2D.Impulse);
@@ -171,7 +194,34 @@ public class Workstation : MonoBehaviour
 
     private bool Sell(Item item)
     {
-        return item.Sell();
+        if (!item.CanSell)
+        {
+            return false;
+        }
+        if (!_price_sheet.ContainsKey(item))
+        {
+            _price_sheet.Add(item, item.price);
+        }
+        else
+        {
+            float rand = UnityEngine.Random.Range(0f, 1f); // Random value between 0 and 1
+            if (rand >= 0.8f) // Adjusted condition
+            {
+                // Lower the price, ensuring it doesn't go below 1
+                _price_sheet[item] = (int)Mathf.Clamp(_price_sheet[item] - 1, 1, float.MaxValue); // Adjusting price
+                _items_price_queue.Enqueue(item);
+            }
+        }
+        if(_items_price_queue.TryPeek(out Item result) && result != item) {
+            // Don't bother if its the same item.. 
+            if(result == item) return item.Sell(_price_sheet[item]);
+            // For now.. this might be the easiest way without day night cycle
+            float rand = UnityEngine.Random.Range(0f, 1f); // Random value between 0 and 1
+            if (rand >= 0.5f) {
+                _price_sheet[result]++;
+            }
+        }
+        return item.Sell(_price_sheet[item]);
     }
 
     // private bool Grind(Item item)
@@ -254,7 +304,7 @@ public class Workstation : MonoBehaviour
     {
         // spawning item at pos
         // adds a bit of randomness to the horizontal position of the spawn
-        GameObject obj = Instantiate(prefab, itemPos.position + Random.Range(-0.1f, 0.1f) * Vector3.right, Quaternion.identity);
+        GameObject obj = Instantiate(prefab, itemPos.position + UnityEngine.Random.Range(-0.1f, 0.1f) * Vector3.right, Quaternion.identity);
         obj.GetComponent<Item>().ChangeItem(t);
     }
 

@@ -36,8 +36,8 @@ public class Workstation : MonoBehaviour
     private int tickTimer;
 
     // So Essentaully this is a DP problem!
-    private Dictionary<Item, int> _price_sheet = new Dictionary<Item, int>();
-    private ConcurrentQueue<Item> _items_price_queue = new ConcurrentQueue<Item>(); 
+    private Dictionary<ItemType, int> _price_sheet = new Dictionary<ItemType, int>();
+    private ConcurrentQueue<ItemType> _items_price_queue = new ConcurrentQueue<ItemType>(); 
 
     public int TickTimer
     {
@@ -198,30 +198,32 @@ public class Workstation : MonoBehaviour
         {
             return false;
         }
-        if (!_price_sheet.ContainsKey(item))
+        if (!_price_sheet.ContainsKey(item.Type))
         {
-            _price_sheet.Add(item, item.price);
+            _price_sheet.Add(item.Type, item.price);
+            Debug.Log("Adding new key");
         }
         else
         {
             float rand = UnityEngine.Random.Range(0f, 1f); // Random value between 0 and 1
-            if (rand >= 0.8f) // Adjusted condition
+            if (rand <= 0.8f) // Adjusted condition
             {
                 // Lower the price, ensuring it doesn't go below 1
-                _price_sheet[item] = (int)Mathf.Clamp(_price_sheet[item] - 1, 1, float.MaxValue); // Adjusting price
-                _items_price_queue.Enqueue(item);
+                _price_sheet[item.Type] = (int)Mathf.Clamp(_price_sheet[item.Type] - 1, 1, float.MaxValue); // Adjusting price
+                Debug.Log(_price_sheet[item.Type]);
+                _items_price_queue.Enqueue(item.Type);
             }
         }
-        if(_items_price_queue.TryPeek(out Item result) && result != item) {
+        if(_items_price_queue.TryPeek(out ItemType result) && result != item.Type) {
             // Don't bother if its the same item.. 
-            if(result == item) return item.Sell(_price_sheet[item]);
+            if(result == item.Type) return item.Sell(_price_sheet[item.Type]);
             // For now.. this might be the easiest way without day night cycle
             float rand = UnityEngine.Random.Range(0f, 1f); // Random value between 0 and 1
             if (rand >= 0.5f) {
                 _price_sheet[result]++;
             }
         }
-        return item.Sell(_price_sheet[item]);
+        return item.Sell(_price_sheet[item.Type]);
     }
 
     // private bool Grind(Item item)

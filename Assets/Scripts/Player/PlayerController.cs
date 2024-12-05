@@ -61,6 +61,10 @@ public class PlayerController : MonoBehaviour
     }
     private void Start() {
         _pause_menu = GameObject.FindWithTag("PauseMenu").GetComponent<PauseMenu>();
+
+        stats.isBusy = false;
+        stats.isYapping = false;
+
     }
 
     public void Update() {

@@ -13,6 +13,7 @@ public class Ghost : MonoBehaviour
     public LayerMask nodeMask;
 
     private Transform target;
+    private Rigidbody2D rb;
     private bool pickedUp;
 
     public bool HasItem{
@@ -61,10 +62,12 @@ public class Ghost : MonoBehaviour
     }
 
     public void PickUp(){
+        rb.isKinematic = true;
         pickedUp = true;
     }
 
     public void Drop(Transform p){
+        rb.isKinematic = false;
         pickedUp = false;
         player = p;
         TryFindNode();

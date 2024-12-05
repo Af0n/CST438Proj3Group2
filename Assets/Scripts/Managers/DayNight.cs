@@ -41,6 +41,6 @@ public class DayNight : MonoBehaviour
             clock = 0;
         }
 
-        Debug.Log($"Day {day}, IsDay {IsDay}, PercentDay {PercentDay}");
+        // Debug.Log($"Day {day}, IsDay {IsDay}, PercentDay {PercentDay}");
     }
 }

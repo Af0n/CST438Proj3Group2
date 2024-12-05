@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 748228332}
+    - target: {fileID: 7389853168501298814, guid: 9e5617037de135a41855fa73bc440091, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 08661f339cb6f254a867f89d9a012f1f, type: 2}
     - target: {fileID: 7681748526747771890, guid: 9e5617037de135a41855fa73bc440091, type: 3}
       propertyPath: m_Name
       value: Player

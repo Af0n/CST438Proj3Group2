@@ -36,6 +36,8 @@ public class PickUp : MonoBehaviour
         if(transform.CompareTag("Item"))
         {
             GetComponent<Item>().Drop();
+        }else if(transform.CompareTag("Ghost")){
+            GetComponent<Ghost>().Drop();
         }
 
         Debug.Log(transform.name + " has been dropped");

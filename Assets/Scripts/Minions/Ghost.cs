@@ -30,6 +30,7 @@ public class Ghost : MonoBehaviour
 
     private void Awake() {
         target = transform;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void SetTargets(Transform p, Transform n){
@@ -70,6 +71,12 @@ public class Ghost : MonoBehaviour
         rb.isKinematic = false;
         pickedUp = false;
         player = p;
+        TryFindNode();
+    }
+
+    public void Drop(){
+        rb.isKinematic = false;
+        pickedUp = false;
         TryFindNode();
     }
 

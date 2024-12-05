@@ -40,6 +40,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 43ecae7a98cec3d4d821237c6c6de9b1, type: 3}
+    - target: {fileID: 4286977317673287800, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: m_SortingLayer
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286977317673287800, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1372805351
+      objectReference: {fileID: 0}
     - target: {fileID: 7491038651350048174, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_Name
       value: Conflagration Pyre

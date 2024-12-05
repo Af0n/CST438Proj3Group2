@@ -183,6 +183,6 @@ public class InteractionSide : MonoBehaviour
 
     private void ItemDrop(){
         stats.hasItem = false;
-        itemPos.GetChild(0).GetComponent<PickUp>().Drop();
+        itemPos.GetChild(0).GetComponent<PickUp>().Drop(transform);
     }
 }

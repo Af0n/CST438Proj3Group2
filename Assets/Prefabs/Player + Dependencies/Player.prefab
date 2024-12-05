@@ -747,7 +747,7 @@ MonoBehaviour:
   itemPos: {fileID: 8799285890132214664}
   pickupMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 576
   interactMask:
     serializedVersion: 2
     m_Bits: 128

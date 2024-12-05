@@ -230,12 +230,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8781852691390579336, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781852691390579336, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781852691390579336, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 3.5290074
+      value: 1.54
       objectReference: {fileID: 0}
     - target: {fileID: 8781852691390579336, guid: 3841248cd31b06345a68179a6eff952c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 3.8689227
+      value: 1.6883334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -81,7 +81,7 @@ public class Ghost : MonoBehaviour
     }
 
     private bool TryFindNode(){
-        Collider2D[] objs = Physics2D.OverlapCircleAll(transform.position, radius * 3, nodeMask);
+        Collider2D[] objs = Physics2D.OverlapCircleAll(transform.position, radius * 2, nodeMask);
 
         // if there are no nearby nodes, quit
         if(objs.Length == 0){
@@ -145,7 +145,7 @@ public class Ghost : MonoBehaviour
     }
 
     private bool TryItemPickup(){
-        Collider2D[] objs = Physics2D.OverlapCircleAll(transform.position, radius * 3 , pickupMask);
+        Collider2D[] objs = Physics2D.OverlapCircleAll(transform.position, radius * 2 , pickupMask);
 
         // if there are no nearby items to pickup, quit
         if(objs.Length == 0){

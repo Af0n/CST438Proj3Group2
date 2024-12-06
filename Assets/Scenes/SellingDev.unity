@@ -1254,6 +1254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 683709459484418219, guid: 4efa7428249052643a9b26676926b088, type: 3}
+      propertyPath: dayLength
+      value: 6000
+      objectReference: {fileID: 0}
     - target: {fileID: 5931090148733457638, guid: 4efa7428249052643a9b26676926b088, type: 3}
       propertyPath: m_Name
       value: GameManager

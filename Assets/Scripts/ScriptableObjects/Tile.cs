@@ -11,6 +11,6 @@ public class Tile : ScriptableObject
     [Tooltip("Possible adjacent tiles for each direction (Up, Right, Down, Left)")]
     public Tile[] possibleAdjacent;
     [Range(0,100)]
-    [Tooltip("Weight for the probability of this tile appearing in the generation")]
-    public int weight = 1;
+    [Tooltip("Weight of Adjacent Tiles")]
+    public int[] Adjacentweight;
 }

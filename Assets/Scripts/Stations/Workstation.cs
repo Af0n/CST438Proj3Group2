@@ -133,6 +133,12 @@ public class Workstation : MonoBehaviour
 
         Item itemScript = ProcessingItem.GetComponent<Item>();
 
+        if (itemScript == null)
+        {
+            Reject(ProcessingItem);
+            return;
+        }
+
         // checking if item is invalid
         stationRecipeIndex = ValidInput(itemScript.Type);
         //Debug.Log(stationRecipeIndex);

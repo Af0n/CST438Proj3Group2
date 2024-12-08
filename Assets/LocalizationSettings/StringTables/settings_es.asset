@@ -58,6 +58,14 @@ MonoBehaviour:
     m_Localized: Jugar Juego
     m_Metadata:
       m_Items: []
+  - m_Id: 11143698440192
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11049917997056
+    m_Localized: "Ingl\xE9s"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

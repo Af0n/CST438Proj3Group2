@@ -8,10 +8,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 8.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 8.76
+      objectReference: {fileID: 0}
     - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3a298da725c3a174fbb6d7a57646fcf5, type: 3}
+      objectReference: {fileID: -6721713032007478531, guid: bc273349510d54a4e8029b3e3a5a0f1b, type: 3}
+    - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SortingLayer
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1372805351
+      objectReference: {fileID: 0}
     - target: {fileID: 2731708665564458764, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_Name
       value: AppleNode

@@ -8,10 +8,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 9.24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.13
+      objectReference: {fileID: 0}
     - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0ccbc531b6a769d47a32a4dc1aa7131d, type: 3}
+      objectReference: {fileID: 21300000, guid: 293a7414c2cedb14c8f66607ab66920c, type: 3}
+    - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SortingLayer
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1372805351
+      objectReference: {fileID: 0}
     - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1

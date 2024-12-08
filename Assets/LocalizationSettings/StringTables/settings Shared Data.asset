@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: settings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: settings
+  m_TableCollectionNameGuidString: 9c893a78fbd9882439762903dba1aea0
+  m_Entries:
+  - m_Id: 5820637184
+    m_Key: Resume Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74737246208
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102444818432
+    m_Key: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573934919680
+    m_Key: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3081046581248
+    m_Key: sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3099245666304
+    m_Key: Objects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3147467579392
+    m_Key: Spells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3166975287296
+    m_Key: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5254446833664
+    m_Key: Entities
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6533877325824
+    m_Key: Play Game
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8495841868968362070
+  references:
+    version: 2
+    RefIds:
+    - rid: 8495841868968362070
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1733626506923

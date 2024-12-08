@@ -64,12 +64,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -267,14 +267,21 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SparklingGemstone_0: -4109391661578310206
+      SparklingGemstone_1: 7621498750860936384
+      SparklingGemstone_2: -3063931009264480534
+      SparklingGemstone_3: -3082526947345957265
+      SparklingGemstone_4: 8543460095856060078
+      SparklingGemstone_5: -5254906525890623960
+      SparklingGemstone_6: 7658425182644928282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

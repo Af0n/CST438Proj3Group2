@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: settings_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 9c893a78fbd9882439762903dba1aea0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5820637184
+    m_Localized: Reanudar El Juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74737246208
+    m_Localized: "\rAjustes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102444818432
+    m_Localized: "\rSalir Del Juego"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 573934919680
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3081046581248
+    m_Localized: sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3099245666304
+    m_Localized: "\rObjetos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3147467579392
+    m_Localized: Hechizos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3166975287296
+    m_Localized: General
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5254446833664
+    m_Localized: Entidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6533877325824
+    m_Localized: Jugar Juego
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -6,9 +6,9 @@ using UnityEngine.Tilemaps;
 
 public class Smoothing : MonoBehaviour
 {
-    private WorldGenerationSettings _wgs; 
+    private WorldGenerationSettings _wgs;
     public Tilemap SmoothTilemap(WorldGenerationSettings wgs)
-    { 
+    {
         _wgs = wgs;
         // Get the size of the tilemap bounds
         BoundsInt bounds = _wgs.tilemap.cellBounds;
@@ -52,14 +52,17 @@ public class Smoothing : MonoBehaviour
                 Vector3Int neighborPosition = position + new Vector3Int(x, y, 0);
                 TileBase neighborTile = tilemap.GetTile(neighborPosition);
 
-                if (neighborTile != null)
+                if (neighborTile == null)
                 {
-                    if (!tileFrequency.ContainsKey(neighborTile))
-                    {
-                        tileFrequency[neighborTile] = 0;
-                    }
-                    tileFrequency[neighborTile]++;
+                    continue;
                 }
+
+                if (!tileFrequency.ContainsKey(neighborTile))
+                {
+                    tileFrequency[neighborTile] = 0;
+                }
+                tileFrequency[neighborTile]++;
+
             }
         }
 

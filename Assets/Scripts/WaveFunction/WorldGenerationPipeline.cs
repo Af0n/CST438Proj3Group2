@@ -1,4 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -12,62 +15,27 @@ public class WorldGenerationPipeline : MonoBehaviour
     public bool generating = false;
     public ResizeCollider resize;
     private GridCell[,] _grid;
+    public static Dictionary<TileBase, int> baseToTile = new Dictionary<TileBase, int>();
     // Threads for smoothing.. 
     private void Start()
     {
         wgs.tilemap = GameObject.FindGameObjectWithTag("Tilemap").GetComponent<Tilemap>();
         resize = FindAnyObjectByType<ResizeCollider>();
-        StartCoroutine(runPipeline());
-    }
-    public void regenerate()
-    {
-        if (generating) return;
-        StartCoroutine(generateWorld());
-    }
+        foreach(Tile tile in wgs.allTiles) {
+            baseToTile[tile.tileSprite] = tile.TileID;
+        }
 
-    public void smooth()
-    {
-        if (generating) return;
-        StartCoroutine(smoothTileMap());
+        foreach (var item in baseToTile)
+        {
+            Debug.Log(item);
+        }
+    
+        StartCoroutine(runPipeline());
     }
     public void pipeline()
     {
         if (generating) return;
         StartCoroutine(runPipeline());
-    }
-    public void pregen()
-    {
-        if (generating) return;
-        StartCoroutine(preGeneration());
-    }
-    public IEnumerator preGeneration()
-    {
-        generating = true;
-        _grid = pregeneration.PreGeneration(wgs);
-        wgs.tilemap = placeSprites(_grid);
-        generating = false;
-        yield return null;
-    }
-
-    public IEnumerator generateWorld()
-    {
-        generating = true;
-        if (_grid == null)
-        {
-            _grid = pregeneration.PreGeneration(wgs);
-        }
-        _grid = wfc.initGrid(_grid, pregeneration.tilesToCollapse, wgs);
-        wgs.tilemap = placeSprites(_grid);
-        generating = false;
-        yield return null;
-    }
-
-    public IEnumerator smoothTileMap()
-    {
-        generating = true;
-        wgs.tilemap = smoothing.SmoothTilemap(wgs);
-        generating = false;
-        yield return null;
     }
 
     public IEnumerator runPipeline()
@@ -80,6 +48,7 @@ public class WorldGenerationPipeline : MonoBehaviour
         {
             wgs.tilemap = smoothing.SmoothTilemap(wgs);
         }
+        cleanup.cleanupTiles(wgs);
         generating = false;
         yield return null;
     }

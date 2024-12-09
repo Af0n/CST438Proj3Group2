@@ -18,6 +18,4 @@ public class Tile : ScriptableObject
     [Range(0,10)]
     [Tooltip("The multplier for Adjacencents tiles of the same type.")]
     public float adjacencyMultplier;
-    [Tooltip("Scriptable Object that holds AjacencyBlendingRules")]
-    public List<TileAdj> AdjacencyBlendRules;
 }

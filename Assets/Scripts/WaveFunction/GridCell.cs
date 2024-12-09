@@ -15,11 +15,6 @@ public class GridCell
     public bool IsCollapsed => possibleTiles.Count == 1;
 
     // GridCell Constructor
-    public GridCell(List<Tile> initialTiles) {
-        // Cast as Arraylist
-        possibleTiles = new List<Tile>(initialTiles);
-    }
-
     public GridCell(int _x, int _y, List<Tile> initialTiles) {
         x = _x;
         y = _y;  

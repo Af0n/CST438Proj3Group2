@@ -18,25 +18,9 @@ public class WFCManager : MonoBehaviour
     };
     private long _tilesToCollapse = 0;
     // Add some inital rules here.. 
-    public Tilemap initGrid(Tilemap tilemap)
+    public Tilemap initGrid(Tilemap tilemap, GridCell[,] map, long toCollapse)
     {
-        _tilesToCollapse = settings.WFCWidth * settings.WFCHeight;
-        grid = new GridCell[settings.WFCWidth, settings.WFCHeight];
-
-        for (int x = 0; x < settings.WFCWidth; x++)
-        {
-            for (int y = 0; y < settings.WFCHeight; y++)
-            {
-                grid[x, y] = new GridCell(x, y, settings.allTiles);
-                if (x < settings.OceanBoundarySize || x >= settings.WFCWidth - settings.OceanBoundarySize || y < settings.OceanBoundarySize || y >= settings.WFCHeight - settings.OceanBoundarySize)
-                {
-                    grid[x, y].possibleTiles = new List<Tile> { settings.allTiles[3] };
-                    _tilesToCollapse--;
-                }
-
-            }
-        }
-
+        _tilesToCollapse = toCollapse;
         _RunWFC();
         return _PlaceSprites(tilemap);
     }
@@ -128,8 +112,31 @@ public class WFCManager : MonoBehaviour
         List<Tile> weightedTiles = new List<Tile>();
         foreach (Tile validTile in validTiles)
         {
-            // Add the tile to the weighted list according to its weight
-            for (int i = 0; i < validTile.weight; i++)
+            // Calculate the number of adjacent tiles of the same type
+            int adjacentSameTypeCount = 0;
+            for (int i = 0; i < directions.GetLength(0); i++)
+            {
+                int newX = cell.x + directions[i, 0];
+                int newY = cell.y + directions[i, 1];
+
+                if (newX >= 0 && newX < settings.WFCWidth && newY >= 0 && newY < settings.WFCHeight)
+                {
+                    if (grid[newX, newY].IsCollapsed)
+                    {
+                        Tile neighborTile = grid[newX, newY].possibleTiles[0];
+                        if (neighborTile == validTile)
+                        {
+                            adjacentSameTypeCount++;
+                        }
+                    }
+                }
+            }
+
+            // Adjust the weight using the adjacency multiplier
+            int adjustedWeight = validTile.weight + Mathf.RoundToInt(adjacentSameTypeCount * validTile.adjacencyMultplier);
+
+            // Add the tile to the weighted list according to its adjusted weight
+            for (int i = 0; i < adjustedWeight; i++)
             {
                 weightedTiles.Add(validTile);
             }

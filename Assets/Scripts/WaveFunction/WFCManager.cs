@@ -8,21 +8,22 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class WFCManager : MonoBehaviour
-{
-    [Header("Grid Settings")]
-    public WorldGenerationSettings settings;
+{   
     private GridCell[,] grid;
     private readonly int[,] directions = {
     { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 }, // Up, Down, Left, Right
     { -1, -1 }, { -1, 1 }, { 1, -1 }, { 1, 1 } // Diagonals
     };
     private long _tilesToCollapse = 0;
+    private WorldGenerationSettings _wgs;
     // Add some inital rules here.. 
-    public Tilemap initGrid(Tilemap tilemap, GridCell[,] map, long toCollapse)
+    public Tilemap initGrid(GridCell[,] map, long toCollapse, WorldGenerationSettings wgs)
     {
+        _wgs = wgs;
+        grid = map;
         _tilesToCollapse = toCollapse;
         _RunWFC();
-        return _PlaceSprites(tilemap);
+        return _PlaceSprites(wgs.tilemap);
     }
 
     private void _RunWFC()
@@ -44,9 +45,9 @@ public class WFCManager : MonoBehaviour
         GridCell selectedCell = null;
         int minEntropy = int.MaxValue;
 
-        for (int x = 0; x < settings.WFCWidth; x++)
+        for (int x = 0; x < _wgs.WFCWidth; x++)
         {
-            for (int y = 0; y < settings.WFCHeight; y++)
+            for (int y = 0; y < _wgs.WFCHeight; y++)
             {
                 GridCell cell = grid[x, y];
                 if (cell.IsCollapsed) continue;
@@ -77,7 +78,7 @@ public class WFCManager : MonoBehaviour
                 int newX = cell.x + directions[i, 0];
                 int newY = cell.y + directions[i, 1];
 
-                if (newX >= 0 && newX < settings.WFCWidth && newY >= 0 && newY < settings.WFCHeight)
+                if (newX >= 0 && newX < _wgs.WFCWidth && newY >= 0 && newY < _wgs.WFCHeight)
                 {
                     // Get the neighboring tile, if it's collapsed
                     if (grid[newX, newY].IsCollapsed)
@@ -119,7 +120,7 @@ public class WFCManager : MonoBehaviour
                 int newX = cell.x + directions[i, 0];
                 int newY = cell.y + directions[i, 1];
 
-                if (newX >= 0 && newX < settings.WFCWidth && newY >= 0 && newY < settings.WFCHeight)
+                if (newX >= 0 && newX < _wgs.WFCWidth && newY >= 0 && newY < _wgs.WFCHeight)
                 {
                     if (grid[newX, newY].IsCollapsed)
                     {
@@ -170,7 +171,7 @@ public class WFCManager : MonoBehaviour
                 int neighborX = currentX + directions[i, 0];
                 int neighborY = currentY + directions[i, 1];
 
-                if (neighborX >= 0 && neighborX < settings.WFCWidth && neighborY >= 0 && neighborY < settings.WFCHeight)
+                if (neighborX >= 0 && neighborX < _wgs.WFCWidth && neighborY >= 0 && neighborY < _wgs.WFCHeight)
                 {
                     GridCell neighborCell = grid[neighborX, neighborY];
                     if (neighborCell.IsCollapsed) continue;
@@ -208,12 +209,12 @@ public class WFCManager : MonoBehaviour
         tilemap.ClearAllTiles();
 
         // Calculate the center of the Tilemap grid
-        Vector3Int tilemapCenter = new Vector3Int(settings.WFCWidth / 2, settings.WFCHeight / 2, 0);
+        Vector3Int tilemapCenter = new Vector3Int(_wgs.WFCWidth / 2, _wgs.WFCHeight / 2, 0);
 
         // Loop through the grid and place the tiles into the Tilemap
-        for (int x = 0; x < settings.WFCWidth; x++)
+        for (int x = 0; x < _wgs.WFCWidth; x++)
         {
-            for (int y = 0; y < settings.WFCHeight; y++)
+            for (int y = 0; y < _wgs.WFCHeight; y++)
             {
                 GridCell cell = grid[x, y];
                 if (cell.IsCollapsed)

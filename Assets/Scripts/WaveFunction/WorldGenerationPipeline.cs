@@ -3,14 +3,16 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class WorldGenerationPipeline : MonoBehaviour {
+    public WorldGenerationSettings wgs;
     public Pregeneration pregeneration;
     public WFCManager wfc; 
-    public Tilemap tilemap;
+    
     public Smoothing smoothing;
     public bool generating = false; 
     // Threads for smoothing.. 
     private void Start() {
-        StartCoroutine(generateWorld());
+        wgs.tilemap = GameObject.FindGameObjectWithTag("Tilemap").GetComponent<Tilemap>();
+        StartCoroutine(runPipeline());
     }
     public void regenerate() {
         if(generating) return;
@@ -24,15 +26,25 @@ public class WorldGenerationPipeline : MonoBehaviour {
 
     public IEnumerator generateWorld() {
         generating = true;
-        GridCell[,] grid = pregeneration.PreGeneration();
-        tilemap = wfc.initGrid(tilemap, grid, pregeneration.tilesToCollapse);
+        GridCell[,] grid = pregeneration.PreGeneration(wgs);
+        wgs.tilemap = wfc.initGrid(grid, pregeneration.tilesToCollapse, wgs);
         generating = false;
         yield return null;
     }
 
     public IEnumerator smoothTileMap() {
         generating = true;
-        tilemap = smoothing.SmoothTilemap(tilemap);
+        wgs.tilemap = smoothing.SmoothTilemap(wgs);
+        generating = false;
+        yield return null;
+    }
+
+    public IEnumerator runPipeline() {
+        generating = true;
+        GridCell[,] grid = pregeneration.PreGeneration(wgs);
+        wgs.tilemap = wfc.initGrid(grid, pregeneration.tilesToCollapse, wgs);
+        for(int i = 0; i < wgs.numberOfPasses; i++)
+            wgs.tilemap = smoothing.SmoothTilemap(wgs);
         generating = false;
         yield return null;
     }

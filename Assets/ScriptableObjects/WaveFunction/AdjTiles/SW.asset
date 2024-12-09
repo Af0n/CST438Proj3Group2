@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9b6943a6d343d44941de1ad103224b, type: 3}
+  m_Name: SW
+  m_EditorClassIdentifier: 
+  IDAdj: 2
+  IDBase: 3
+  upperLeft: {fileID: 11400000, guid: bed774f1dc3c4a84ea30e93ebd1ed2e9, type: 2}
+  upperMiddle: {fileID: 11400000, guid: ca742a8290a7d274aa48d21ae4a122fb, type: 2}
+  upperRight: {fileID: 11400000, guid: b815182474fafd843a12d7cb2d0de4ca, type: 2}
+  middleRight: {fileID: 11400000, guid: 40b49f1c19397d045853201e160ff6eb, type: 2}
+  middleLeft: {fileID: 11400000, guid: 4342471eb4522fe4c84f681bf13912a2, type: 2}
+  lowerLeft: {fileID: 11400000, guid: c5453b312d3d1eb4ab4356f770389e55, type: 2}
+  lowerMiddle: {fileID: 11400000, guid: 5b9e944f26ddad6479236e78a8d379e7, type: 2}
+  lowerRight: {fileID: 11400000, guid: 58a650c02c67db44295ead0533052fa6, type: 2}

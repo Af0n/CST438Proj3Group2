@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec21a758a1e405449c461d0487337ab, type: 3}
   m_Name: Sand
   m_EditorClassIdentifier: 
+  TileID: 2
   tileSprite: {fileID: 11400000, guid: ac5ffe4c204cb224088bbffa52754426, type: 2}
   possibleAdjacent:
   - {fileID: 11400000}
@@ -20,3 +21,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: edbf768748764e042a7e14774a561c51, type: 2}
   weight: 7
   adjacencyMultplier: 1.03
+  AdjacencyBlendRules:
+  - {fileID: 11400000, guid: 07466c67c1702cf4f8d2035ddea925fe, type: 2}
+  - {fileID: 11400000, guid: 1dfb4cafc65e99a48be4b4b3595eba31, type: 2}
+  - {fileID: 11400000, guid: 474f9d742f519a3408af144982b58937, type: 2}

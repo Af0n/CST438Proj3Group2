@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9b6943a6d343d44941de1ad103224b, type: 3}
+  m_Name: GS
+  m_EditorClassIdentifier: 
+  IDAdj: 0
+  IDBase: 2
+  upperLeft: {fileID: 11400000, guid: bd15476d001699c46aabd10860f2e542, type: 2}
+  upperMiddle: {fileID: 11400000, guid: 33859349ad49dca4498b13a2c61c3744, type: 2}
+  upperRight: {fileID: 11400000, guid: 15854c2ac1062454d81f37e3ec96dbff, type: 2}
+  middleRight: {fileID: 11400000, guid: d171ae1aae2a0c64bb46a40e31f5f83d, type: 2}
+  middleLeft: {fileID: 11400000, guid: 00fdd3994f79bb148946b209759a83ab, type: 2}
+  lowerLeft: {fileID: 11400000, guid: 32e9348580d7ddc418d1830ca185fe61, type: 2}
+  lowerMiddle: {fileID: 11400000, guid: 814e2584254463249994d174fcafc0ea, type: 2}
+  lowerRight: {fileID: 11400000, guid: d89c5a9325231c9439bd54cb436d4caf, type: 2}

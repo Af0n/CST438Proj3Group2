@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da83a94eb8b44a43b5f558194cf946b, type: 3}
   m_Name: LargeWorldGeneration
   m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  OceanBoundarySize: 3
+  numberOfBlobs: 10
+  blobYOffset: 23
+  blobXOffset: 10
+  blobMinSize: 20
+  blobMaxSize: 250
   WFCWidth: 128
   WFCHeight: 128
-  OceanBoundarySize: 3
+  smoothingRadius: 2
+  numberOfPasses: 3
   allTiles:
   - {fileID: 11400000, guid: 96eec42797a1ec3479ee51c5d06c935e, type: 2}
   - {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
   - {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
   - {fileID: 11400000, guid: edbf768748764e042a7e14774a561c51, type: 2}
+  maxAmountOfFeatures: 0

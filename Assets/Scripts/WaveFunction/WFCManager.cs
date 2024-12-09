@@ -1,54 +1,68 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.Compression;
 using Unity.Collections;
 using UnityEditor.U2D.Aseprite;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class WFCManager : MonoBehaviour
 {
     [Header("Grid Settings")]
-    public int WFCWidth = 32; // Number of Columns
-    public int WFCHeight = 32; // Number of rows!
-
-    [Header("Tiles")]
-    public List<Tile> allTiles; // Array of all possible tiles
+    public WorldGenerationSettings settings;
     private GridCell[,] grid;
-
     private readonly int[,] directions = {
     { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 }, // Up, Down, Left, Right
     { -1, -1 }, { -1, 1 }, { 1, -1 }, { 1, 1 } // Diagonals
     };
-
-    void Start()
-    {
-        initGrid();
-    }
+    private long _tilesToCollapse = 0;
     // Add some inital rules here.. 
-    public void initGrid()
+    public Tilemap initGrid(Tilemap tilemap)
     {
-        grid = new GridCell[WFCWidth, WFCHeight];
+        _tilesToCollapse = settings.WFCWidth * settings.WFCHeight;
+        grid = new GridCell[settings.WFCWidth, settings.WFCHeight];
 
-        for (int x = 0; x < WFCWidth; x++)
+        for (int x = 0; x < settings.WFCWidth; x++)
         {
-            for (int y = 0; y < WFCHeight; y++)
+            for (int y = 0; y < settings.WFCHeight; y++)
             {
-                grid[x, y] = new GridCell(allTiles);
-                Debug.Log($"Cell [{x}, {y}] initialized with {grid[x, y].possibleTiles.Count} possible tiles.");
+                grid[x, y] = new GridCell(x, y, settings.allTiles);
+                if (x < settings.OceanBoundarySize || x >= settings.WFCWidth - settings.OceanBoundarySize || y < settings.OceanBoundarySize || y >= settings.WFCHeight - settings.OceanBoundarySize)
+                {
+                    grid[x, y].possibleTiles = new List<Tile> { settings.allTiles[3] };
+                    _tilesToCollapse--;
+                }
+
             }
         }
+
+        _RunWFC();
+        return _PlaceSprites(tilemap);
+    }
+
+    private void _RunWFC()
+    {
+        while (_tilesToCollapse > 0)
+        {
+            GridCell cell = _get_Least_Entropy();
+            if (cell == null) return; // Safety check
+
+            _CollapseCell(cell);
+            _PropagateConstraints(cell);
+        }
+
+        Debug.Log("WFC completed!");
     }
 
     private GridCell _get_Least_Entropy()
     {
-        // Selection Variable
         GridCell selectedCell = null;
         int minEntropy = int.MaxValue;
 
-        // Iterate through the grid
-        for (int x = 0; x < WFCWidth; x++)
+        for (int x = 0; x < settings.WFCWidth; x++)
         {
-            for (int y = 0; y < WFCHeight; y++)
+            for (int y = 0; y < settings.WFCHeight; y++)
             {
                 GridCell cell = grid[x, y];
                 if (cell.IsCollapsed) continue;
@@ -63,20 +77,155 @@ public class WFCManager : MonoBehaviour
         return selectedCell;
     }
 
-    private void _collapse_Cell(int x, int y)
+    private void _CollapseCell(GridCell cell)
     {
-        GridCell cell = grid[x, y];
-        for (int i = 0; i < directions.GetLength(0); i++)
+        // List to store tiles that satisfy the adjacency conditions
+        List<Tile> validTiles = new List<Tile>();
+
+        // Check the adjacent cells and filter the possible tiles based on the adjacency rules
+        foreach (Tile tile in cell.possibleTiles)
         {
-            int newX = x + directions[i, 0];
-            int newY = y + directions[i, 1];
-            if (newX >= 0 && newX < grid.GetLength(0) &&
-            newY >= 0 && newY < grid.GetLength(1))
+            bool isValid = true;
+
+            // Check each adjacent direction
+            for (int i = 0; i < directions.GetLength(0); i++)
             {
-                
+                int newX = cell.x + directions[i, 0];
+                int newY = cell.y + directions[i, 1];
+
+                if (newX >= 0 && newX < settings.WFCWidth && newY >= 0 && newY < settings.WFCHeight)
+                {
+                    // Get the neighboring tile, if it's collapsed
+                    if (grid[newX, newY].IsCollapsed)
+                    {
+                        Tile neighborTile = grid[newX, newY].possibleTiles[0];
+
+                        // Check if the current tile is adjacent to the neighbor tile
+                        if (!Array.Exists(tile.possibleAdjacent, t => t == neighborTile))
+                        {
+                            isValid = false;
+                            break; // No need to check further if any adjacent rule fails
+                        }
+                    }
+                }
+            }
+
+            // If the tile satisfies all adjacency rules, add it to the validTiles list
+            if (isValid)
+            {
+                validTiles.Add(tile);
+            }
+        }
+
+        // If no valid tiles are found, warn and return (this is a fail state, ideally shouldn't happen)
+        if (validTiles.Count == 0)
+        {
+            Debug.LogWarning("No valid tiles available to collapse.");
+            return;
+        }
+
+        // Now, create the weighted list based on the valid tiles
+        List<Tile> weightedTiles = new List<Tile>();
+        foreach (Tile validTile in validTiles)
+        {
+            // Add the tile to the weighted list according to its weight
+            for (int i = 0; i < validTile.weight; i++)
+            {
+                weightedTiles.Add(validTile);
+            }
+        }
+
+        // Select a tile randomly from the weighted list
+        int randomIndex = UnityEngine.Random.Range(0, weightedTiles.Count);
+        Tile selectedTile = weightedTiles[randomIndex];
+
+        // Collapse the cell by setting possibleTiles to only the selected tile
+        cell.possibleTiles = new List<Tile> { selectedTile };
+        _tilesToCollapse--; // Decrease the counter for remaining cells to collapse
+
+        Debug.Log($"Collapsed cell at [{cell.x}, {cell.y}] to tile: {selectedTile.name} with weight {selectedTile.weight}");
+    }
+
+
+    private void _PropagateConstraints(GridCell collapsedCell)
+    {
+        Queue<(int x, int y)> queue = new Queue<(int, int)>();
+
+        queue.Enqueue((collapsedCell.x, collapsedCell.y));
+
+        while (queue.Count > 0)
+        {
+            var (currentX, currentY) = queue.Dequeue();
+            GridCell currentCell = grid[currentX, currentY];
+
+            for (int i = 0; i < directions.GetLength(0); i++)
+            {
+                int neighborX = currentX + directions[i, 0];
+                int neighborY = currentY + directions[i, 1];
+
+                if (neighborX >= 0 && neighborX < settings.WFCWidth && neighborY >= 0 && neighborY < settings.WFCHeight)
+                {
+                    GridCell neighborCell = grid[neighborX, neighborY];
+                    if (neighborCell.IsCollapsed) continue;
+
+                    List<Tile> validTiles = new List<Tile>();
+                    foreach (Tile tile in neighborCell.possibleTiles)
+                    {
+                        if (_IsValidNeighbor(tile, currentCell.possibleTiles[0], i))
+                        {
+                            validTiles.Add(tile);
+                        }
+                    }
+
+                    if (validTiles.Count < neighborCell.possibleTiles.Count)
+                    {
+                        neighborCell.possibleTiles = validTiles;
+                        queue.Enqueue((neighborX, neighborY));
+                    }
+                }
             }
         }
     }
+
+    private bool _IsValidNeighbor(Tile neighborTile, Tile collapsedTile, int direction)
+    {
+        // Inverse the direction to match the adjacency array
+        int inverseDirection = (direction + 2) % 4;
+        return Array.Exists(collapsedTile.possibleAdjacent, t => t == neighborTile);
+    }
+
+    public Tilemap _PlaceSprites(Tilemap tilemap)
+    {
+
+        // Clear existing tiles from the Tilemap (optional, depends on whether you want to clear previous ones)
+        tilemap.ClearAllTiles();
+
+        // Calculate the center of the Tilemap grid
+        Vector3Int tilemapCenter = new Vector3Int(settings.WFCWidth / 2, settings.WFCHeight / 2, 0);
+
+        // Loop through the grid and place the tiles into the Tilemap
+        for (int x = 0; x < settings.WFCWidth; x++)
+        {
+            for (int y = 0; y < settings.WFCHeight; y++)
+            {
+                GridCell cell = grid[x, y];
+                if (cell.IsCollapsed)
+                {
+                    Tile collapsedTile = cell.possibleTiles[0];
+
+                    // Calculate the offset from the center (using WFCWidth / 2 and WFCHeight / 2)
+                    Vector3Int tilePosition = new Vector3Int(x - tilemapCenter.x, y - tilemapCenter.y, 0);
+
+                    // Place the tile in the Tilemap (you can replace Tile with your custom tile if needed)
+                    tilemap.SetTile(tilePosition, collapsedTile.tileSprite); // Use tile sprite here if you want
+                }
+            }
+        }
+        return tilemap;
+    }
+
+
+
 
 
 }

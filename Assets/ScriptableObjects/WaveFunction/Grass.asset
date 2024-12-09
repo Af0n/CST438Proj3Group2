@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec21a758a1e405449c461d0487337ab, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
-  tileSprite: {fileID: -2158441306721915952, guid: 4fc9c8e62993d5347a01855f613bcc3e, type: 3}
+  tileSprite: {fileID: 11400000, guid: db5a85f81509ad3489ed0881c4a2e047, type: 2}
   possibleAdjacent:
   - {fileID: 11400000}
   - {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
   - {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
-  Adjacentweight: 
+  weight: 70
+  adjacencyMultplier: 2.16

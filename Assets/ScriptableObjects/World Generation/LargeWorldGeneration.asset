@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
   OceanBoundarySize: 3
-  numberOfBlobs: 10
-  blobYOffset: 23
+  numberOfBlobs: 64
+  blobYOffset: 10
   blobXOffset: 10
-  blobMinSize: 20
-  blobMaxSize: 250
+  blobMinSize: 1
+  blobMaxSize: 128
+  spawnBoxSize: {x: 20, y: 10}
+  spawnBoxOffset: {x: -10, y: -5}
   WFCWidth: 128
   WFCHeight: 128
   smoothingRadius: 2

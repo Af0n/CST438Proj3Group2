@@ -8,13 +8,11 @@ public class ResizeCollider : MonoBehaviour
 {
     public PolygonCollider2D polygon;
     public Tilemap tilemap;
-    private CinemachineConfiner2D confiner2D;
-    private void Start() {
-        confiner2D = GameObject.FindGameObjectWithTag("Confiner").GetComponent<CinemachineConfiner2D>();
-    }
+    private CinemachineConfiner2D _confiner2D;
     public void resizeCollider()
     {
         // Set the polygon to the bounds
+        _confiner2D = GameObject.FindGameObjectWithTag("Confiner").GetComponent<CinemachineConfiner2D>();
         Bounds tilemapBounds = tilemap.localBounds;
         Vector2[] boxColliderPoints = new Vector2[4];
         boxColliderPoints[0] = new Vector2(tilemapBounds.min.x, tilemapBounds.min.y);
@@ -23,6 +21,6 @@ public class ResizeCollider : MonoBehaviour
         boxColliderPoints[3] = new Vector2(tilemapBounds.min.x, tilemapBounds.max.y);
         polygon.SetPath(0, boxColliderPoints);
         // Invalidate the cache.. to reset the polygon
-        confiner2D.InvalidateCache();
+        _confiner2D.InvalidateCache();
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - PauseMenu
   - ScrollingMenu
   - Tilemap
+  - Confiner
   layers:
   - Default
   - TransparentFX

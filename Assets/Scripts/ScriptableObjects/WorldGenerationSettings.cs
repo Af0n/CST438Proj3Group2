@@ -5,9 +5,7 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(fileName = "New World Generation Settings", menuName = "Wave Function/World Generation Settings")]
 public class WorldGenerationSettings : ScriptableObject{
     // Just a file to preconfigure a world generation settings.
-    [Header("Tilemap")]
     public Tilemap tilemap;
-    public ResizeCollider resize;
     [Space(32)]
     [Header("Pre-generation")]
     public int OceanBoundarySize = 1;

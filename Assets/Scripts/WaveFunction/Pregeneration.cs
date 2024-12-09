@@ -21,7 +21,7 @@ public class Pregeneration : MonoBehaviour
             }
         }
         generateBlobs();
-        
+
         // Ocean boundary
         for (int x = 0; x < wgs.WFCWidth; x++)
         {
@@ -48,32 +48,59 @@ public class Pregeneration : MonoBehaviour
 
             // Random blob size
             int blobSize = Random.Range(_wgs.blobMinSize, _wgs.blobMaxSize);
-            int randomIndex = Random.Range(0, _wgs.allTiles.Count-2);
+            int randomIndex = Random.Range(0, _wgs.allTiles.Count - 2);
             _generateBlob(startPosition, blobSize, _wgs.allTiles[randomIndex]);
         }
         // Spawn box
-        Vector2Int boxPos = new Vector2Int(_wgs.WFCWidth/2 + _wgs.spawnBoxOffset.x, _wgs.WFCHeight/2 + _wgs.spawnBoxOffset.y);
+        Vector2Int boxPos = new Vector2Int(_wgs.WFCWidth / 2 + _wgs.spawnBoxOffset.x, _wgs.WFCHeight / 2 + _wgs.spawnBoxOffset.y);
         _generateBox(boxPos, _wgs.spawnBoxSize, _wgs.allTiles[0]);
     }
-    private void _generateBlob(Vector2Int position, int size, Tile tile)
+    private void _generateBlob(Vector2Int center, int area, Tile tile)
     {
-        for (int i = 0; i < size; i++)
+        float radius = Mathf.Sqrt(area / Mathf.PI);
+        HashSet<Vector2Int> filledPositions = new HashSet<Vector2Int>();
+
+        // Start with a basic filled circle
+        for (int x = Mathf.FloorToInt(-radius); x <= Mathf.CeilToInt(radius); x++)
         {
-            // Random offset from the starting position
-            Vector2Int offset = new Vector2Int(
-                Random.Range(-_wgs.blobYOffset, _wgs.blobXOffset), // Range for x-offset
-                Random.Range(-_wgs.blobXOffset, _wgs.blobYOffset)  // Range for y-offset
-            );
-
-            Vector2Int tilePosition = position + offset;
-
-            if (tilePosition.x >= 0 && tilePosition.x < _wgs.WFCWidth &&
-                tilePosition.y >= 0 && tilePosition.y < _wgs.WFCHeight)
+            for (int y = Mathf.FloorToInt(-radius); y <= Mathf.CeilToInt(radius); y++)
             {
-                grid[tilePosition.x, tilePosition.y].possibleTiles = new List<Tile> { tile };
+                Vector2Int offset = new Vector2Int(x, y);
+                float distance = offset.magnitude;
+
+                // Check if the point is within the radius
+                if (distance <= radius)
+                {
+                    // Deform the circle by slightly shifting the radius for this point
+                    float deformation = Random.Range(-radius * 0.1f, radius * 0.1f);
+                    if (distance + deformation <= radius)
+                    {
+                        Vector2Int tilePosition = center + offset;
+
+                        // Check bounds to ensure tile stays within the tilemap
+                        if (tilePosition.x >= 0 && tilePosition.x < _wgs.WFCWidth &&
+                            tilePosition.y >= 0 && tilePosition.y < _wgs.WFCHeight)
+                        {
+                            filledPositions.Add(tilePosition);
+                        }
+                    }
+                }
             }
         }
+
+        // Limit the filled positions to match the exact area
+        foreach (Vector2Int position in filledPositions)
+        {
+            if (filledPositions.Count > area)
+                break;
+
+            // Set the tile in the grid
+            grid[position.x, position.y].possibleTiles = new List<Tile> { tile };
+        }
     }
+
+
+
 
     private void _generateBox(Vector2Int position, Vector2Int size, Tile tile)
     {

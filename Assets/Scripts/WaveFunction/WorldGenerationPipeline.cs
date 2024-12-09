@@ -10,12 +10,13 @@ public class WorldGenerationPipeline : MonoBehaviour
     public Cleanup cleanup;
     public Smoothing smoothing;
     public bool generating = false;
+    public ResizeCollider resize;
     private GridCell[,] _grid;
     // Threads for smoothing.. 
     private void Start()
     {
         wgs.tilemap = GameObject.FindGameObjectWithTag("Tilemap").GetComponent<Tilemap>();
-        wgs.resize = FindAnyObjectByType<ResizeCollider>();
+        resize = FindAnyObjectByType<ResizeCollider>();
         StartCoroutine(runPipeline());
     }
     public void regenerate()
@@ -106,7 +107,7 @@ public class WorldGenerationPipeline : MonoBehaviour
 
             }
         }
-        wgs.resize.resizeCollider();
+        resize.resizeCollider();
         return wgs.tilemap;
     }
 }

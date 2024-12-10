@@ -18,8 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000}
   - {fileID: 11400000, guid: 96eec42797a1ec3479ee51c5d06c935e, type: 2}
   - {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
-  weight: 9
+  weight: 37
   adjacencyMultplier: 9.41
-  AdjacencyBlendRules:
-  - {fileID: 11400000, guid: 1dfb4cafc65e99a48be4b4b3595eba31, type: 2}
-  - {fileID: 11400000, guid: 0cd94faea88598c4dbbfb17eb1cc9903, type: 2}

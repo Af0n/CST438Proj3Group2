@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2939e9142d518dd4db74504c859a0377, type: 3}
-  m_Name: RubyVein
+  m_Name: HandyGhostFeature
   m_EditorClassIdentifier: 
-  featureObject: {fileID: 4441094615941049022, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
-  baseTile: {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
-  weight: 0.5
+  featureObject: {fileID: 5843704799726028433, guid: 7e256639d977bcc4ab75b517793a8f8f, type: 3}
+  baseTile: {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
+  weight: 0.001
   minDistance: 100

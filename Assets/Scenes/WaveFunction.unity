@@ -978,6 +978,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3929161257620291891, guid: 80d22139d7f775d4b9dc1817c598f142, type: 3}
+      propertyPath: m_SortingOrder
+      value: -10000
+      objectReference: {fileID: 0}
     - target: {fileID: 4479393277341431940, guid: 80d22139d7f775d4b9dc1817c598f142, type: 3}
       propertyPath: m_Name
       value: WFC

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2939e9142d518dd4db74504c859a0377, type: 3}
-  m_Name: RubyVein
+  m_Name: AppleFeature
   m_EditorClassIdentifier: 
-  featureObject: {fileID: 4441094615941049022, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
-  baseTile: {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
+  featureObject: {fileID: 5184138440715391061, guid: 88ba09b8c3956de439adce893804f28e, type: 3}
+  baseTile: {fileID: 11400000, guid: 96eec42797a1ec3479ee51c5d06c935e, type: 2}
   weight: 0.5
-  minDistance: 100
+  minDistance: 93.6

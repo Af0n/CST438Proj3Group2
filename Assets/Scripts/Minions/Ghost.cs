@@ -122,6 +122,10 @@ public class Ghost : MonoBehaviour
     // TODO: UTILIZE PATHFINDING SCRIPT
     private void NavigateTowardTarget(){
         // getting normalized direction to target
+        if(player == null || target == null){
+            return;
+        }
+
         Vector2 direction = target.position - transform.position;
         direction.Normalize();
 
@@ -129,6 +133,10 @@ public class Ghost : MonoBehaviour
     }
 
     private void TrySwitch(){
+        if(player == null || target == null){
+            return;
+        }
+
         // if not close enough, don't do anything
         if(radius < Vector2.Distance(transform.position, target.position)){
             return;

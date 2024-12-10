@@ -30,4 +30,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
   - {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
   - {fileID: 11400000, guid: edbf768748764e042a7e14774a561c51, type: 2}
-  maxAmountOfFeatures: 0
+  allFeatures:
+  - {fileID: 11400000, guid: 3b8b72dd0f7d6e249b1c10a0f329d9c8, type: 2}
+  - {fileID: 11400000, guid: 084b8407a35674f4ca542614be0b6f1e, type: 2}
+  - {fileID: 11400000, guid: 1347a628e7cecd040bbc20b98ce65d75, type: 2}
+  featureMask:
+    serializedVersion: 2
+    m_Bits: 256

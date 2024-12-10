@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2939e9142d518dd4db74504c859a0377, type: 3}
   m_Name: RubyVein
   m_EditorClassIdentifier: 
-  featureObject: {fileID: 0}
-  baseTile: {fileID: 0}
-  weight: 0
-  minDistance: 0
+  featureObject: {fileID: 4441094615941049022, guid: 81121607b7faf7747b2841cd49c47b6c, type: 3}
+  baseTile: {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
+  weight: 0.5
+  minDistance: 100

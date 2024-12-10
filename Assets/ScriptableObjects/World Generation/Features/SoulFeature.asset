@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2939e9142d518dd4db74504c859a0377, type: 3}
   m_Name: SoulFeature
   m_EditorClassIdentifier: 
-  featureObject: {fileID: 0}
-  baseTile: {fileID: 0}
-  weight: 0
-  minDistance: 0
+  featureObject: {fileID: 1359493687066205693, guid: 881f03abfa662b5418d5724d3e8d0742, type: 3}
+  baseTile: {fileID: 11400000, guid: 06055e9d1102aa94180745c99e59b137, type: 2}
+  weight: 0.1
+  minDistance: 59.3

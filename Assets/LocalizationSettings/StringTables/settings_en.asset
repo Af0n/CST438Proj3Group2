@@ -66,8 +66,20 @@ MonoBehaviour:
     m_Localized: Spanish
     m_Metadata:
       m_Items: []
-  - m_Id: 775154020429824
-    m_Localized: Generate World
+  - m_Id: 779975748739072
+    m_Localized: Recipe Book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786546771877888
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786525351567360
+    m_Localized: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786507525775360
+    m_Localized: Right
     m_Metadata:
       m_Items: []
   references:

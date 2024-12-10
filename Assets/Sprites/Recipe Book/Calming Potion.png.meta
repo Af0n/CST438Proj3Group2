@@ -1,0 +1,4064 @@
+fileFormatVersion: 2
+guid: 63ef9bc3d1137be4ab29df6de3d5c8c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2967539155334969626
+    second: Calming Potion_0
+  - first:
+      213: 8302606886398558441
+    second: Calming Potion_1
+  - first:
+      213: -2694634517228368161
+    second: Calming Potion_2
+  - first:
+      213: 830992163271198364
+    second: Calming Potion_3
+  - first:
+      213: -3884826197542002439
+    second: Calming Potion_4
+  - first:
+      213: 980620772258484745
+    second: Calming Potion_5
+  - first:
+      213: -3428439806437530426
+    second: Calming Potion_6
+  - first:
+      213: -1813055583806310075
+    second: Calming Potion_7
+  - first:
+      213: -8192072558141555327
+    second: Calming Potion_8
+  - first:
+      213: 5580631750152407142
+    second: Calming Potion_9
+  - first:
+      213: 897611566741359132
+    second: Calming Potion_10
+  - first:
+      213: -6854424037317465498
+    second: Calming Potion_11
+  - first:
+      213: -3882418418344979971
+    second: Calming Potion_12
+  - first:
+      213: -498833467359109719
+    second: Calming Potion_13
+  - first:
+      213: 7534673036258933454
+    second: Calming Potion_14
+  - first:
+      213: -8182849828937838355
+    second: Calming Potion_15
+  - first:
+      213: -1085194330113148348
+    second: Calming Potion_16
+  - first:
+      213: 5851793568672836014
+    second: Calming Potion_17
+  - first:
+      213: 7367784375274027576
+    second: Calming Potion_18
+  - first:
+      213: -7206577491382649276
+    second: Calming Potion_19
+  - first:
+      213: -3156423930098142601
+    second: Calming Potion_20
+  - first:
+      213: 720315503207593924
+    second: Calming Potion_21
+  - first:
+      213: 8667370324684573895
+    second: Calming Potion_22
+  - first:
+      213: 3018083354936078492
+    second: Calming Potion_23
+  - first:
+      213: 6769931624637019804
+    second: Calming Potion_24
+  - first:
+      213: -2890168388849093727
+    second: Calming Potion_25
+  - first:
+      213: 7658158133261726247
+    second: Calming Potion_26
+  - first:
+      213: 3574254955093479901
+    second: Calming Potion_27
+  - first:
+      213: 3091785393948187854
+    second: Calming Potion_28
+  - first:
+      213: 8475016786558652818
+    second: Calming Potion_29
+  - first:
+      213: 4429017905656052249
+    second: Calming Potion_30
+  - first:
+      213: 3997258294995814189
+    second: Calming Potion_31
+  - first:
+      213: 3388435751069233798
+    second: Calming Potion_32
+  - first:
+      213: -7155049528536290332
+    second: Calming Potion_33
+  - first:
+      213: 3821326006518455799
+    second: Calming Potion_34
+  - first:
+      213: -7758929579173669298
+    second: Calming Potion_35
+  - first:
+      213: -5519675152294341102
+    second: Calming Potion_36
+  - first:
+      213: -4155840549012126105
+    second: Calming Potion_37
+  - first:
+      213: 4492922749651213964
+    second: Calming Potion_38
+  - first:
+      213: 6894401286606955926
+    second: Calming Potion_39
+  - first:
+      213: 2156678709580557860
+    second: Calming Potion_40
+  - first:
+      213: 5106156433249845495
+    second: Calming Potion_41
+  - first:
+      213: 269746779394848401
+    second: Calming Potion_42
+  - first:
+      213: 4440044213435796545
+    second: Calming Potion_43
+  - first:
+      213: 5121345828323194262
+    second: Calming Potion_44
+  - first:
+      213: 5283035891126057603
+    second: Calming Potion_45
+  - first:
+      213: -4158710691797205159
+    second: Calming Potion_46
+  - first:
+      213: 5658812580210872329
+    second: Calming Potion_47
+  - first:
+      213: 6193047595423120128
+    second: Calming Potion_48
+  - first:
+      213: 8110244323702790849
+    second: Calming Potion_49
+  - first:
+      213: 7477805447385589806
+    second: Calming Potion_50
+  - first:
+      213: -2051746800087873538
+    second: Calming Potion_51
+  - first:
+      213: 6549292246145500386
+    second: Calming Potion_52
+  - first:
+      213: -4175257343132298354
+    second: Calming Potion_53
+  - first:
+      213: -6942493339261559273
+    second: Calming Potion_54
+  - first:
+      213: 592481531857959298
+    second: Calming Potion_55
+  - first:
+      213: 9143564804798385683
+    second: Calming Potion_56
+  - first:
+      213: 6578931138006626591
+    second: Calming Potion_57
+  - first:
+      213: -5575932251779560238
+    second: Calming Potion_58
+  - first:
+      213: -5336620354101809296
+    second: Calming Potion_59
+  - first:
+      213: 2375133192630511960
+    second: Calming Potion_60
+  - first:
+      213: -2873540180862349086
+    second: Calming Potion_61
+  - first:
+      213: 8056052066834772373
+    second: Calming Potion_62
+  - first:
+      213: -7548605203149427341
+    second: Calming Potion_63
+  - first:
+      213: 1709697449375261345
+    second: Calming Potion_64
+  - first:
+      213: 3616257630711711652
+    second: Calming Potion_65
+  - first:
+      213: 1521296470293374445
+    second: Calming Potion_66
+  - first:
+      213: 2766237936719406427
+    second: Calming Potion_67
+  - first:
+      213: 8662140141473568030
+    second: Calming Potion_68
+  - first:
+      213: -463417329702427507
+    second: Calming Potion_69
+  - first:
+      213: -8572979752687690510
+    second: Calming Potion_70
+  - first:
+      213: 4574865209611666511
+    second: Calming Potion_71
+  - first:
+      213: 847461498776381412
+    second: Calming Potion_72
+  - first:
+      213: -9041543979232176855
+    second: Calming Potion_73
+  - first:
+      213: -7229150397026276515
+    second: Calming Potion_74
+  - first:
+      213: -7058839163554528938
+    second: Calming Potion_75
+  - first:
+      213: 4630048028534604901
+    second: Calming Potion_76
+  - first:
+      213: 5965431188663562903
+    second: Calming Potion_77
+  - first:
+      213: 7092645240953523235
+    second: Calming Potion_78
+  - first:
+      213: -2620059980107791841
+    second: Calming Potion_79
+  - first:
+      213: 8768037699778183688
+    second: Calming Potion_80
+  - first:
+      213: -8480378164400471099
+    second: Calming Potion_81
+  - first:
+      213: -1532033933577262526
+    second: Calming Potion_82
+  - first:
+      213: 2404588625312895638
+    second: Calming Potion_83
+  - first:
+      213: 8314690524089259829
+    second: Calming Potion_84
+  - first:
+      213: -7559714920013890690
+    second: Calming Potion_85
+  - first:
+      213: -8790365529388610989
+    second: Calming Potion_86
+  - first:
+      213: 1812095738687913382
+    second: Calming Potion_87
+  - first:
+      213: 7000502568564573349
+    second: Calming Potion_88
+  - first:
+      213: -1349223479267662446
+    second: Calming Potion_89
+  - first:
+      213: -2613617213957271069
+    second: Calming Potion_90
+  - first:
+      213: -318151564252532199
+    second: Calming Potion_91
+  - first:
+      213: -6457053332126232101
+    second: Calming Potion_92
+  - first:
+      213: 9020844797911541151
+    second: Calming Potion_93
+  - first:
+      213: -6093903580610025550
+    second: Calming Potion_94
+  - first:
+      213: 1866946005458309958
+    second: Calming Potion_95
+  - first:
+      213: 7962510878547077620
+    second: Calming Potion_96
+  - first:
+      213: 848501966611732602
+    second: Calming Potion_97
+  - first:
+      213: 7054500953987769727
+    second: Calming Potion_98
+  - first:
+      213: -6372152470252428595
+    second: Calming Potion_99
+  - first:
+      213: 8203100259854121613
+    second: Calming Potion_100
+  - first:
+      213: -8125402231590253569
+    second: Calming Potion_101
+  - first:
+      213: -3865249048627256619
+    second: Calming Potion_102
+  - first:
+      213: 4684080094628982086
+    second: Calming Potion_103
+  - first:
+      213: 6300529893842062686
+    second: Calming Potion_104
+  - first:
+      213: 4966309005883899625
+    second: Calming Potion_105
+  - first:
+      213: -8473723604397592853
+    second: Calming Potion_106
+  - first:
+      213: 3944437314758732540
+    second: Calming Potion_107
+  - first:
+      213: 2882720787810601911
+    second: Calming Potion_108
+  - first:
+      213: -323754657005490356
+    second: Calming Potion_109
+  - first:
+      213: -1376535262065295864
+    second: Calming Potion_110
+  - first:
+      213: -2457972628827794497
+    second: Calming Potion_111
+  - first:
+      213: -547725475726712892
+    second: Calming Potion_112
+  - first:
+      213: -4069604859063726242
+    second: Calming Potion_113
+  - first:
+      213: 7053802247548745158
+    second: Calming Potion_114
+  - first:
+      213: -1013603698939423301
+    second: Calming Potion_115
+  - first:
+      213: 8175589529058995626
+    second: Calming Potion_116
+  - first:
+      213: -7453311630475527289
+    second: Calming Potion_117
+  - first:
+      213: 305542610167666254
+    second: Calming Potion_118
+  - first:
+      213: 9148789412627713011
+    second: Calming Potion_119
+  - first:
+      213: -2156003547636457318
+    second: Calming Potion_120
+  - first:
+      213: 8155984678111309141
+    second: Calming Potion_121
+  - first:
+      213: 6637296825650022955
+    second: Calming Potion_122
+  - first:
+      213: 6651478347531177211
+    second: Calming Potion_123
+  - first:
+      213: -2685934588636277613
+    second: Calming Potion_124
+  - first:
+      213: -173736727219848370
+    second: Calming Potion_125
+  - first:
+      213: 4029392359262054261
+    second: Calming Potion_126
+  - first:
+      213: 1328851781725775228
+    second: Calming Potion_127
+  - first:
+      213: 627887454015612817
+    second: Calming Potion_128
+  - first:
+      213: -4774655024070969218
+    second: Calming Potion_129
+  - first:
+      213: 8293223668758504499
+    second: Calming Potion_130
+  - first:
+      213: 2594664026820589615
+    second: Calming Potion_131
+  - first:
+      213: -6816834742568092650
+    second: Calming Potion_132
+  - first:
+      213: 561104158397753662
+    second: Calming Potion_133
+  - first:
+      213: -7215930251338249977
+    second: Calming Potion_134
+  - first:
+      213: 8603710904074246450
+    second: Calming Potion_135
+  - first:
+      213: 4730480816990800510
+    second: Calming Potion_136
+  - first:
+      213: 5219346375688329099
+    second: Calming Potion_137
+  - first:
+      213: -7929725885450536060
+    second: Calming Potion_138
+  - first:
+      213: 332893895069199066
+    second: Calming Potion_139
+  - first:
+      213: 3371934866924297254
+    second: Calming Potion_140
+  - first:
+      213: -6685759280327270145
+    second: Calming Potion_141
+  - first:
+      213: 6733623443712490116
+    second: Calming Potion_142
+  - first:
+      213: 3136299197505610221
+    second: Calming Potion_143
+  - first:
+      213: 1060883657942852415
+    second: Calming Potion_144
+  - first:
+      213: -759041263112645691
+    second: Calming Potion_145
+  - first:
+      213: -7946826772707380052
+    second: Calming Potion_146
+  - first:
+      213: 1698644197667570968
+    second: Calming Potion_147
+  - first:
+      213: -1156701597041625053
+    second: Calming Potion_148
+  - first:
+      213: -1387421723260834650
+    second: Calming Potion_149
+  - first:
+      213: 6705202734690555490
+    second: Calming Potion_150
+  - first:
+      213: 8034777549571981433
+    second: Calming Potion_151
+  - first:
+      213: 1260080086161600567
+    second: Calming Potion_152
+  - first:
+      213: 3518582194553714407
+    second: Calming Potion_153
+  - first:
+      213: -3090639213483285353
+    second: Calming Potion_154
+  - first:
+      213: -4860112087564104123
+    second: Calming Potion_155
+  - first:
+      213: -2721545886427806389
+    second: Calming Potion_156
+  - first:
+      213: 3861931147764148201
+    second: Calming Potion_157
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Calming Potion_0
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 3491
+        width: 723
+        height: 814
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e642356cde21d6d0800000000000000
+      internalID: -2967539155334969626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_1
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 4235
+        width: 124
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e08f7d59f8c83370800000000000000
+      internalID: 8302606886398558441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_2
+      rect:
+        serializedVersion: 2
+        x: 4001
+        y: 4284
+        width: 128
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdec811fe2cba9ad0800000000000000
+      internalID: -2694634517228368161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_3
+      rect:
+        serializedVersion: 2
+        x: 4075
+        y: 4148
+        width: 185
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96c9ee38f6488b00800000000000000
+      internalID: 830992163271198364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_4
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 3993
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0a061f723561ac0800000000000000
+      internalID: -3884826197542002439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_5
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 3491
+        width: 608
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90216d5956ddb9d00800000000000000
+      internalID: 980620772258484745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_6
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 4151
+        width: 119
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c46b73292cbb60d0800000000000000
+      internalID: -3428439806437530426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_7
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 4008
+        width: 91
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549bf217d8bb6d6e0800000000000000
+      internalID: -1813055583806310075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_8
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 4084
+        width: 128
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d3fbd6969ef4e80800000000000000
+      internalID: -8192072558141555327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_9
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 4039
+        width: 113
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668c9126203627d40800000000000000
+      internalID: 5580631750152407142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_10
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 3898
+        width: 119
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a86e5d6f4f47c00800000000000000
+      internalID: 897611566741359132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_11
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 3950
+        width: 128
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a2bc387a130e0a0800000000000000
+      internalID: -6854424037317465498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_12
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3887
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df11d19b401ee1ac0800000000000000
+      internalID: -3882418418344979971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_13
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 3907
+        width: 107
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9addbf7ba99c319f0800000000000000
+      internalID: -498833467359109719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_14
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 3607
+        width: 619
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca7de0c439809860800000000000000
+      internalID: 7534673036258933454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_15
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 3697
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de05bc76f6da07e80800000000000000
+      internalID: -8182849828937838355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_16
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 3754
+        width: 101
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a7651a18d90f0f0800000000000000
+      internalID: -1085194330113148348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_17
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 3817
+        width: 87
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9e8af1f3fb53150800000000000000
+      internalID: 5851793568672836014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_18
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 3762
+        width: 122
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ab1e56ad0af3660800000000000000
+      internalID: 7367784375274027576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_19
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 3758
+        width: 101
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ebfc324f71dfb90800000000000000
+      internalID: -7206577491382649276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_20
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 3627
+        width: 124
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77235f5b8212234d0800000000000000
+      internalID: -3156423930098142601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_21
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 3515
+        width: 95
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c735ee32231ff900800000000000000
+      internalID: 720315503207593924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_22
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 2834
+        width: 760
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc069b736fa84870800000000000000
+      internalID: 8667370324684573895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_23
+      rect:
+        serializedVersion: 2
+        x: 5083
+        y: 3501
+        width: 126
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90fb7122d262e920800000000000000
+      internalID: 3018083354936078492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_24
+      rect:
+        serializedVersion: 2
+        x: 5288
+        y: 3464
+        width: 121
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c963c28a1f0a3fd50800000000000000
+      internalID: 6769931624637019804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_25
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 3353
+        width: 120
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a33691c92f04e7d0800000000000000
+      internalID: -2890168388849093727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_26
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 2899
+        width: 676
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72275de5f3e374a60800000000000000
+      internalID: 7658158133261726247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_27
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 3331
+        width: 87
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1d607c1fd4a9130800000000000000
+      internalID: 3574254955093479901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_28
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 3397
+        width: 108
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccd5005f6a38ea20800000000000000
+      internalID: 3091785393948187854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_29
+      rect:
+        serializedVersion: 2
+        x: 5430
+        y: 3293
+        width: 59
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2911d446dde4d9570800000000000000
+      internalID: 8475016786558652818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_30
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 3227
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a397ab158077d30800000000000000
+      internalID: 4429017905656052249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_31
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 3250
+        width: 123
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2785bcad3d197730800000000000000
+      internalID: 3997258294995814189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_32
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 3137
+        width: 68
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68237b6ec54260f20800000000000000
+      internalID: 3388435751069233798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_33
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 2460
+        width: 706
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eba445ec5824bc90800000000000000
+      internalID: -7155049528536290332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_34
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 3216
+        width: 72
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd9e75b1c3180530800000000000000
+      internalID: 3821326006518455799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_35
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 3061
+        width: 105
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46151408aeb25490800000000000000
+      internalID: -7758929579173669298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_36
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 3131
+        width: 124
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21612f781bc2663b0800000000000000
+      internalID: -5519675152294341102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_37
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 3097
+        width: 66
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766c7fc0a0d7356c0800000000000000
+      internalID: -4155840549012126105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_38
+      rect:
+        serializedVersion: 2
+        x: 5324
+        y: 3114
+        width: 91
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e5b30bf611a5e30800000000000000
+      internalID: 4492922749651213964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_39
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 3004
+        width: 127
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695243b2175ddaf50800000000000000
+      internalID: 6894401286606955926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_40
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2987
+        width: 75
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e623b1cdf0eed10800000000000000
+      internalID: 2156678709580557860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_41
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2932
+        width: 56
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0ce63f836bcd640800000000000000
+      internalID: 5106156433249845495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_42
+      rect:
+        serializedVersion: 2
+        x: 5216
+        y: 2936
+        width: 84
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196b22544455eb300800000000000000
+      internalID: 269746779394848401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_43
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2821
+        width: 97
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c8ed010b43e9d30800000000000000
+      internalID: 4440044213435796545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_44
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2724
+        width: 45
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695f12595eca21740800000000000000
+      internalID: 5121345828323194262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_45
+      rect:
+        serializedVersion: 2
+        x: 5116
+        y: 2738
+        width: 210
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a353af62d115940800000000000000
+      internalID: 5283035891126057603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_46
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2639
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ffecbd8aa4946c0800000000000000
+      internalID: -4158710691797205159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_47
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2591
+        width: 127
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9001bfd5f04288e40800000000000000
+      internalID: 5658812580210872329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_48
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 2578
+        width: 215
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b3842d9ff12f550800000000000000
+      internalID: 6193047595423120128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_49
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2522
+        width: 73
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cadee31e306d8070800000000000000
+      internalID: 8110244323702790849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_50
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 2579
+        width: 209
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2826ee6f6086c760800000000000000
+      internalID: 7477805447385589806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_51
+      rect:
+        serializedVersion: 2
+        x: 3454
+        y: 2612
+        width: 60
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7c7bbe72bb683e0800000000000000
+      internalID: -2051746800087873538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_52
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2509
+        width: 128
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e409b52992c3ea50800000000000000
+      internalID: 6549292246145500386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_53
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 2545
+        width: 122
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8312c061918e06c0800000000000000
+      internalID: -4175257343132298354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_54
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 2405
+        width: 56
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e9cc1471f47af90800000000000000
+      internalID: -6942493339261559273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_55
+      rect:
+        serializedVersion: 2
+        x: 3723
+        y: 2291
+        width: 238
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2897f5a60dae83800800000000000000
+      internalID: 592481531857959298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_56
+      rect:
+        serializedVersion: 2
+        x: 4947
+        y: 2487
+        width: 128
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e85caceb774ee70800000000000000
+      internalID: 9143564804798385683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_57
+      rect:
+        serializedVersion: 2
+        x: 5156
+        y: 2487
+        width: 127
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1134aa630f0d4b50800000000000000
+      internalID: 6578931138006626591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_58
+      rect:
+        serializedVersion: 2
+        x: 5363
+        y: 2408
+        width: 71
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc0909d82f4e92b0800000000000000
+      internalID: -5575932251779560238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_59
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 2276
+        width: 123
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f64a4001480f5b0800000000000000
+      internalID: -5336620354101809296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_60
+      rect:
+        serializedVersion: 2
+        x: 4898
+        y: 2305
+        width: 45
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8592bf00e0b26f020800000000000000
+      internalID: 2375133192630511960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_61
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 2200
+        width: 44
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e053ef1e622f18d0800000000000000
+      internalID: -2873540180862349086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_62
+      rect:
+        serializedVersion: 2
+        x: 5622
+        y: 1561
+        width: 859
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591fcb70ca8dccf60800000000000000
+      internalID: 8056052066834772373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_63
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 2097
+        width: 44
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dec9cdf87fd3790800000000000000
+      internalID: -7548605203149427341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_64
+      rect:
+        serializedVersion: 2
+        x: 5364
+        y: 2001
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2676795c01ab710800000000000000
+      internalID: 1709697449375261345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_65
+      rect:
+        serializedVersion: 2
+        x: 6580
+        y: 2105
+        width: 128
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a70ed6c7278f2230800000000000000
+      internalID: 3616257630711711652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_66
+      rect:
+        serializedVersion: 2
+        x: 6788
+        y: 2114
+        width: 128
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de564ed541bbc1510800000000000000
+      internalID: 1521296470293374445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_67
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2106
+        width: 128
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55ae5e4fb6a36620800000000000000
+      internalID: 2766237936719406427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_68
+      rect:
+        serializedVersion: 2
+        x: 7204
+        y: 2080
+        width: 127
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e151f2f809a163870800000000000000
+      internalID: 8662140141473568030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_69
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 840
+        width: 1142
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84a358d46c9199f0800000000000000
+      internalID: -463417329702427507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_70
+      rect:
+        serializedVersion: 2
+        x: 4942
+        y: 1995
+        width: 134
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc1f662658a60980800000000000000
+      internalID: -8572979752687690510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_71
+      rect:
+        serializedVersion: 2
+        x: 5157
+        y: 1995
+        width: 127
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4442326baf2d7f30800000000000000
+      internalID: 4574865209611666511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_72
+      rect:
+        serializedVersion: 2
+        x: 7408
+        y: 2028
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7e26b3eb9c2cb00800000000000000
+      internalID: 847461498776381412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_73
+      rect:
+        serializedVersion: 2
+        x: 7598
+        y: 1894
+        width: 65
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9255bc0b7abf58280800000000000000
+      internalID: -9041543979232176855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_74
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 1059
+        width: 857
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bef5df306ecab90800000000000000
+      internalID: -7229150397026276515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_75
+      rect:
+        serializedVersion: 2
+        x: 4947
+        y: 1766
+        width: 128
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65187b91e27f90e90800000000000000
+      internalID: -7058839163554528938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_76
+      rect:
+        serializedVersion: 2
+        x: 5156
+        y: 1766
+        width: 127
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5648dc1a62c314040800000000000000
+      internalID: 4630048028534604901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_77
+      rect:
+        serializedVersion: 2
+        x: 5363
+        y: 1687
+        width: 71
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792f3545f0879c250800000000000000
+      internalID: 5965431188663562903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_78
+      rect:
+        serializedVersion: 2
+        x: 7472
+        y: 1748
+        width: 112
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c46e8a4432e6260800000000000000
+      internalID: 7092645240953523235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_79
+      rect:
+        serializedVersion: 2
+        x: 4898
+        y: 1585
+        width: 45
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12457b645da3abd0800000000000000
+      internalID: -2620059980107791841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_80
+      rect:
+        serializedVersion: 2
+        x: 7292
+        y: 1643
+        width: 117
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802038835d35ea970800000000000000
+      internalID: 8768037699778183688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_81
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1471
+        width: 109
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c34eed8df4af4a80800000000000000
+      internalID: -8480378164400471099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_82
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 1479
+        width: 44
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a6845214f1dbae0800000000000000
+      internalID: -1532033933577262526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_83
+      rect:
+        serializedVersion: 2
+        x: 7109
+        y: 1544
+        width: 118
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69258ba5d90de5120800000000000000
+      internalID: 2404588625312895638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_84
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1389
+        width: 62
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53795a18af6b36370800000000000000
+      internalID: 8314690524089259829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_85
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 1376
+        width: 44
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bf955555f761790800000000000000
+      internalID: -7559714920013890690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_86
+      rect:
+        serializedVersion: 2
+        x: 6923
+        y: 1450
+        width: 119
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a04f6df19520680800000000000000
+      internalID: -8790365529388610989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_87
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1270
+        width: 63
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adfd73397bd52910800000000000000
+      internalID: 1812095738687913382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_88
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 1172
+        width: 294
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a44080fef7c62160800000000000000
+      internalID: 7000502568564573349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_89
+      rect:
+        serializedVersion: 2
+        x: 5364
+        y: 1280
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29562a3e468964de0800000000000000
+      internalID: -1349223479267662446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_90
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 1361
+        width: 120
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e11b3fcdf09abbd0800000000000000
+      internalID: -2613617213957271069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_91
+      rect:
+        serializedVersion: 2
+        x: 4942
+        y: 1274
+        width: 134
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9123ef386d2b59bf0800000000000000
+      internalID: -318151564252532199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_92
+      rect:
+        serializedVersion: 2
+        x: 5157
+        y: 1274
+        width: 127
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd11dd29430f366a0800000000000000
+      internalID: -6457053332126232101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_93
+      rect:
+        serializedVersion: 2
+        x: 6544
+        y: 1277
+        width: 121
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95a2799c8a703d70800000000000000
+      internalID: 9020844797911541151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_94
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1088
+        width: 89
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b72246fafa1e6ba0800000000000000
+      internalID: -6093903580610025550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_95
+      rect:
+        serializedVersion: 2
+        x: 6352
+        y: 1197
+        width: 121
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6435d2e1089b8e910800000000000000
+      internalID: 1866946005458309958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_96
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 832
+        width: 281
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f96bf3f475808e60800000000000000
+      internalID: 7962510878547077620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_97
+      rect:
+        serializedVersion: 2
+        x: 5962
+        y: 1049
+        width: 123
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78dc170b0c76cb00800000000000000
+      internalID: 848501966611732602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_98
+      rect:
+        serializedVersion: 2
+        x: 6157
+        y: 1122
+        width: 123
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f756816cd3f96e160800000000000000
+      internalID: 7054500953987769727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_99
+      rect:
+        serializedVersion: 2
+        x: 6936
+        y: 359
+        width: 625
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2e9f3e6119197a0800000000000000
+      internalID: -6372152470252428595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_100
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 866
+        width: 65
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8af485793447d170800000000000000
+      internalID: 8203100259854121613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_101
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 939
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb85e878b5cc3f80800000000000000
+      internalID: -8125402231590253569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_102
+      rect:
+        serializedVersion: 2
+        x: 3702
+        y: 396
+        width: 623
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2e7202870eb5ac0800000000000000
+      internalID: -3865249048627256619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_103
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 906
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64da6db5702310140800000000000000
+      internalID: 4684080094628982086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_104
+      rect:
+        serializedVersion: 2
+        x: 4815
+        y: 896
+        width: 199
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d8f2b8e8aff6750800000000000000
+      internalID: 6300529893842062686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_105
+      rect:
+        serializedVersion: 2
+        x: 5774
+        y: 960
+        width: 119
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee788c6abfdbe440800000000000000
+      internalID: 4966309005883899625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_106
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 175
+        width: 623
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beee90b0749476a80800000000000000
+      internalID: -8473723604397592853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_107
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 807
+        width: 72
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa6df8d6d47db630800000000000000
+      internalID: 3944437314758732540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_108
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 802
+        width: 108
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbc510884b710820800000000000000
+      internalID: 2882720787810601911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_109
+      rect:
+        serializedVersion: 2
+        x: 4882
+        y: 778
+        width: 49
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f2fc2dadac18bf0800000000000000
+      internalID: -323754657005490356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_110
+      rect:
+        serializedVersion: 2
+        x: 5625
+        y: 823
+        width: 89
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e7ccbe87095ece0800000000000000
+      internalID: -1376535262065295864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_111
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 661
+        width: 59
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3161fbae683edd0800000000000000
+      internalID: -2457972628827794497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_112
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 612
+        width: 84
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf90e0f4961668f0800000000000000
+      internalID: -547725475726712892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_113
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 697
+        width: 90
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f8d4f31fbd587c0800000000000000
+      internalID: -4069604859063726242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_114
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 606
+        width: 84
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5bef085c324e160800000000000000
+      internalID: 7053802247548745158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_115
+      rect:
+        serializedVersion: 2
+        x: 4901
+        y: 582
+        width: 84
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb591bd5ec4fee1f0800000000000000
+      internalID: -1013603698939423301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_116
+      rect:
+        serializedVersion: 2
+        x: 5665
+        y: 642
+        width: 97
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aade6fc4c57857170800000000000000
+      internalID: 8175589529058995626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_117
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 455
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bf739bf84809890800000000000000
+      internalID: -7453311630475527289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_118
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 531
+        width: 102
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e461ac692618d3400800000000000000
+      internalID: 305542610167666254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_119
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 504
+        width: 54
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb87889f7707fe70800000000000000
+      internalID: 9148789412627713011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_120
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 498
+        width: 142
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90a5a842365412e0800000000000000
+      internalID: -2156003547636457318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_121
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 500
+        width: 148
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d6a5c3ad0ef2170800000000000000
+      internalID: 8155984678111309141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_122
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 562
+        width: 90
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a82b90c4a6c1c50800000000000000
+      internalID: 6637296825650022955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_123
+      rect:
+        serializedVersion: 2
+        x: 5816
+        y: 529
+        width: 119
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc4cc7e05cce4c50800000000000000
+      internalID: 6651478347531177211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_124
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 478
+        width: 232
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394566ae8b4a9bad0800000000000000
+      internalID: -2685934588636277613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_125
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 459
+        width: 127
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b3f99fd53c69df0800000000000000
+      internalID: -173736727219848370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_126
+      rect:
+        serializedVersion: 2
+        x: 4219
+        y: 214
+        width: 255
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577ec7a80074be730800000000000000
+      internalID: 4029392359262054261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_127
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 384
+        width: 89
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75e8e8a7a7017210800000000000000
+      internalID: 1328851781725775228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_128
+      rect:
+        serializedVersion: 2
+        x: 5045
+        y: 486
+        width: 123
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197668f0054b6b800800000000000000
+      internalID: 627887454015612817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_129
+      rect:
+        serializedVersion: 2
+        x: 6011
+        y: 483
+        width: 127
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7837358d840dbdb0800000000000000
+      internalID: -4774655024070969218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_130
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 478
+        width: 128
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3346633ccf2771370800000000000000
+      internalID: 8293223668758504499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_131
+      rect:
+        serializedVersion: 2
+        x: 6426
+        y: 488
+        width: 127
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28302e6f29120420800000000000000
+      internalID: 2594664026820589615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_132
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 281
+        width: 107
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cffa43becb561a0800000000000000
+      internalID: -6816834742568092650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_133
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 329
+        width: 47
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39ea4b524179c700800000000000000
+      internalID: 561104158397753662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_134
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 319
+        width: 91
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7090df40baddbdb90800000000000000
+      internalID: -7215930251338249977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_135
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 348
+        width: 110
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239108b9b75866770800000000000000
+      internalID: 8603710904074246450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_136
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 323
+        width: 71
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a49896d3b06a140800000000000000
+      internalID: 4730480816990800510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_137
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 187
+        width: 211
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8710aa10e7de6840800000000000000
+      internalID: 5219346375688329099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_138
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 337
+        width: 113
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b30871254f3f190800000000000000
+      internalID: -7929725885450536060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_139
+      rect:
+        serializedVersion: 2
+        x: 3053
+        y: 280
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adaee7bdb3dae9400800000000000000
+      internalID: 332893895069199066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_140
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 248
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cd6cc65e48bce20800000000000000
+      internalID: 3371934866924297254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_141
+      rect:
+        serializedVersion: 2
+        x: 3997
+        y: 253
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff062527b596733a0800000000000000
+      internalID: -6685759280327270145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_142
+      rect:
+        serializedVersion: 2
+        x: 5233
+        y: 355
+        width: 78
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ab9b588d2a27d50800000000000000
+      internalID: 6733623443712490116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_143
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 238
+        width: 127
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de12aa8d08f568b20800000000000000
+      internalID: 3136299197505610221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_144
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 174
+        width: 116
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3363bbe01409be00800000000000000
+      internalID: 1060883657942852415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_145
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 216
+        width: 112
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c39e462ef75775f0800000000000000
+      internalID: -759041263112645691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_146
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 187
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca47631872337b190800000000000000
+      internalID: -7946826772707380052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_147
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 198
+        width: 127
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81501c1e5ebc29710800000000000000
+      internalID: 1698644197667570968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_148
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 179
+        width: 122
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328f435a60292ffe0800000000000000
+      internalID: -1156701597041625053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_149
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 52
+        width: 206
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aca0672b43eebce0800000000000000
+      internalID: -1387421723260834650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_150
+      rect:
+        serializedVersion: 2
+        x: 4677
+        y: 223
+        width: 102
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266553c8c5aad0d50800000000000000
+      internalID: 6705202734690555490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_151
+      rect:
+        serializedVersion: 2
+        x: 5223
+        y: 157
+        width: 81
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970858b7c93418f60800000000000000
+      internalID: 8034777549571981433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_152
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 77
+        width: 109
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730b4348924bc7110800000000000000
+      internalID: 1260080086161600567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_153
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 90
+        width: 187
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6736b1dd384d030800000000000000
+      internalID: 3518582194553714407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_154
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 71
+        width: 126
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794af6f9208db15d0800000000000000
+      internalID: -3090639213483285353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_155
+      rect:
+        serializedVersion: 2
+        x: 4834
+        y: 115
+        width: 121
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ec82c6ec96d8cb0800000000000000
+      internalID: -4860112087564104123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_156
+      rect:
+        serializedVersion: 2
+        x: 5033
+        y: 96
+        width: 129
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b458b878f602b3ad0800000000000000
+      internalID: -2721545886427806389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calming Potion_157
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 51
+        width: 127
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7af71eae5589530800000000000000
+      internalID: 3861931147764148201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Calming Potion_0: -2967539155334969626
+      Calming Potion_1: 8302606886398558441
+      Calming Potion_10: 897611566741359132
+      Calming Potion_100: 8203100259854121613
+      Calming Potion_101: -8125402231590253569
+      Calming Potion_102: -3865249048627256619
+      Calming Potion_103: 4684080094628982086
+      Calming Potion_104: 6300529893842062686
+      Calming Potion_105: 4966309005883899625
+      Calming Potion_106: -8473723604397592853
+      Calming Potion_107: 3944437314758732540
+      Calming Potion_108: 2882720787810601911
+      Calming Potion_109: -323754657005490356
+      Calming Potion_11: -6854424037317465498
+      Calming Potion_110: -1376535262065295864
+      Calming Potion_111: -2457972628827794497
+      Calming Potion_112: -547725475726712892
+      Calming Potion_113: -4069604859063726242
+      Calming Potion_114: 7053802247548745158
+      Calming Potion_115: -1013603698939423301
+      Calming Potion_116: 8175589529058995626
+      Calming Potion_117: -7453311630475527289
+      Calming Potion_118: 305542610167666254
+      Calming Potion_119: 9148789412627713011
+      Calming Potion_12: -3882418418344979971
+      Calming Potion_120: -2156003547636457318
+      Calming Potion_121: 8155984678111309141
+      Calming Potion_122: 6637296825650022955
+      Calming Potion_123: 6651478347531177211
+      Calming Potion_124: -2685934588636277613
+      Calming Potion_125: -173736727219848370
+      Calming Potion_126: 4029392359262054261
+      Calming Potion_127: 1328851781725775228
+      Calming Potion_128: 627887454015612817
+      Calming Potion_129: -4774655024070969218
+      Calming Potion_13: -498833467359109719
+      Calming Potion_130: 8293223668758504499
+      Calming Potion_131: 2594664026820589615
+      Calming Potion_132: -6816834742568092650
+      Calming Potion_133: 561104158397753662
+      Calming Potion_134: -7215930251338249977
+      Calming Potion_135: 8603710904074246450
+      Calming Potion_136: 4730480816990800510
+      Calming Potion_137: 5219346375688329099
+      Calming Potion_138: -7929725885450536060
+      Calming Potion_139: 332893895069199066
+      Calming Potion_14: 7534673036258933454
+      Calming Potion_140: 3371934866924297254
+      Calming Potion_141: -6685759280327270145
+      Calming Potion_142: 6733623443712490116
+      Calming Potion_143: 3136299197505610221
+      Calming Potion_144: 1060883657942852415
+      Calming Potion_145: -759041263112645691
+      Calming Potion_146: -7946826772707380052
+      Calming Potion_147: 1698644197667570968
+      Calming Potion_148: -1156701597041625053
+      Calming Potion_149: -1387421723260834650
+      Calming Potion_15: -8182849828937838355
+      Calming Potion_150: 6705202734690555490
+      Calming Potion_151: 8034777549571981433
+      Calming Potion_152: 1260080086161600567
+      Calming Potion_153: 3518582194553714407
+      Calming Potion_154: -3090639213483285353
+      Calming Potion_155: -4860112087564104123
+      Calming Potion_156: -2721545886427806389
+      Calming Potion_157: 3861931147764148201
+      Calming Potion_16: -1085194330113148348
+      Calming Potion_17: 5851793568672836014
+      Calming Potion_18: 7367784375274027576
+      Calming Potion_19: -7206577491382649276
+      Calming Potion_2: -2694634517228368161
+      Calming Potion_20: -3156423930098142601
+      Calming Potion_21: 720315503207593924
+      Calming Potion_22: 8667370324684573895
+      Calming Potion_23: 3018083354936078492
+      Calming Potion_24: 6769931624637019804
+      Calming Potion_25: -2890168388849093727
+      Calming Potion_26: 7658158133261726247
+      Calming Potion_27: 3574254955093479901
+      Calming Potion_28: 3091785393948187854
+      Calming Potion_29: 8475016786558652818
+      Calming Potion_3: 830992163271198364
+      Calming Potion_30: 4429017905656052249
+      Calming Potion_31: 3997258294995814189
+      Calming Potion_32: 3388435751069233798
+      Calming Potion_33: -7155049528536290332
+      Calming Potion_34: 3821326006518455799
+      Calming Potion_35: -7758929579173669298
+      Calming Potion_36: -5519675152294341102
+      Calming Potion_37: -4155840549012126105
+      Calming Potion_38: 4492922749651213964
+      Calming Potion_39: 6894401286606955926
+      Calming Potion_4: -3884826197542002439
+      Calming Potion_40: 2156678709580557860
+      Calming Potion_41: 5106156433249845495
+      Calming Potion_42: 269746779394848401
+      Calming Potion_43: 4440044213435796545
+      Calming Potion_44: 5121345828323194262
+      Calming Potion_45: 5283035891126057603
+      Calming Potion_46: -4158710691797205159
+      Calming Potion_47: 5658812580210872329
+      Calming Potion_48: 6193047595423120128
+      Calming Potion_49: 8110244323702790849
+      Calming Potion_5: 980620772258484745
+      Calming Potion_50: 7477805447385589806
+      Calming Potion_51: -2051746800087873538
+      Calming Potion_52: 6549292246145500386
+      Calming Potion_53: -4175257343132298354
+      Calming Potion_54: -6942493339261559273
+      Calming Potion_55: 592481531857959298
+      Calming Potion_56: 9143564804798385683
+      Calming Potion_57: 6578931138006626591
+      Calming Potion_58: -5575932251779560238
+      Calming Potion_59: -5336620354101809296
+      Calming Potion_6: -3428439806437530426
+      Calming Potion_60: 2375133192630511960
+      Calming Potion_61: -2873540180862349086
+      Calming Potion_62: 8056052066834772373
+      Calming Potion_63: -7548605203149427341
+      Calming Potion_64: 1709697449375261345
+      Calming Potion_65: 3616257630711711652
+      Calming Potion_66: 1521296470293374445
+      Calming Potion_67: 2766237936719406427
+      Calming Potion_68: 8662140141473568030
+      Calming Potion_69: -463417329702427507
+      Calming Potion_7: -1813055583806310075
+      Calming Potion_70: -8572979752687690510
+      Calming Potion_71: 4574865209611666511
+      Calming Potion_72: 847461498776381412
+      Calming Potion_73: -9041543979232176855
+      Calming Potion_74: -7229150397026276515
+      Calming Potion_75: -7058839163554528938
+      Calming Potion_76: 4630048028534604901
+      Calming Potion_77: 5965431188663562903
+      Calming Potion_78: 7092645240953523235
+      Calming Potion_79: -2620059980107791841
+      Calming Potion_8: -8192072558141555327
+      Calming Potion_80: 8768037699778183688
+      Calming Potion_81: -8480378164400471099
+      Calming Potion_82: -1532033933577262526
+      Calming Potion_83: 2404588625312895638
+      Calming Potion_84: 8314690524089259829
+      Calming Potion_85: -7559714920013890690
+      Calming Potion_86: -8790365529388610989
+      Calming Potion_87: 1812095738687913382
+      Calming Potion_88: 7000502568564573349
+      Calming Potion_89: -1349223479267662446
+      Calming Potion_9: 5580631750152407142
+      Calming Potion_90: -2613617213957271069
+      Calming Potion_91: -318151564252532199
+      Calming Potion_92: -6457053332126232101
+      Calming Potion_93: 9020844797911541151
+      Calming Potion_94: -6093903580610025550
+      Calming Potion_95: 1866946005458309958
+      Calming Potion_96: 7962510878547077620
+      Calming Potion_97: 848501966611732602
+      Calming Potion_98: 7054500953987769727
+      Calming Potion_99: -6372152470252428595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

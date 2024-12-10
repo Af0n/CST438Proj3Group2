@@ -4,8 +4,11 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
     public GameObject menu;
     public GameObject settingsMenu;
+    public GameObject recipeBook;
     public bool isActive = false;
     public bool isSettingsActive = false;
+    public bool isRecipeBookActive = false;
+
     public void togglePause() {
         isActive = !isActive;
         menu.SetActive(isActive);
@@ -20,5 +23,20 @@ public class PauseMenu : MonoBehaviour {
     public void toggleSettings() {
         isSettingsActive = !isSettingsActive;
         settingsMenu.SetActive(isSettingsActive);
+    }
+
+    public void toggleRecipeBook()
+    {
+        if (!isRecipeBookActive)
+        {
+            isRecipeBookActive = !isRecipeBookActive;
+            recipeBook.SetActive(isRecipeBookActive);
+        }    
+    }
+
+    public void closeRecipeBook()
+    {
+        isRecipeBookActive = !isRecipeBookActive;
+        recipeBook.SetActive(isRecipeBookActive);
     }
 }

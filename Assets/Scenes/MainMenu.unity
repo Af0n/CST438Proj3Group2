@@ -586,6 +586,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1490715422371827401, guid: f406b4c0a5265784da087355354565dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 836187889693664109, guid: abe52b187a2995144b273dcf27ad6118, type: 3}
+    - target: {fileID: 1490715422371827401, guid: f406b4c0a5265784da087355354565dc, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2577768609669226777, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -637,6 +645,12 @@ PrefabInstance:
     - target: {fileID: 3705366912111752581, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5562170896429744243, guid: f406b4c0a5265784da087355354565dc, type: 3}
+      propertyPath: m_text
+      value: 'Settings
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5778572707820711306, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_Name
@@ -1006,7 +1020,11 @@ PrefabInstance:
     - target: {fileID: 1490715422371827401, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2789201414582085655, guid: abe52b187a2995144b273dcf27ad6118, type: 3}
+      objectReference: {fileID: -6165196343856887769, guid: abe52b187a2995144b273dcf27ad6118, type: 3}
+    - target: {fileID: 1490715422371827401, guid: f406b4c0a5265784da087355354565dc, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2577768609669226777, guid: f406b4c0a5265784da087355354565dc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1408,8 +1426,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '"Cooking Mama" Build - 11/19/2024'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7084b34786c7de8458109b59400d2404, type: 2}
-  m_sharedMaterial: {fileID: 8214399652758862631, guid: 7084b34786c7de8458109b59400d2404, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1433,7 +1451,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.75
+  m_fontSize: 51.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

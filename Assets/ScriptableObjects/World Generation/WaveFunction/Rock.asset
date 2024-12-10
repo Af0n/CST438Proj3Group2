@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec21a758a1e405449c461d0487337ab, type: 3}
+  m_Name: Rock
+  m_EditorClassIdentifier: 
+  TileID: 1
+  tileSprite: {fileID: 11400000, guid: e4996afbf726bd545addb74fa4569003, type: 2}
+  possibleAdjacent:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 96eec42797a1ec3479ee51c5d06c935e, type: 2}
+  - {fileID: 11400000, guid: f4de93220a26c704db2861b34be2726b, type: 2}
+  weight: 37
+  adjacencyMultplier: 9.41

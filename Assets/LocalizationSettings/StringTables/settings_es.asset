@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3081046581248
-    m_Localized: sfx
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 3099245666304
@@ -56,6 +56,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6533877325824
     m_Localized: Jugar Juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 738384201428992
+    m_Localized: "Ingl\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 738429063704576
+    m_Localized: "Espa\xF1ol"
     m_Metadata:
       m_Items: []
   references:

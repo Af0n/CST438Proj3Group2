@@ -55,6 +55,56 @@ MonoBehaviour:
       on isle my Cauldron!
     m_Metadata:
       m_Items: []
+  - m_Id: 5611965112320
+    m_Localized: ayo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6337718116352
+    m_Localized: Bobby Minion but it's actually Homer Simpson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6509936238592
+    m_Localized: Get back to work or else you die RIGHT MEOW!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6691537018880
+    m_Localized: You do NYAT deserve a raise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6887784308736
+    m_Localized: Do you guys remember OVERWORKED? Yeah, that was a fun time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8217231876096
+    m_Localized: If you're having trouble making potions, look at the recipe book!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8302183309312
+    m_Localized: Remember, you can find the cookbook in the pause menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8303827476480
+    m_Localized: If you sell the same potion multiple times, it loses value!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8718266654720
+    m_Localized: Try selling different potions!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024966746112
+    m_Localized: When making potions in the mixer, all you need to do is place the
+      items next to the station!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9315992723456
+    m_Localized: My brothers are scattered all around the island!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9426567159808
+    m_Localized: If you place them near an item node, they'll get you an item from
+      that node once it gets spawned in!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

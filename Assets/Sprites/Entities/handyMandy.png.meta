@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4892a2342f483154cb8138c087dfb7bd
+guid: bf0a8c19ea8cdf144ae72628861f0694
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9185128551254447149
-    second: rizzlerCat_0
+      213: 7538523281880182537
+    second: handyMandy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rizzlerCat_0
+      name: handyMandy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 134
-        height: 129
+        x: 4
+        y: 5
+        width: 94
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3db2e2e5f3ed78080800000000000000
-      internalID: -9185128551254447149
+      spriteID: 90fea7bebf63e9860800000000000000
+      internalID: 7538523281880182537
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rizzlerCat_0: -9185128551254447149
+      handyMandy_0: 7538523281880182537
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

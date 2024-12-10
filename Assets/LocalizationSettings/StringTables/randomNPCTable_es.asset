@@ -58,6 +58,57 @@ MonoBehaviour:
       \xA1Limpieza en Isla Mi Caldero!"
     m_Metadata:
       m_Items: []
+  - m_Id: 5611965112320
+    m_Localized: ayo?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6337718116352
+    m_Localized: Bobby Minion pero en realidad es Homer Simpson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6509936238592
+    m_Localized: "Vuelve al trabajo o morir\xE1s \xA1\xA1\xA1MEOW!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6691537018880
+    m_Localized: "\xBFNYAT merece un aumento?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6887784308736
+    m_Localized: "\xBFRecuerdan OVERWORKED? S\xED, fue un momento divertido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8217231876096
+    m_Localized: "Si tienes problemas para hacer pociones, \xA1mira el libro de recetas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8302183309312
+    m_Localized: "Recuerda que puedes encontrar el libro de cocina en el men\xFA
+      de pausa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8303827476480
+    m_Localized: "Si vendes la misma poci\xF3n varias veces, \xA1pierde valor!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8718266654720
+    m_Localized: "\xA1Intenta vender diferentes pociones!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024966746112
+    m_Localized: "\xA1Al hacer pociones en la batidora, todo lo que necesitas hacer
+      es colocar los elementos al lado de la estaci\xF3n!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9315992723456
+    m_Localized: "\xA1Mis hermanos est\xE1n dispersos por toda la isla!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9426567159808
+    m_Localized: "Si los colocas cerca de un nodo de elemento, \xA1te dar\xE1n un
+      elemento de ese nodo una vez que se genere!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -9,6 +9,9 @@ TagManager:
   - ScrollingMenu
   - DialogueManager
   - Ghost
+  - Confiner
+  - Tilemap
+  - Feature
   layers:
   - Default
   - TransparentFX

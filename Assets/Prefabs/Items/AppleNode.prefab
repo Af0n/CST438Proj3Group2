@@ -26,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 8.01
+      value: 0.801
       objectReference: {fileID: 0}
     - target: {fileID: -8461982418196265594, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 8.76
+      value: 0.876
       objectReference: {fileID: 0}
     - target: {fileID: 887656168911321310, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_Sprite
@@ -47,6 +47,10 @@ PrefabInstance:
     - target: {fileID: 2731708665564458764, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: m_Name
       value: AppleNode
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731708665564458764, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4994843122853843954, guid: bffd7b07e9799ef429b72816c1653545, type: 3}
       propertyPath: type

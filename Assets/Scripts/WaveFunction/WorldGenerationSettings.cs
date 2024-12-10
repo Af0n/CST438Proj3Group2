@@ -31,4 +31,5 @@ public class WorldGenerationSettings : ScriptableObject{
     [Space(32)]
     [Header("Features")]
     public List<Feature> allFeatures; 
+    public LayerMask featureMask;
 }

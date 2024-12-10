@@ -10,8 +10,8 @@ public class Feature : ScriptableObject{
     public Tile baseTile;
     [Range(0, 100)]
     [Tooltip("How often this feature spawns in comparison to others?")]
-    public int weight; 
-    [Range(0, 25f)]
+    public float weight; 
+    [Range(0, 100f)]
     [Tooltip("Min distance between features")]
     public float minDistance;
 }

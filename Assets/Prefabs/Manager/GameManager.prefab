@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221a575436183c84eb9a48e7b87ac2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLength: 100
+  dayLength: 6000
 --- !u!1 &5931090148733457638
 GameObject:
   m_ObjectHideFlags: 0

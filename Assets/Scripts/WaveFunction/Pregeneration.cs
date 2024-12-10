@@ -57,7 +57,7 @@ public class Pregeneration : MonoBehaviour
 
             // Random blob size
             int blobSize = Random.Range(_wgs.blobMinSize, _wgs.blobMaxSize);
-            int randomIndex = Random.Range(0, _wgs.allTiles.Count - 2);
+            int randomIndex = Random.Range(0, _wgs.allTiles.Count);
             _generateBlob(startPosition, blobSize, _wgs.allTiles[randomIndex]);
         }
     }

@@ -12,6 +12,7 @@ public class WorldGenerationPipeline : MonoBehaviour
     public WFCManager wfc;
     public Cleanup cleanup;
     public Smoothing smoothing;
+    public GenerateFeatures generateFeatures;
     public bool generating = false;
     public ResizeCollider resize;
     private GridCell[,] _grid;
@@ -35,7 +36,29 @@ public class WorldGenerationPipeline : MonoBehaviour
     public void pipeline()
     {
         if (generating) return;
-        StartCoroutine(runPipeline());
+        StartCoroutine(runDemoPipeline());
+    }
+    public IEnumerator runDemoPipeline()
+    {
+        generating = true;
+        _grid = pregeneration.PreGeneration(wgs);
+        wgs.tilemap = placeSprites(_grid);
+        yield return new WaitForSeconds(2.5f);
+        _grid = wfc.initGrid(_grid, pregeneration.tilesToCollapse, wgs);
+        yield return new WaitForSeconds(2.5f);
+        wgs.tilemap = placeSprites(_grid);
+        yield return new WaitForSeconds(2.5f);
+        for (int i = 0; i < wgs.numberOfPasses; i++)
+        {
+            wgs.tilemap = smoothing.SmoothTilemap(wgs);
+            yield return new WaitForSeconds(2.5f);
+        }
+        cleanup.cleanupTiles(wgs);
+        yield return new WaitForSeconds(2.5f);
+        generateFeatures.generate(wgs);
+        yield return new WaitForSeconds(2.5f);
+        generating = false;
+        yield return null;
     }
 
     public IEnumerator runPipeline()
@@ -49,6 +72,7 @@ public class WorldGenerationPipeline : MonoBehaviour
             wgs.tilemap = smoothing.SmoothTilemap(wgs);
         }
         cleanup.cleanupTiles(wgs);
+        generateFeatures.generate(wgs);
         generating = false;
         yield return null;
     }

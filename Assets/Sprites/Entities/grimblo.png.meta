@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5f4f4e84e6fdc84ba6ebfef45fde6c4
+guid: c63f107af24558f448db59fcf3079d2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2830828286557567880
-    second: Healing Potion_0
+      213: -3864495768208590262
+    second: grimblo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Healing Potion_0
+      name: grimblo_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 0
-        width: 8000
-        height: 4500
+        width: 75
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88b3468045f194720800000000000000
-      internalID: 2830828286557567880
+      spriteID: a4a3de3e29d8e5ac0800000000000000
+      internalID: -3864495768208590262
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Healing Potion_0: 2830828286557567880
+      grimblo_0: -3864495768208590262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

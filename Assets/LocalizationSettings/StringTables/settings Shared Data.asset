@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: Spanish
     m_Metadata:
       m_Items: []
+  - m_Id: 772348956368896
+    m_Key: Recipe Book
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

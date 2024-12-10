@@ -66,6 +66,10 @@ MonoBehaviour:
     m_Localized: "Ingl\xE9s"
     m_Metadata:
       m_Items: []
+  - m_Id: 772348956368896
+    m_Localized: Libro De Recetas
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

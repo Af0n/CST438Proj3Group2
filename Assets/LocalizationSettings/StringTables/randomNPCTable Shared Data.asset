@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: randomNPCTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: randomNPCTable
+  m_TableCollectionNameGuidString: 499ab8c5939b54e4d8eec53000f4eb06
+  m_Entries:
+  - m_Id: 6651109376
+    m_Key: pierre0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36522942464
+    m_Key: andrew0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238340268032
+    m_Key: andrew1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379918999552
+    m_Key: andrew2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 463826051072
+    m_Key: andrew3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 530007973888
+    m_Key: andrew4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2611733323776
+    m_Key: alex0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2641022148608
+    m_Key: alex1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756285816832
+    m_Key: betan0
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8495841917068640372
+  references:
+    version: 2
+    RefIds:
+    - rid: 8495841917068640372
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1733816655051

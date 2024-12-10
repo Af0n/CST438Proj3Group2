@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: randomNPCTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 499ab8c5939b54e4d8eec53000f4eb06, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 36522942464
+    m_Localized: I was eating chicken nuggets one day...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6651109376
+    m_Localized: Sigma, Sigma, on the wall. Who is the skibidiest of them all?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238340268032
+    m_Localized: and I was using a fork to pick them up and bite into the sides
+    m_Metadata:
+      m_Items: []
+  - m_Id: 379918999552
+    m_Localized: and I took a really big chicken nugget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 463826051072
+    m_Localized: and bit into it 5 times to make a star
+    m_Metadata:
+      m_Items: []
+  - m_Id: 530007973888
+    m_Localized: and I realized it kinda looked like a character so I named it pierre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2611733323776
+    m_Localized: Your Diggin in me...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2641022148608
+    m_Localized: The weather might be unbearable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756285816832
+    m_Localized: I couldn't even brew to this, I drank it immediately!!  Cleanup
+      on isle my Cauldron!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

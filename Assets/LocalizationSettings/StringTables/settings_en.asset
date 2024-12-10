@@ -31,7 +31,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3081046581248
-    m_Localized: sfx
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 3147467579392
@@ -58,16 +58,12 @@ MonoBehaviour:
     m_Localized: Play Game
     m_Metadata:
       m_Items: []
-  - m_Id: 11049917997056
+  - m_Id: 738384201428992
     m_Localized: English
     m_Metadata:
       m_Items: []
-  - m_Id: 11143698440192
+  - m_Id: 738429063704576
     m_Localized: Spanish
-    m_Metadata:
-      m_Items: []
-  - m_Id: 772348956368896
-    m_Localized: Recipe Book
     m_Metadata:
       m_Items: []
   references:

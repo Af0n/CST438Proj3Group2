@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Brewing : MonoBehaviour
@@ -38,6 +34,10 @@ public class Brewing : MonoBehaviour
 
     public bool IsBrewing{
         get { return isBrewing;  }
+    }
+
+    public int TickTimer{
+        get { return tickTimer; }
     }
 
     private void OnEnable() {
@@ -86,14 +86,14 @@ public class Brewing : MonoBehaviour
     }
     
     public void Tick(){
-        tickTimer --;
-        tickTimer = Mathf.Max(0, tickTimer);
+        tickTimer++;
+        tickTimer = Mathf.Clamp(tickTimer, 0, processTime);
 
         if(isBrewing){
             // go in here if currently brewing
 
-            if(tickTimer <= 0){
-                tickTimer = processTime;
+            if(tickTimer >= processTime){
+                tickTimer = 0;
                 EndBrewing();
                 SpawnItem(type);
                 if(selectedRecipe.containsBucket){
@@ -104,6 +104,7 @@ public class Brewing : MonoBehaviour
         }
 
         // comes here if not brewing
+        tickTimer=0;
         
         // don't do anything if recipe is not satisfied
         if(!IsRecipeSatisfied()){
@@ -115,7 +116,7 @@ public class Brewing : MonoBehaviour
 
     private void StartBrewing(){
         isBrewing = true;
-        tickTimer = processTime;
+        tickTimer = 0;
 
         TargetIngredients();
         GrabTargetIngredients();

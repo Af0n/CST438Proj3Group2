@@ -48,7 +48,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        fixedMove();
+        // Will only handle movement when the player isn't dealing with dialogue boxes
+        if (!stats.isBusy)
+        {
+            fixedMove();
+        }
     }
 
     // Fixed update since we are using RB physics.

@@ -13,6 +13,8 @@ public class PlayerStats : ScriptableObject {
     [Header("States")]
     public bool hasItem;
     public bool isBuilding;
+    public bool isYapping;
+    public bool isBusy;
 
     [Header("Debug")]
     public bool debug;

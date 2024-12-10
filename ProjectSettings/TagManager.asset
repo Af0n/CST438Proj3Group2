@@ -7,8 +7,8 @@ TagManager:
   - Item
   - PauseMenu
   - ScrollingMenu
-  - Tilemap
-  - Confiner
+  - DialogueManager
+  - Ghost
   layers:
   - Default
   - TransparentFX
@@ -18,8 +18,8 @@ TagManager:
   - UI
   - Pickupable
   - Interactable
-  - 
-  - 
+  - Nodes
+  - MinionPickupable
   - 
   - 
   - 

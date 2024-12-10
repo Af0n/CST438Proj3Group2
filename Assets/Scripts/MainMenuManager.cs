@@ -7,6 +7,10 @@ public class MainMenuManager : MonoBehaviour
 {
     public GameObject settingsMenu;
     public string startingScene;
+
+    // String ref to a target dev scene
+    public string devScene;
+
     void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -14,12 +18,19 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        AudioManager.Instance.getAudioModifiers();
         AudioManager.Instance.PlayMusic("MainMenu");
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene(startingScene);
+    }
+
+    // Enters the aformentioned dev scene in the listed on the GameObject
+    public void LoadDevScene()
+    {
+        SceneManager.LoadScene(devScene);
     }
 
     public void ActivateSettingsMenu()

@@ -7,6 +7,13 @@ public class PlayerManager : MonoBehaviour
     public PlayerStats stats;
     public HUDScript hud;
 
+    // initializes the yapping variable to false
+    private void Awake()
+    {
+        stats.isYapping = false;
+        stats.isBusy = false;
+    }
+
     void Update() {
         hud.UpdateMoneyText(stats.money);
     }
@@ -29,4 +36,22 @@ public class PlayerManager : MonoBehaviour
 
         // do other stuff relating to dropping your item
     }
+
+    public bool isBusyCheck()
+    {
+        return stats.isBusy;
+    }
+
+    public void flipYapping()
+    {
+        stats.isYapping = !stats.isYapping;
+        flipBusy();
+
+    }
+
+    public void flipBusy()
+    {
+        stats.isBusy = !stats.isBusy;
+    }
+
 }

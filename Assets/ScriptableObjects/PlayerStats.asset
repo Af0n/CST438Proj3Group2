@@ -17,5 +17,7 @@ MonoBehaviour:
   money: 0
   hasItem: 0
   isBuilding: 0
+  isYapping: 0
+  isBusy: 0
   debug: 0
   MoveDeceleration: 10

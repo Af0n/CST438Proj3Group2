@@ -66,6 +66,22 @@ MonoBehaviour:
     m_Localized: "Espa\xF1ol"
     m_Metadata:
       m_Items: []
+  - m_Id: 779975748739072
+    m_Localized: Libro De Recetas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786507525775360
+    m_Localized: Bien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786525351567360
+    m_Localized: Izquierda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786546771877888
+    m_Localized: Salida
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

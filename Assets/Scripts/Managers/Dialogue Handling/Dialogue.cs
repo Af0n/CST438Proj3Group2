@@ -14,6 +14,12 @@ public class Dialogue : MonoBehaviour
     // Ref to all the possible key names
     public string[] keyNames;
 
+    public void Awake()
+    {
+        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+    }
+
+
     // Simple function that manages the dialogue
     public void RunDialogue()
     {

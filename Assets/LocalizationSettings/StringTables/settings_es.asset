@@ -66,6 +66,10 @@ MonoBehaviour:
     m_Localized: "Espa\xF1ol"
     m_Metadata:
       m_Items: []
+  - m_Id: 775154020429824
+    m_Localized: Generar mundo
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

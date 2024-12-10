@@ -66,6 +66,10 @@ MonoBehaviour:
     m_Localized: Spanish
     m_Metadata:
       m_Items: []
+  - m_Id: 775154020429824
+    m_Localized: Generate World
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

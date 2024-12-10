@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(fileName = "New World Generation Settings", menuName = "Wave Function/World Generation Settings")]
 public class WorldGenerationSettings : ScriptableObject{
     // Just a file to preconfigure a world generation settings.
+    [HideInInspector]
     public Tilemap tilemap;
     [Space(32)]
     [Header("Pre-generation")]
@@ -29,5 +30,5 @@ public class WorldGenerationSettings : ScriptableObject{
     public List<Tile> allTiles; // Array of all possible tile;
     [Space(32)]
     [Header("Features")]
-    public int maxAmountOfFeatures; 
+    public List<Feature> allFeatures; 
 }
